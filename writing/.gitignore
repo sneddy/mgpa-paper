@@ -1,0 +1,16 @@
+# Keep manuscript and figure PDFs; ignore only LaTeX build intermediates.
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.xdv
+*.toc
+*.loa
+*.lof
+*.lot
+build/
+.DS_Store

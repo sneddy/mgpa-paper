@@ -1,0 +1,326 @@
+\section{Experimental Protocols}
+\label{app:protocols}
+\label{app:protocol}
+FIT determines coordinates, gates and adapters; VAL sets prescribed movement
+endpoints; HEAD trains independent readers; EVAL supplies participant scores.
+Participant roles are disjoint within a split. Table~\ref{tab:protocol-map}
+distinguishes native outputs, matched movement and task-informed P300 DEV
+selection. Downstream labels construct associations and train heads, but
+enter adapter selection only in reuse and never adapter fitting.
+The repository README (Appendix~\ref{app:reproduction}) indexes participant
+lists, executable configurations and per-study reproduction instructions.
+
+\begin{table}[htbp]
+\centering\small
+\caption{\textbf{Protocol map.} Participant counts are FIT/VAL/HEAD/EVAL
+(DEV replaces VAL in reuse). Gates are fixed during correction.}
+\label{tab:protocol-map}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.18\linewidth}>{\raggedright\arraybackslash}p{.43\linewidth}>{\raggedright\arraybackslash}p{.33\linewidth}@{}}
+\toprule
+Study & Coordinates, calibration and gate & Participants and operating point \\
+\midrule
+Controlled SSVEP & Pooled EEGPT512; full same-trial CAR/Oz contrasts;
+90\% directional energy, ranks $3,3,3,2$ & Four role rotations;
+81 distinct EVAL participants. Native correction/target; $.05$ VAL budget for permission. \\
+\addlinespace
+Temporal N170 & 240 temporal features; simultaneous Neuroscan/Flex pairs;
+90\% energy, rank 56 & $4/2/4/10$; native maps and matched-budget IGBP comparison. \\
+\addlinespace
+Recorded SSVEP & Mean512 correction, $15\times512$ readouts;
+six virtual FIT-local contrasts; 99\% energy, rank 328 & $41/20/20/21$;
+native maps. \\
+\addlinespace
+P300-selected reuse & EEGPT/PCA256, P300 FIT reference coordinates;
+400 simultaneous CAL pairs, rank 8 & $4/2/4/8$;
+P300 DEV-selected map, unchanged on N170/MMN. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Measurement views and participant roles}
+\paragraph{Controlled SSVEP.}
+The wet/dry collection contains 102 participants, 12 frequencies and ten
+blocks per frequency and electrode type \citep{zhu2021ssvep}. Wet trials
+from eight occipital channels are cropped to samples 160--659 at 250 Hz,
+standardized within channel and encoded by frozen EEGPT
+\citep{wang2024eegpt}. CAR and Oz-reference views are encoded separately;
+averaging 15 tokens yields $h_i^{\rm CAR},h_i^{\rm Oz}\in\R^{512}$.
+The evaluated endpoints are
+\[
+ h_i(u)=\tfrac12(h_i^{\rm CAR}+h_i^{\rm Oz})
+ +(2u-1)\tfrac{\gamma}{2}(h_i^{\rm Oz}-h_i^{\rm CAR}),\qquad\gamma=.005,
+\]
+whereas calibration uses the full CAR--Oz contrasts. The task is frequency
+$\geq12$ Hz. Within each FIT/VAL participant--frequency cell, nine of ten
+trials receive source 1 in the high-frequency class and one of ten in the
+low-frequency class. Adapters fit these observed endpoints; HEAD/EVAL
+readers use both endpoints with equal source mass.
+
+Five folds are stratified by electrode-session order and gender. In rotation
+$r$, folds $r,r+1,r+2$ supply EVAL, HEAD, VAL cyclically, and the remaining
+two supply FIT. The four FIT/VAL/HEAD/EVAL counts are $41/20/20/21$,
+$42/20/20/20$, $41/21/20/20$ and $40/21/21/20$. Each participant supplies
+120 underlying trials. The 81 distinct EVAL participants appear once per
+fit seed; source assignment is fixed across seeds. Closed-form comparisons
+use one deterministic map per split and the seed-17 reader realization;
+gate/target comparisons cross these rotations with all shared fit seeds.
+
+\paragraph{Temporal N170.}
+Neuroscan (source 0) and Flex (source 1) record the same watch/face events
+concurrently \citep{williams2020flex}. Processing uses 16 common channels,
+0.1--30 Hz zero-phase FIR filtering, CAR, resampling to 128 Hz, and one-second
+epochs starting at $-.2$ s with prestimulus baseline subtraction. Event
+ordinals and timestamps align the views. A pair is retained only if neither
+device exceeds $100\,\mu$V absolute amplitude after baseline correction.
+FIT/VAL/HEAD/EVAL contain $622/288/716/1381$ clean pairs; every EVAL
+participant retains both classes. Fifteen successive 50 ms channel averages
+from 0 to 750 ms give 240 coordinates without an encoder or PCA. This is
+distinct from the EEGPT-based reuse protocol below.
+
+\paragraph{Recorded SSVEP.}
+Source 0/1 denotes actual dry/wet sessions, with no physiological trial
+correspondence. The roles contain $9840/4800/4800/5040$ observations under
+one fixed stratified split. Six calibration transformations of each trial
+use spectral transport, spatial transport and their composition at strengths
+.5 and 1 toward the opposite source. FIT prestimulus signals determine
+smoothed log-power gains clipped to $[.25,4]$ and spatial whitening/coloring
+with covariance shrinkage .1. MGPA corrects the token mean and adds its
+displacement to every token; source and twelve-frequency task readers
+access the full $15\times512$ representation.
+
+\subsection{Fitting, replay and comparison interfaces}
+\label{app:fitting-replay}
+\label{app:component-fitting}
+\begin{table}[htbp]
+\centering\small
+\caption{\textbf{Shared MGPA settings.} Component ablations change only the
+specified critic or target. Split, reader and assignment seeds are separate.}
+\label{tab:shared-settings}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.34\linewidth}>{\raggedright\arraybackslash}p{.60\linewidth}@{}}
+\toprule
+Component & Setting \\
+\midrule
+Iterative fits / horizon & Seeds 17, 29, 43; at most 48 stages \\
+Source critics & Balanced logistic ($C=1$); GELU MLP, hidden width 128 \\
+Conditional-mean anchor & Ridge with intercept and penalty 10 (both constructions) \\
+Neural-critic optimizer & AdamW, batch 256, weight decay $.001$ \\
+Gradient stabilizer / damping & $.1$ / $.001$ \\
+Controlled and real-representation fits & 12 critic epochs, LR $.001$, radius $.05\sqrt d$ \\
+P300 reuse fits & At most 100 epochs, LR $.0003$, source-VAL patience 10,
+radius $.025\sqrt d$ \\
+Closed-form residual covariance & $.01$ shrinkage toward mean-diagonal identity \\
+Participant uncertainty & 20,000 percentile bootstrap resamples, seed 1101 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{algorithm}[htbp]
+\small
+\caption{Iterative MGPA: fit once, replay without source labels}
+\label{fig:algorithm-main}
+\begin{enumerate}
+\setlength{\itemsep}{2pt}
+\item \textbf{Inputs:} calibration pairs, source-labeled FIT/VAL embeddings,
+gate rank or energy threshold, critic bank, $\lambda,\tau,\rho,K$, and
+endpoint rule. Task-informed selection additionally requires DEV task data.
+\item Fit standardization and the contrast-SVD gate \eqref{eq:gate-estimate};
+freeze $B,P,Q$. Return identity if $r=0$. Store original FIT/VAL complements.
+\item Fit source critics on current FIT embeddings and regress their scores
+on original FIT $Q$ to obtain conditional anchors.
+\item Store critics and anchors; compute $e,A,W$, solve
+\eqref{eq:tr-problem}, and apply $h\leftarrow h+B\Delta z_*$. Record VAL
+outputs and repeat Steps 3--4 up to $K$ stages.
+\item Select and store the prefix and optional final-stage fraction using
+the declared validation rule; only task-informed selection uses task labels.
+\item \textbf{Deployment:} standardize one embedding, replay the stored map,
+and return it in the downstream interface's coordinates.
+\end{enumerate}
+\end{algorithm}
+
+Standardization uses FIT only. Gates use row-normalized contrasts;
+controlled and N170 fits filter contrast norms at the fifth percentile,
+whereas recorded SSVEP uses no percentile filter. Controlled gating uses
+at most 2048 deterministically sampled contrasts. Energy thresholds and
+ranks appear in Table~\ref{tab:protocol-map}.
+Closed-form MGPA uses the same gate and standardization, the mean projected
+calibration contrast, and the shared Ridge anchor. Its metric comes from
+residuals of a joint regression of $Z$ on $Q$ and source: intercept/source
+coefficients are unpenalized and $Q$ has penalty 10. The residual second
+moment is normalized by FIT count and shrunk as in
+Table~\ref{tab:shared-settings}; \eqref{eq:closed-form-mgpa} uses linear
+solves. Native studies take $\alpha=1$; reuse selects $\alpha$ on DEV.
+Recorded contrasts are oriented wet-like to dry-like for both gate and direction.
+
+The target ablation replaces the conditional anchor by the current-stage
+empirical FIT-mean score; a zero-score control is also reported. The
+linear-only ablation removes the nonlinear critic. Other fitting settings
+remain matched as specified in the corresponding results.
+
+\paragraph{Baselines and deployment information.}
+LEACE fits an unrestricted covariance-weighted affine eraser to observed
+FIT rows. CORAL uses FIT source means and identity-regularized sample
+covariances, not pair correspondence. FEATMAP fits centered unregularized
+least squares to FIT pairs, with the minimum-norm slope for rank-deficient
+designs; controlled pairs use the evaluated $\gamma$-scaled endpoints.
+CORAL/FEATMAP leave their chosen reference unchanged and require source
+routing at deployment; both orientations are reported. MGPA, LEACE and
+IGBP deploy source-blind. Recorded SSVEP has no paired FEATMAP comparison.
+No method uses EVAL moments. Reuse searches regularization/strength on
+P300 DEV instead of using these native settings.
+
+\paragraph{IGBP.}
+\label{app:igbp-protocol}
+IGBP~\citep{iskander2023} shares each study's roles, standardized inputs and
+independent readers. At each iteration a $d\to d\to2$ ReLU classifier
+drives an ungated projective update without a conditional anchor or pair
+correspondence. All reported fits use the longer-training preset: AdamW,
+LR $2\times10^{-4}$, weight decay $.01$, batch 256, at most 50 epochs,
+VAL source-accuracy patience 10 and improvement threshold $.002$, with no
+$.80$ accuracy exit. Native maps apply 100 projections without task-based
+stopping. Updates are evaluated directly in logit space to avoid softmax
+saturation. For N170, $d=240$; for recorded SSVEP, $d=512$ and the resulting
+mean correction is added to every token, matching MGPA's interface.
+
+\paragraph{Matched movement and edit-permission controls.}
+\label{app:gate-attribution}
+Native outputs apply the complete fitted map; movements need not match.
+A budget $b$ instead selects the first
+upward crossing of $\|H'_{\rm VAL}-H_{\rm VAL}\|_F/\|H_{\rm VAL}\|_F=b$,
+interpolating only the last update and replaying that prefix/fraction on
+HEAD/EVAL. Controlled permission compares the measurement gate, leading
+observed-FIT PCA directions of the same rank, five fixed random orientations
+of that rank (averaged, not selected), and all 512 directions. Each arm
+refits its critics and anchors with the same recipe and original measurement
+complement $Q_0$ as anchor input. Thus controls receive calibration-derived
+rank and conditioning information; only the measurement arm necessarily
+preserves $Q_0$. Every correction arm and random orientation attains the
+reported $.05$ budget; all 108 cells, including identity, are available.
+At the originally primary $.10$ budget, 17 of 60 random trajectories
+do not attain it within the horizon; native endpoints are not substituted.
+The N170 IGBP budget comparison uses the same first-crossing rule.
+
+\subsection{Independent readers and statistical summaries}
+\label{app:independent-readouts}
+\label{app:full-token-readers}
+Source readers fit corrected HEAD outputs independently of adapters and
+score participant-disjoint EVAL outputs. Table~\ref{tab:reader-bank} specifies
+their inputs and capacity. All preprocessing uses HEAD only; each recording,
+not each token, is one example. Neural readers train without early stopping
+and contribute three restarts at 12/50/200 epochs.
+
+\begin{table}[htbp]
+\centering\small
+\caption{\textbf{Independent source-reader bank.} Controlled/N170 use the
+11 common readers. Recorded SSVEP uses all $11+20+10=41$ readers; its common
+bank alone defines $S_{\rm mean}$.}
+\label{tab:reader-bank}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.23\linewidth}>{\raggedright\arraybackslash}p{.71\linewidth}@{}}
+\toprule
+Input & Readers and training \\
+\midrule
+Common representation & Ordinary and covariance-whitened logistic ($C=1$,
+whitening shrinkage $.01$); GELU MLP with width 128, AdamW, LR $.001$,
+batch 256, weight decay $.001$. \\
+\addlinespace
+Direct full tokens & Raw logistic ($C=1$), HEAD-standardized logistic
+($C=.01$); flat $7680\to128\to2$ GELU with common training; token network
+with LayerNorm, shared $512\to64$ GELU, concatenation and binary output,
+LR $.0005$, batch 128, weight decay $.001$, gradient clipping 5. \\
+\addlinespace
+Centered token residuals & Standardized logistic and the same token network
+with its three restarts/checkpoints. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Recorded common-offset correction preserves $R_t=H_t-\bar H$.
+Residual readers fit once on original HEAD residuals and are reused on
+corrected EVAL; numerical invariance is checked. This retained token
+variation is distinct from the pooled gate complement $Q$.
+
+\paragraph{Task utility and movement.}
+Controlled/N170 heads are HEAD-standardized balanced Ridge classifiers
+(penalty 10, LSQR). The recorded task head uses HEAD-standardized flattened
+features and the token architecture above with a twelve-class output,
+trained for 50 epochs. Frozen heads and scalers train on original HEAD;
+refitted heads and scalers train on corrected HEAD; both evaluate corrected
+EVAL. $T_f/T_r$ equally average participant AUROCs over $0\to1$ and
+$1\to0$ transfer; recorded scores are twelve-class macro AUROC.
+$M$ averages $\|H'_p-H_p\|_F/\|H_p\|_F$ over EVAL participants, which
+can differ from aggregate VAL movement.
+
+\paragraph{Aggregation and uncertainty.}
+\label{app:evaluation-scope}
+Source accessibility maximizes participant-mean AUROC over readers within
+each fit, then averages fits. Controlled scores pool disjoint EVAL folds;
+deterministic maps contribute one output per split. Shared participant
+bootstrap draws pair methods, transfer directions and fits, recomputing
+the source maximum inside every draw. Intervals condition on fitted
+coordinates, adapters and readers and are pointwise, without multiplicity
+adjustment; seeds/trials do not increase participant counts. These cohorts
+informed protocol development, including the P300 selection task and rank
+eight. Controlled gate/target studies share participants; the two N170
+protocols overlap. Source maxima measure accessibility under the specified
+bank, not complete erasure or unbiased performance of an EVAL-selected reader.
+
+\subsection{P300-selected correction reused on N170 and MMN}
+\label{app:recovery-protocol}
+\label{app:reuse-protocol}
+\paragraph{Calibration and shared coordinates.}
+All three tasks use simultaneous Neuroscan/Flex recordings and the same
+eight EVAL participants. The first 100 consecutive P300 pairs per FIT
+participant form CAL. Any other FIT event whose one-second epoch overlaps
+CAL on either device is excluded, leaving 2260 observed events. One endpoint
+per observed event plus both endpoints of the 400 CAL pairs yields 3060
+unique fitting endpoints for MGPA, LEACE and CORAL; FEATMAP uses the 400
+pairs. CAL supplies both MGPA gates and the Closed-form direction;
+Iterative critics fit the pooled bank without paired targets.
+
+Frozen EEGPT retains $7\times4\times512=14{,}336$ features from seven
+overlapping windows, with fixed $20\,\mu$V input scaling. Centered PCA256
+and standardization fit only the Neuroscan endpoints of remaining P300 FIT
+events, then apply to both devices and all tasks. Neither N170 nor MMN
+fits coordinates or selects the adapter. HEAD uses all technically valid
+events, unlike the amplitude-filtered temporal N170 study.
+
+\paragraph{Frozen heads and association shifts.}
+Each task has two balanced logistic heads trained on original HEAD features
+with equal participant weights: an aligned, shortcut-sensitive head and an
+independent-assignment control head. Regularization is selected from
+$C\in\{10^{-6},10^{-5},\ldots,10\}$ by leave-one-HEAD-participant-out
+independent-head AUROC and shared between that task's heads. Heads,
+standardizers and assignment realizations stay fixed across adapter fits.
+For positive-class prevalence $\pi_p$, endpoint assignment satisfies
+\[
+ \Pr(U=1\mid Y=y,p;\xi)=\tfrac12+.4\xi
+ \frac{y-\pi_p}{\max(\pi_p,1-\pi_p)},\qquad \xi\in[-1,1].
+\]
+Aligned/independent/reversed settings are $\xi=1/0/-1$; device marginals
+remain one half and signals are unchanged. Fitting samples recorded
+endpoints; evaluation weights both endpoints. Worst AUROC is the exact
+minimum of the participant-mean quadratic AUROC curve on $[-1,1]$,
+including interior minima. Control-head AUROC is evaluated at $\xi=0$.
+
+\paragraph{Selection and transfer.}
+Both MGPA constructions use rank-eight gates and pooled conditional-mean
+targets. Iterative training follows Table~\ref{tab:shared-settings}, with
+1332 DEV source-validation endpoints. P300 DEV selects the endpoint
+maximizing worst AUROC subject to at most $.01$ loss from identity for
+\emph{each} head at independent association. Ties prefer less movement,
+then an earlier endpoint. All iterative prefixes are eligible. Affine
+strengths are $0,.02,\ldots,1,1.1,1.2,1.3$; baseline ridge grids and both
+CORAL/FEATMAP reference choices are searched under the same rule. Across
+recipes within a family, candidates within $.002$ of the best admissible
+DEV worst AUROC are ordered by movement and the fixed tie rule. The grids
+and selected values are recorded in the repository's task-reuse guide;
+Closed-form MGPA selects $\alpha=1.1$. Each complete selected map is then
+reused unchanged on P300, N170 and MMN.
+
+Reuse movement for DEV tie-breaking is the participant mean of the ratio
+of mean paired-event displacement norm to mean input norm, rather than the
+Frobenius ratio above. Reported worst AUROC averages fit-specific minima
+of participant-mean curves, not the minimum of an ensemble curve.
+Each shared participant-bootstrap draw recomputes every curve and its
+minimum before averaging fits; the same draws pair all tasks and methods.
+Control-head AUROCs average participants and fits. Other uncertainty
+conventions follow Appendix~\ref{app:evaluation-scope}.

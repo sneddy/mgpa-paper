@@ -1,0 +1,154 @@
+\section{Supporting Experimental Results}
+\label{app:retained-results}
+Paired intervals follow Appendix~\ref{app:independent-readouts}.
+
+\subsection{Controlled correction and target choice}
+\label{app:closed-form-controlled}
+\label{app:target-controls}
+\paragraph{Closed-form correction.}
+In Table~\ref{tab:controlled-cf}, Closed-form MGPA changes source AUROC from
+identity by $-.173$ $[-.180,-.164]$. Frozen- and refitted-task changes are
+$-.0002$ $[-.0007,+.0002]$ and $+.0004$ $[-.0001,+.0008]$;
+the refitted-task gain over LEACE is $+.0879$ $[.0762,.0998]$.
+
+\paragraph{Conditional versus unconditional targets.}
+The unconditional control uses each critic's empirical mean score on the
+current corrected FIT inputs, recomputed at every stage without downstream
+labels or HEAD/EVAL data. Gate, critic fitting, solver and the 48-stage
+horizon are unchanged. Each trajectory refits its critics, testing learned
+correction rather than the fixed-score equivalence of
+Proposition~\ref{prop:parallel-levels}. Zero-score targeting remains a
+separate control: balanced source labels do not imply a zero mean logit.
+
+\begin{table}[htbp]
+\centering\small
+\caption{\textbf{Conditional versus constant targets.}
+Native controlled outputs for the same 81 participants and fits as
+Figure~\ref{fig:target-cost}c. $S$: source AUROC; $T_f/T_r$: frozen/refitted
+task AUROC; $M$: movement.}
+\label{tab:target-controls}
+\input{assets/controlled_target_controls.tex}
+\end{table}
+
+Conditional minus empirical-unconditional anchoring gives movement
+$-.2563$ $[-.2907,-.2232]$ and source AUROC $-.0110$ $[-.0143,-.0079]$.
+Frozen-task change is $+.0008$ $[-.0015,.0030]$; refitted-task change is
+$-.0047$ $[-.0070,-.0025]$.
+
+\subsection{Temporal N170: nonlinear correction and task utility}
+\label{app:critic-complexity}
+\label{app:igbp-comparison}
+\paragraph{Linear-only ablation.}
+Removing the GELU critic retains the gate, Ridge mean anchor, smooth
+weighting, trust-region radius and stage horizon. Single-critic damping
+$.0005$ preserves regularization relative to mean critic loss, equivalently
+duplicating the affine constraint at the shared two-critic damping.
+Sample-dependent bounded steps make this a linear-critic ablation, not a
+globally affine map. Closed-form MGPA instead estimates its direction and
+covariance metric from measurement contrasts and the joint residual model.
+Table~\ref{tab:critic-complexity} shows why the distinction matters:
+linear-only correction lowers linear accessibility but leaves nonlinear
+accessibility nearly intact. Iterative MGPA lowers the full-bank score
+with higher task scores at nearly the same movement.
+
+\begin{table}[htbp]
+\centering\small
+\caption{\textbf{Nonlinear critics on N170.} A: strongest linear reader $L$
+versus full-bank $S$ for the ten participants in Table~\ref{tab:real-main}A.
+B: Iterative minus linear-only AUROC percentage points, with paired 95\%
+intervals. Iterative estimates average fits; linear-only is deterministic.}
+\label{tab:critic-complexity}
+\label{tab:critic-complexity-paired}
+\input{assets/n170_critic_compact.tex}
+\end{table}
+
+\paragraph{Comparison with IGBP.}
+At native outputs, Iterative MGPA minus IGBP gives frozen/refitted task
+gains of $+.0123$ $[.0042,.0203]$ and $+.0361$ $[.0306,.0405]$, and movement
+lower by $.1504$ $[.1230,.1769]$. The source-AUROC difference is
+$-.0091$ $[-.0198,.0006]$. At common VAL movement budget $.25$
+(Table~\ref{tab:igbp-budget}), the respective source, frozen-task and
+refitted-task differences are $-.0234$ $[-.0393,-.0099]$,
+$+.0082$ $[.0015,.0154]$ and $+.0156$ $[.0063,.0269]$.
+At budget $.10$, source accessibility is lower but a downstream advantage
+is not established. These comparisons assess complete correction
+procedures; equal iteration counts would not equalize their computation.
+
+\begin{table}[htbp]
+\centering\small
+\caption{\textbf{N170: MGPA versus IGBP at matched VAL budgets.}
+First-crossing endpoints follow Appendix~\ref{app:gate-attribution};
+attained EVAL movement $M$ may differ. Same ten participants and shared fits.}
+\label{tab:igbp-budget}
+\input{assets/n170_igbp_budget.tex}
+\end{table}
+
+\paragraph{Task utility.}
+Iterative MGPA improves frozen/refitted task AUROC over identity by
+$+.0070$ $[+.0012,+.0131]$ and $+.0187$ $[+.0042,+.0366]$, respectively.
+Both transfer directions receive equal weight:
+the refitted gain is concentrated in Neuroscan-to-Flex ($.608$ to $.648$),
+while the reverse direction changes from $.847$ to $.844$.
+
+\subsection{Recorded SSVEP: full-input accessibility and utility}
+\label{app:recorded-full-input}
+On the same saved outputs and participant roles, Iterative MGPA gives
+pooled source AUROC $.7954$ and full-bank $S=.8718$, versus identity's
+$.9155$. Readers trained directly on all tokens independently support
+attenuation: their maximum falls from $.8987$ to $.8685$, a paired change
+of $-.0302$ $[-.0459,-.0174]$. The full-bank difference from LEACE is
+$-.0463$ $[-.0671,-.0225]$. Closed-form MGPA gives $S=.8949$, a change
+of $-.0206$ $[-.0356,-.0043]$ from identity. All maps share the 41-reader bank
+(Appendix~\ref{app:full-token-readers}).
+
+Residual-only readers attain $.8718$ for every common-offset correction;
+this determines the full-bank maximum for Iterative MGPA, linear-only MGPA
+and IGBP. Thus the maximum also reflects retained temporal structure.
+CORAL reaches $S=1$ in both orientations under the common-offset interface;
+these are not results for token-specific CORAL maps.
+
+\paragraph{Comparison with IGBP and task utility.}
+IGBP and Iterative MGPA both attain full-bank $S=.8718$, with pooled-mean
+scores $.7832$ and $.7954$, respectively. IGBP has lower movement
+($.0956$ versus $.1490$), slightly higher frozen-task AUROC ($.6891$ versus
+$.6880$), and similar refitted-task AUROC ($.6884$ versus $.6886$).
+Against identity, Iterative MGPA's frozen/refitted task changes are
+$-.0002$ $[-.0017,+.0013]$ and $+.0004$ $[-.0028,+.0034]$.
+
+\subsection{P300-selected reuse: absolute outcomes and paired comparisons}
+\label{app:transfer-results}
+\label{app:reuse-results}
+Tables~\ref{tab:reuse-absolute}--\ref{tab:reuse-paired} supplement the main
+reuse comparison at its unchanged P300-selected operating points.
+Both MGPA corrections improve
+transferred worst AUROC over LEACE on N170 and MMN, with paired intervals
+excluding zero; on P300 these intervals contain zero. Control-head changes
+from identity are small: Closed-form MGPA gains $.0012$ $[.0006,.0018]$ on
+MMN, while the other three MGPA transfer-task intervals contain zero.
+N170 worst AUROC remains below .5: the gain is improved robustness rather
+than complete recovery.
+
+\begin{table}[htbp]
+\centering\small
+\caption{\textbf{Absolute reuse outcomes.} A/I/R: aligned/independent/reversed
+AUROC of the shortcut-sensitive head; worst/control results are in
+Table~\ref{tab:reuse-main}. Iterative entries average fits; other maps are
+evaluated once. CORAL/FEATMAP require device identity.}
+\label{tab:reuse-absolute}
+\input{assets/reuse_absolute_compact.tex}
+\end{table}
+
+\begin{table}[htbp]
+\centering\small
+\caption{\textbf{Paired reuse gains.} Method-minus-comparator AUROC and 95\%
+intervals, recomputing worst AUROC inside each bootstrap draw
+(Appendix~\ref{app:reuse-protocol}).}
+\label{tab:reuse-paired}
+\input{assets/reuse_paired_ci.tex}
+\end{table}
+
+Across the three Iterative MGPA fits, worst-association AUROC ranges from
+$.417$ to $.471$ on N170 and $.622$ to $.639$ on MMN. Every P300-selected map,
+reused unchanged, improves this score over LEACE on both transfer tasks;
+Table~\ref{tab:reuse-paired} reports intervals for the mean across fits.
+\FloatBarrier

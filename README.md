@@ -14,6 +14,13 @@ include the manuscript's component controls and Identity, LEACE, CORAL, FEATMAP
 and IGBP comparisons. CORAL and FEATMAP require source identity at application.
 The result identifiers for the two MGPA methods are `mgpa_cf` and `mgpa_iter`.
 
+## Manuscript
+
+The self-contained manuscript project is in [writing/](writing/README.md):
+[LaTeX source](writing/merged_v5.tex) · [PDF](writing/merged_v5.pdf).
+It includes all figures, table sources, bibliography, and local ICLR styles.
+Compilation instructions are in [writing/README.md](writing/README.md).
+
 ## Reproduction guide
 
 Choose one of two workflows after [installation](#install):
