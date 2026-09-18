@@ -18,6 +18,10 @@ maximum. They are not selected using EVAL.
 
 ## Data
 
+Obtain the [SSVEP recordings](../../DATASETS.md#ssvep) and
+[EEGPT checkpoint](../../DATASETS.md#eegpt) using the download guide.
+The guide also gives the [raw-input setup](../../DATASETS.md#run-from-raw-data).
+
 Frozen EEGPT encodes full CAR/Oz rereferences of the same wet trials. The
 observed endpoints use the fixed γ=0.005 chord; calibration uses the full
 contrasts. FIT/VAL source assignment is 0.9-associated with binary stimulus

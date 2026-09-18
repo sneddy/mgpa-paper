@@ -38,6 +38,10 @@ No endpoint is selected by downstream or EVAL performance.
 
 ## Running
 
+Obtain the [SSVEP recordings](../../DATASETS.md#ssvep) and
+[EEGPT checkpoint](../../DATASETS.md#eegpt) using the download guide, then follow
+the [raw-input setup](../../DATASETS.md#run-from-raw-data).
+
 Install the package from the repository root. Run the following commands from
 this experiment directory:
 

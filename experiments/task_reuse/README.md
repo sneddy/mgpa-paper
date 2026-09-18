@@ -24,6 +24,10 @@ python experiments/task_reuse/run.py verify-selection --published
 
 ## Fresh reproduction
 
+Obtain the required [Flex–Neuroscan files](../../DATASETS.md#flex-neuroscan) and
+[EEGPT checkpoint](../../DATASETS.md#eegpt). The download guide includes the
+[raw-input setup](../../DATASETS.md#run-from-raw-data).
+
 Use a new run directory. The raw collection root must contain the original
 `raw/Saline Raw Data/` layout. Supply the published EEGPT safetensors checkpoint
 (SHA256 `fb34c20609983324679b9534f9d17a2289a232d0276dd2b8b7d5b088f876f621`).

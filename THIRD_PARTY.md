@@ -3,6 +3,10 @@
 This release retains the original project's MIT license. It does not redistribute
 raw participant recordings or pretrained weights.
 
+The [download guide](DATASETS.md) lists official sources, required files and
+local directory layouts for [SSVEP](DATASETS.md#ssvep),
+[Flex–Neuroscan](DATASETS.md#flex-neuroscan) and [EEGPT](DATASETS.md#eegpt).
+
 - **LEACE, CORAL and FEATMAP:** local numerical implementations of the comparison
   methods cited in the manuscript. They are baselines, not MGPA components:
   [LEACE (Belrose et al., 2023)](https://proceedings.neurips.cc/paper_files/paper/2023/hash/d066d21c619d0a78c5b557fa3291a8f4-Abstract-Conference.html),

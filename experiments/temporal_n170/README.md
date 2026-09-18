@@ -28,6 +28,10 @@ task heads. CORAL/FEATMAP require source ID at application; the others do not.
 
 ## Running
 
+Download the required [Flex–Neuroscan N170 files](../../DATASETS.md#flex-neuroscan)
+and follow the [raw-input setup](../../DATASETS.md#run-from-raw-data).
+This protocol does not need EEGPT weights.
+
 Install the package from the repository root. Run the following commands from
 this experiment directory:
 

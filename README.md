@@ -31,6 +31,8 @@ Experiment launchers use Unix file locks; Windows execution has not been validat
 EEG recordings and EEGPT weights are external inputs, not bundled or downloaded
 implicitly. Their required formats, sources and preparation options are documented
 in each experiment and in [THIRD_PARTY.md](THIRD_PARTY.md).
+See [DATASETS.md](DATASETS.md) for official download links, required files and
+directory layouts, and the EEGPT checkpoint.
 
 ## Use a correction in another study
 
@@ -78,6 +80,8 @@ adapter fitting, HEAD/EVAL evaluation and reporting are separate phases.
 The saved participant-level cells include all reported fit repetitions and
 source-reader scores. Reuse cells retain the coefficients needed to recompute
 worst-association AUROC. The manuscript tables and figures are in `paper_assets/`.
+These commands use the supplied results: no EEG recordings, feature downloads
+or pretrained weights are needed.
 
 ```sh
 python paper_assets/verify.py
@@ -99,6 +103,7 @@ additional participants.
 
 ## Fresh numerical reproduction
 
+For raw inputs, follow the [download and setup guide](DATASETS.md#run-from-raw-data).
 First inspect the configuration and job plan. For the controlled study:
 
 ```sh

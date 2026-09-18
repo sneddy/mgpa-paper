@@ -2,5 +2,6 @@
 # Download data/checkpoints yourself under their providers' terms.
 [data]
 mode = "raw"
-raw_root = "/path/to/flex-neuroscan/raw"
+# Collection root containing raw/Saline Raw Data/ (not the raw/ directory itself).
+raw_root = "/path/to/flex-neuroscan"
 # Temporal N170 uses fixed raw time bins: no encoder checkpoint is required.

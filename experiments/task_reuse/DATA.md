@@ -1,5 +1,11 @@
 # Portable inputs
 
+For official downloads and required files, see the
+[Flex–Neuroscan data guide](../../DATASETS.md#flex-neuroscan) and
+[EEGPT checkpoint guide](../../DATASETS.md#eegpt). This page describes the input
+manifest; [raw-input setup commands](../../DATASETS.md#run-from-raw-data) are in
+the download guide.
+
 `--raw-root` builds a manifest automatically and prepares original recordings
 lazily through the shared raw-data loader. To reuse prepared epochs or frozen
 EEGPT tokens, create an explicit JSON manifest. Relative paths resolve against
