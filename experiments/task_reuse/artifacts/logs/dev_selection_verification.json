@@ -1,0 +1,76 @@
+{
+  "between_baseline_recipes_tolerance": 0.002,
+  "candidate_count": 28,
+  "endpoint_count": 1444,
+  "independent_head_guardrails": -0.01,
+  "input_hashes": {
+    "tables/dev_cells/coral_ref0_ridge0.01.json": "450b16bd74e8a32a96323cc3fe181420e515f4809c4556539a145c66916308e5",
+    "tables/dev_cells/coral_ref0_ridge0.1.json": "f8a981e381f65a5cb68b50bd64556088f9452d3cbd79cd92431610d9656dd452",
+    "tables/dev_cells/coral_ref0_ridge1.json": "e6c35eae69a0b6aebee88bd1b9c39661650fdf3eb16cd9047cf16ba717166362",
+    "tables/dev_cells/coral_ref0_ridge10.json": "618e611618c3a8753fa9f2580908dc54ebb3d6dc59a32baf558c201c9eb1f22e",
+    "tables/dev_cells/coral_ref1_ridge0.01.json": "1904de03f0dd0e1d946fb9aff998f5141f2a3bfd31ddce439adad4326c85cc25",
+    "tables/dev_cells/coral_ref1_ridge0.1.json": "cb99e7ece51ff52a7d0182c7215022d4c62bfce626b3b9089e4425faf59e4ea7",
+    "tables/dev_cells/coral_ref1_ridge1.json": "3df126b81d892606ee5c6bb8571228786275a7df78ac3d4f2c8147a9b4d5f1a1",
+    "tables/dev_cells/coral_ref1_ridge10.json": "0f594d9a27b7eb2910708ef0ee7cb3e9c41bfc4accc6eff6c624236af426ae81",
+    "tables/dev_cells/featmap_ref0_ridge0.json": "3f4f1dffd87375886ef63b380465c1f5ead5203c598b4a9a83d0367f8557d810",
+    "tables/dev_cells/featmap_ref0_ridge1.json": "4e456837d7690e8d853258f5a16ed756ecf7f21df183293e524b847ba6a9d087",
+    "tables/dev_cells/featmap_ref0_ridge10.json": "bdb809a2830d99e9c55e0da60b21be134795d84a58d0dfa81652a29722848ca5",
+    "tables/dev_cells/featmap_ref0_ridge100.json": "836488ef57f8763216713f932fba86f6a0f1a664d7384ae89fef8cb6e8566bc5",
+    "tables/dev_cells/featmap_ref0_ridge1000.json": "e43529c56dcb8f7c811cb9971be9065b49b71e75957848842ce08381c8ff13df",
+    "tables/dev_cells/featmap_ref1_ridge0.json": "36f0d9dcf218cd38b71690beaf2f06b3e13f4296f188f7847bef5476c471cbbb",
+    "tables/dev_cells/featmap_ref1_ridge1.json": "381e21451af8c9597d186fe34791c4f10655f1102ecb0ff1045c1f5990c2540a",
+    "tables/dev_cells/featmap_ref1_ridge10.json": "097801502258c8e4baaeb0af81d840bfff39721b67fbd2e3c79e6140c695f069",
+    "tables/dev_cells/featmap_ref1_ridge100.json": "0172d6adb664fc792479d375acc7f1dfec106a763332c2e95031587e5a3bca5e",
+    "tables/dev_cells/featmap_ref1_ridge1000.json": "c8106462359931e14dd4d0b18becde7ba30cab9b8eb295108b50ba41799fb23e",
+    "tables/dev_cells/identity.json": "9504de86a0fd50785f07cdfafc38764b1dfa3051d3fda7589536e53bc5b259ea",
+    "tables/dev_cells/leace_ridge0.001.json": "fc70af1203e629426f39fa3769896d79f74ed1ef9402b336c1961753f673273b",
+    "tables/dev_cells/leace_ridge0.01.json": "a0d94399e295c23414a4650b79cf1237a805b34892b447d27b19107f951e6d77",
+    "tables/dev_cells/leace_ridge0.1.json": "7a022851aaa96376ced189282238f17d3c899c0d7c91c2fa715b7a083792545a",
+    "tables/dev_cells/leace_ridge0.json": "ff3a2f9165ad57e77e6e6132f0095c3f7bcd2ff8469c25d05d3dd7a0f69ba647",
+    "tables/dev_cells/leace_ridge1.json": "2ee381a85fa3eebb77088dc39c41ceeebc9abe099119303c80a9c7ec3f2c627d",
+    "tables/dev_cells/mgpa_cf.json": "4a38d4be746f38c72f8f1cd99f1835e0d87f03d386bdb2cdc9b02103f677cac3",
+    "tables/dev_cells/mgpa_iter_seed17.json": "9c1adbf78806c625a0197203540ee07c864d3178201c3e9b4b9355b0728d2147",
+    "tables/dev_cells/mgpa_iter_seed29.json": "61e97b29a78d1373818b44b60afb9a53784ca66c63cdf38a93cccd9700b6eefe",
+    "tables/dev_cells/mgpa_iter_seed43.json": "459d47421436442c4d189377e7d8c9d262126bddc8c0d52e3db01af74562bf4c"
+  },
+  "refitting": false,
+  "selected_summaries_exact": true,
+  "selection_role": "dev",
+  "selections": {
+    "coral": {
+      "candidate": "coral_ref1_ridge10",
+      "endpoint": "strength_0.98"
+    },
+    "featmap": {
+      "candidate": "featmap_ref0_ridge1000",
+      "endpoint": "strength_1"
+    },
+    "identity": {
+      "candidate": "identity",
+      "endpoint": "strength_0"
+    },
+    "leace": {
+      "candidate": "leace_ridge0",
+      "endpoint": "strength_0.98"
+    },
+    "mgpa_cf": {
+      "candidate": "mgpa_cf",
+      "endpoint": "strength_1.1"
+    },
+    "mgpa_iter_seed17": {
+      "candidate": "mgpa_iter_seed17",
+      "endpoint": "fixed_13"
+    },
+    "mgpa_iter_seed29": {
+      "candidate": "mgpa_iter_seed29",
+      "endpoint": "fixed_11"
+    },
+    "mgpa_iter_seed43": {
+      "candidate": "mgpa_iter_seed43",
+      "endpoint": "fixed_19"
+    }
+  },
+  "source_task": "p300",
+  "status": "PASS",
+  "within_candidate_tolerance": 0
+}

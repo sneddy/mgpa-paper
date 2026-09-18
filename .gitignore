@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.DS_Store
+.cache/
+/data/
+!mgpa/data/
+!mgpa/data/**
+**/artifacts/runs/
+**/configs/paths.local.*
+build/
+dist/
+paper_assets/generated/
+**/artifacts/tables/rebuilt/
+**/artifacts/report/

@@ -1,0 +1,801 @@
+{
+  "result": {
+    "control_independent_change": 8.072346035314926e-05,
+    "endpoint": "strength_0.98",
+    "guardrail_pass": true,
+    "independent_change": 0.03916869310387827,
+    "metrics": {
+      "biased": {
+        "aggregation": "equal participant mean",
+        "association_metrics": {
+          "aligned": {
+            "association": 1.0,
+            "auroc": 0.6622441581487744,
+            "brier": 0.27207645007653053,
+            "n_auc_subjects": 8,
+            "per_subject": [
+              {
+                "auroc": 0.7650705255290816,
+                "brier": 0.20494111502079637,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5000000000000002,
+                "subject": "flex:1026",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.732144518446696,
+                "brier": 0.2707497667386548,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5000000000000002,
+                "subject": "flex:1027",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.6975420451258204,
+                "brier": 0.27193178118103967,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5000000000000002,
+                "subject": "flex:1028",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.5795004466433037,
+                "brier": 0.32340948477298453,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5000000000000002,
+                "subject": "flex:1029",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.5712505955950999,
+                "brier": 0.31344285992619636,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5000000000000002,
+                "subject": "flex:1030",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.7038543832547373,
+                "brier": 0.2535556529307883,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5000000000000002,
+                "subject": "flex:1031",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.6242924556446021,
+                "brier": 0.288936658863665,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5000000000000002,
+                "subject": "flex:1032",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.6242982949508535,
+                "brier": 0.2496442811781191,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5000000000000002,
+                "subject": "flex:1033",
+                "target_fraction": 0.14864864864864866
+              }
+            ]
+          },
+          "independent": {
+            "association": 0.0,
+            "auroc": 0.6069719460923165,
+            "brier": 0.27919142436001465,
+            "n_auc_subjects": 8,
+            "per_subject": [
+              {
+                "auroc": 0.6590864553827517,
+                "brier": 0.2209194970629978,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5,
+                "subject": "flex:1026",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.5967523560116152,
+                "brier": 0.28528156618947853,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5,
+                "subject": "flex:1027",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.660645253237846,
+                "brier": 0.2766565334095803,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5,
+                "subject": "flex:1028",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.6099397858657117,
+                "brier": 0.32202830006413474,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5,
+                "subject": "flex:1029",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.5292920385512978,
+                "brier": 0.3191865746347138,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5,
+                "subject": "flex:1030",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.6340209858728377,
+                "brier": 0.26149867423916506,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5,
+                "subject": "flex:1031",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.6103673418488234,
+                "brier": 0.2907147581399404,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5,
+                "subject": "flex:1032",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.5556713519676482,
+                "brier": 0.2572454911401065,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5,
+                "subject": "flex:1033",
+                "target_fraction": 0.14864864864864866
+              }
+            ]
+          },
+          "reversed": {
+            "association": -1.0,
+            "auroc": 0.550320775502285,
+            "brier": 0.2863063986434988,
+            "n_auc_subjects": 8,
+            "per_subject": [
+              {
+                "auroc": 0.5484380887908199,
+                "brier": 0.23689787910519922,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.49999999999999983,
+                "subject": "flex:1026",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.4565625177618098,
+                "brier": 0.29981336564030237,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.49999999999999983,
+                "subject": "flex:1027",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.623802211244891,
+                "brier": 0.28138128563812104,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.49999999999999983,
+                "subject": "flex:1028",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.6407085920372224,
+                "brier": 0.32064711535528495,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.49999999999999983,
+                "subject": "flex:1029",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.48748378213986565,
+                "brier": 0.3249302893432312,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.49999999999999983,
+                "subject": "flex:1030",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.5625312954295891,
+                "brier": 0.26944169554754194,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.49999999999999983,
+                "subject": "flex:1031",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.5962162794202763,
+                "brier": 0.29249285741621583,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.49999999999999983,
+                "subject": "flex:1032",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.4868234371938062,
+                "brier": 0.26484670110209374,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.49999999999999983,
+                "subject": "flex:1033",
+                "target_fraction": 0.14864864864864866
+              }
+            ]
+          }
+        },
+        "max_probability": 0.9,
+        "n_events": 5328,
+        "n_subjects": 8,
+        "paired_device_metrics": {
+          "class0_absolute_probability_difference": 0.11861733331580411,
+          "class0_prediction_flip_fraction": 0.376984126984127,
+          "class1_absolute_probability_difference": 0.09985281640927618,
+          "class1_prediction_flip_fraction": 0.2916666666666667,
+          "mean_absolute_probability_difference": 0.11582801323510403,
+          "mean_signed_probability_difference": 0.07077738438536224,
+          "per_subject": [
+            {
+              "class0_absolute_probability_difference": 0.1972794604079755,
+              "class0_prediction_flip_fraction": 0.564373897707231,
+              "class1_absolute_probability_difference": 0.13297543806691056,
+              "class1_prediction_flip_fraction": 0.41414141414141414,
+              "mean_absolute_probability_difference": 0.18772075438430366,
+              "mean_signed_probability_difference": 0.17530282575069028,
+              "n_events": 666,
+              "prediction_flip_fraction": 0.5420420420420421,
+              "subject": "flex:1026"
+            },
+            {
+              "class0_absolute_probability_difference": 0.14512408787950865,
+              "class0_prediction_flip_fraction": 0.48500881834215165,
+              "class1_absolute_probability_difference": 0.13053230664887153,
+              "class1_prediction_flip_fraction": 0.4444444444444444,
+              "mean_absolute_probability_difference": 0.1429550393181977,
+              "mean_signed_probability_difference": 0.1320050035710267,
+              "n_events": 666,
+              "prediction_flip_fraction": 0.47897897897897895,
+              "subject": "flex:1027"
+            },
+            {
+              "class0_absolute_probability_difference": 0.1112066333861756,
+              "class0_prediction_flip_fraction": 0.36507936507936506,
+              "class1_absolute_probability_difference": 0.0867894817186078,
+              "class1_prediction_flip_fraction": 0.24242424242424243,
+              "mean_absolute_probability_difference": 0.10757705678694256,
+              "mean_signed_probability_difference": 0.048462641847565685,
+              "n_events": 666,
+              "prediction_flip_fraction": 0.34684684684684686,
+              "subject": "flex:1028"
+            },
+            {
+              "class0_absolute_probability_difference": 0.08896377061186204,
+              "class0_prediction_flip_fraction": 0.24867724867724866,
+              "class1_absolute_probability_difference": 0.08293414153057768,
+              "class1_prediction_flip_fraction": 0.1717171717171717,
+              "mean_absolute_probability_difference": 0.08806747439707653,
+              "mean_signed_probability_difference": -0.009512200917579183,
+              "n_events": 666,
+              "prediction_flip_fraction": 0.23723723723723725,
+              "subject": "flex:1029"
+            },
+            {
+              "class0_absolute_probability_difference": 0.08620774526612214,
+              "class0_prediction_flip_fraction": 0.2751322751322751,
+              "class1_absolute_probability_difference": 0.07347795809352971,
+              "class1_prediction_flip_fraction": 0.23232323232323232,
+              "mean_absolute_probability_difference": 0.08431547960533138,
+              "mean_signed_probability_difference": 0.05677078692453313,
+              "n_events": 666,
+              "prediction_flip_fraction": 0.26876876876876876,
+              "subject": "flex:1030"
+            },
+            {
+              "class0_absolute_probability_difference": 0.1125190113075558,
+              "class0_prediction_flip_fraction": 0.3897707231040564,
+              "class1_absolute_probability_difference": 0.09176120506812928,
+              "class1_prediction_flip_fraction": 0.26262626262626265,
+              "mean_absolute_probability_difference": 0.10943339146115459,
+              "mean_signed_probability_difference": 0.07674234367144744,
+              "n_events": 666,
+              "prediction_flip_fraction": 0.3708708708708709,
+              "subject": "flex:1031"
+            },
+            {
+              "class0_absolute_probability_difference": 0.0897626288384485,
+              "class0_prediction_flip_fraction": 0.2804232804232804,
+              "class1_absolute_probability_difference": 0.07908471541521493,
+              "class1_prediction_flip_fraction": 0.25252525252525254,
+              "mean_absolute_probability_difference": 0.08817537143769758,
+              "mean_signed_probability_difference": 0.022384583992359583,
+              "n_events": 666,
+              "prediction_flip_fraction": 0.27627627627627627,
+              "subject": "flex:1032"
+            },
+            {
+              "class0_absolute_probability_difference": 0.1178753288287847,
+              "class0_prediction_flip_fraction": 0.4074074074074074,
+              "class1_absolute_probability_difference": 0.12126728473236785,
+              "class1_prediction_flip_fraction": 0.31313131313131315,
+              "mean_absolute_probability_difference": 0.11837953849012813,
+              "mean_signed_probability_difference": 0.06406309024285425,
+              "n_events": 666,
+              "prediction_flip_fraction": 0.3933933933933934,
+              "subject": "flex:1033"
+            }
+          ],
+          "prediction_flip_fraction": 0.36430180180180183
+        },
+        "target_prevalence": "empirical within participant"
+      },
+      "control": {
+        "aggregation": "equal participant mean",
+        "association_metrics": {
+          "aligned": {
+            "association": 1.0,
+            "auroc": 0.6029846638326944,
+            "brier": 0.2344834396274594,
+            "n_auc_subjects": 8,
+            "per_subject": [
+              {
+                "auroc": 0.6891111444785755,
+                "brier": 0.22113193263764902,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5000000000000002,
+                "subject": "flex:1026",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.6152222881088256,
+                "brier": 0.22326467600230118,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5000000000000002,
+                "subject": "flex:1027",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.6590434283203241,
+                "brier": 0.2425998443805241,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5000000000000002,
+                "subject": "flex:1028",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.5730518646332872,
+                "brier": 0.25119377028044754,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5000000000000002,
+                "subject": "flex:1029",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.5391116195407789,
+                "brier": 0.24553190067500272,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5000000000000002,
+                "subject": "flex:1030",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.6049311682938963,
+                "brier": 0.23110128746936726,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5000000000000002,
+                "subject": "flex:1031",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.6036895027371219,
+                "brier": 0.2262662888835253,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5000000000000002,
+                "subject": "flex:1032",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.5397162945487461,
+                "brier": 0.23477781669085823,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5000000000000002,
+                "subject": "flex:1033",
+                "target_fraction": 0.14864864864864866
+              }
+            ]
+          },
+          "independent": {
+            "association": 0.0,
+            "auroc": 0.6267959578144764,
+            "brier": 0.23285173729986278,
+            "n_auc_subjects": 8,
+            "per_subject": [
+              {
+                "auroc": 0.7136889173926211,
+                "brier": 0.2194348237666142,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5,
+                "subject": "flex:1026",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.6313665758110203,
+                "brier": 0.2225399086317899,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5,
+                "subject": "flex:1027",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.7053337608893164,
+                "brier": 0.23930021490852252,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5,
+                "subject": "flex:1028",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.601669249817398,
+                "brier": 0.24924065768309436,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5,
+                "subject": "flex:1029",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.558187697076586,
+                "brier": 0.24384756164876514,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5,
+                "subject": "flex:1030",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.6245702171628097,
+                "brier": 0.22995861799483405,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5,
+                "subject": "flex:1031",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.6274027755509237,
+                "brier": 0.22447370943796707,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5,
+                "subject": "flex:1032",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.5521484688151355,
+                "brier": 0.23401840432731505,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.5,
+                "subject": "flex:1033",
+                "target_fraction": 0.14864864864864866
+              }
+            ]
+          },
+          "reversed": {
+            "association": -1.0,
+            "auroc": 0.6507717364287029,
+            "brier": 0.23122003497226615,
+            "n_auc_subjects": 8,
+            "per_subject": [
+              {
+                "auroc": 0.7385633100977016,
+                "brier": 0.21773771489557925,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.49999999999999983,
+                "subject": "flex:1026",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.6478074833042498,
+                "brier": 0.22181514126127871,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.49999999999999983,
+                "subject": "flex:1027",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.7518171949330094,
+                "brier": 0.23600058543652092,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.49999999999999983,
+                "subject": "flex:1028",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.6301652000535012,
+                "brier": 0.24728754508574124,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.49999999999999983,
+                "subject": "flex:1029",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.5773344457706597,
+                "brier": 0.24216322262252754,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.49999999999999983,
+                "subject": "flex:1030",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.6444262563486548,
+                "brier": 0.2288159485203008,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.49999999999999983,
+                "subject": "flex:1031",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.6515520197354414,
+                "brier": 0.2226811299924089,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.49999999999999983,
+                "subject": "flex:1032",
+                "target_fraction": 0.14864864864864866
+              },
+              {
+                "auroc": 0.5645079811864057,
+                "brier": 0.2332589919637718,
+                "n_events": 666,
+                "n_positive": 99,
+                "source1_fraction": 0.49999999999999983,
+                "subject": "flex:1033",
+                "target_fraction": 0.14864864864864866
+              }
+            ]
+          }
+        },
+        "max_probability": 0.9,
+        "n_events": 5328,
+        "n_subjects": 8,
+        "paired_device_metrics": {
+          "class0_absolute_probability_difference": 0.07724090581382896,
+          "class0_prediction_flip_fraction": 0.26102292768959434,
+          "class1_absolute_probability_difference": 0.07665843671870863,
+          "class1_prediction_flip_fraction": 0.2815656565656566,
+          "mean_absolute_probability_difference": 0.07715432256995972,
+          "mean_signed_probability_difference": -0.004309279249099127,
+          "per_subject": [
+            {
+              "class0_absolute_probability_difference": 0.09154156970293298,
+              "class0_prediction_flip_fraction": 0.2945326278659612,
+              "class1_absolute_probability_difference": 0.09990539487625759,
+              "class1_prediction_flip_fraction": 0.30303030303030304,
+              "mean_absolute_probability_difference": 0.09278484101248123,
+              "mean_signed_probability_difference": 0.004954249824449773,
+              "n_events": 666,
+              "prediction_flip_fraction": 0.2957957957957958,
+              "subject": "flex:1026"
+            },
+            {
+              "class0_absolute_probability_difference": 0.07865546232274367,
+              "class0_prediction_flip_fraction": 0.2804232804232804,
+              "class1_absolute_probability_difference": 0.07157950157662946,
+              "class1_prediction_flip_fraction": 0.35353535353535354,
+              "mean_absolute_probability_difference": 0.0776036303199429,
+              "mean_signed_probability_difference": 0.004761551244100452,
+              "n_events": 666,
+              "prediction_flip_fraction": 0.2912912912912913,
+              "subject": "flex:1027"
+            },
+            {
+              "class0_absolute_probability_difference": 0.083100751717343,
+              "class0_prediction_flip_fraction": 0.26631393298059963,
+              "class1_absolute_probability_difference": 0.08742488268328298,
+              "class1_prediction_flip_fraction": 0.25252525252525254,
+              "mean_absolute_probability_difference": 0.08374352794200975,
+              "mean_signed_probability_difference": -0.010964586459872368,
+              "n_events": 666,
+              "prediction_flip_fraction": 0.26426426426426425,
+              "subject": "flex:1028"
+            },
+            {
+              "class0_absolute_probability_difference": 0.07367173207885173,
+              "class0_prediction_flip_fraction": 0.27336860670194,
+              "class1_absolute_probability_difference": 0.07590267163000716,
+              "class1_prediction_flip_fraction": 0.24242424242424243,
+              "mean_absolute_probability_difference": 0.07400335822834782,
+              "mean_signed_probability_difference": -0.014359759112329477,
+              "n_events": 666,
+              "prediction_flip_fraction": 0.26876876876876876,
+              "subject": "flex:1029"
+            },
+            {
+              "class0_absolute_probability_difference": 0.06382941424494169,
+              "class0_prediction_flip_fraction": 0.21164021164021163,
+              "class1_absolute_probability_difference": 0.060686059481813694,
+              "class1_prediction_flip_fraction": 0.25252525252525254,
+              "mean_absolute_probability_difference": 0.06336215880717942,
+              "mean_signed_probability_difference": -0.00732703030499985,
+              "n_events": 666,
+              "prediction_flip_fraction": 0.21771771771771772,
+              "subject": "flex:1030"
+            },
+            {
+              "class0_absolute_probability_difference": 0.06944694182702149,
+              "class0_prediction_flip_fraction": 0.2275132275132275,
+              "class1_absolute_probability_difference": 0.07035637800575438,
+              "class1_prediction_flip_fraction": 0.26262626262626265,
+              "mean_absolute_probability_difference": 0.06958212828602232,
+              "mean_signed_probability_difference": -0.0021727899818867564,
+              "n_events": 666,
+              "prediction_flip_fraction": 0.23273273273273273,
+              "subject": "flex:1031"
+            },
+            {
+              "class0_absolute_probability_difference": 0.0727667470887364,
+              "class0_prediction_flip_fraction": 0.21516754850088182,
+              "class1_absolute_probability_difference": 0.06910895998560786,
+              "class1_prediction_flip_fraction": 0.2727272727272727,
+              "mean_absolute_probability_difference": 0.07222302197881188,
+              "mean_signed_probability_difference": -0.004383864678359869,
+              "n_events": 666,
+              "prediction_flip_fraction": 0.22372372372372373,
+              "subject": "flex:1032"
+            },
+            {
+              "class0_absolute_probability_difference": 0.0849146275280607,
+              "class0_prediction_flip_fraction": 0.31922398589065254,
+              "class1_absolute_probability_difference": 0.07830364551031589,
+              "class1_prediction_flip_fraction": 0.31313131313131315,
+              "mean_absolute_probability_difference": 0.08393191398488242,
+              "mean_signed_probability_difference": -0.004982004523894914,
+              "n_events": 666,
+              "prediction_flip_fraction": 0.3183183183183183,
+              "subject": "flex:1033"
+            }
+          ],
+          "prediction_flip_fraction": 0.26407657657657657
+        },
+        "target_prevalence": "empirical within participant"
+      }
+    },
+    "movement": {
+      "mean": 0.14736703050389466,
+      "per_subject": {
+        "flex:1026": 0.14058149597175584,
+        "flex:1027": 0.15569841748933058,
+        "flex:1028": 0.14282973817860858,
+        "flex:1029": 0.14969839066279672,
+        "flex:1030": 0.1509036117475413,
+        "flex:1031": 0.14533469622484482,
+        "flex:1032": 0.1526622910597958,
+        "flex:1033": 0.1412276026964835
+      }
+    },
+    "summary": {
+      "aligned_auroc": 0.6622441581487744,
+      "coefficients": {
+        "aggregation": "equal participant mean before minimizing rho",
+        "coefficient_order": [
+          "a",
+          "b",
+          "c"
+        ],
+        "mean": [
+          -0.0006894792667867661,
+          0.05596169132324463,
+          0.6069719460923165
+        ],
+        "per_subject": {
+          "flex:1026": [
+            -0.0023321482228009227,
+            0.10831621836913086,
+            0.6590864553827517
+          ],
+          "flex:1027": [
+            -0.0023988379073622834,
+            0.13779100034244313,
+            0.5967523560116152
+          ],
+          "flex:1028": [
+            2.6874947509747393e-05,
+            0.03686991694046471,
+            0.660645253237846
+          ],
+          "flex:1029": [
+            0.00016473347455125964,
+            -0.03060407269695936,
+            0.6099397858657117
+          ],
+          "flex:1030": [
+            7.51503161849909e-05,
+            0.041883406727617145,
+            0.5292920385512978
+          ],
+          "flex:1031": [
+            -0.0008281465306745339,
+            0.07066154391257407,
+            0.6340209858728377
+          ],
+          "flex:1032": [
+            -0.00011297431638412903,
+            0.014038088112162894,
+            0.6103673418488234
+          ],
+          "flex:1033": [
+            -0.00011048589531825748,
+            0.06873742887852366,
+            0.5556713519676482
+          ]
+        }
+      },
+      "control_independent_change": 8.072346035314926e-05,
+      "endpoint": "strength_0.98",
+      "guardrail_pass": true,
+      "independent_auroc": 0.6069719460923165,
+      "independent_change": 0.03916869310387827,
+      "movement": {
+        "mean": 0.14736703050389466,
+        "per_subject": {
+          "flex:1026": 0.14058149597175584,
+          "flex:1027": 0.15569841748933058,
+          "flex:1028": 0.14282973817860858,
+          "flex:1029": 0.14969839066279672,
+          "flex:1030": 0.1509036117475413,
+          "flex:1031": 0.14533469622484482,
+          "flex:1032": 0.1526622910597958,
+          "flex:1033": 0.1412276026964835
+        }
+      },
+      "objective": "worst_association",
+      "objective_value": 0.5503207755022851,
+      "reversed_auroc": 0.5503207755022851,
+      "worst_association_auroc": 0.5503207755022851,
+      "worst_association_rho": -1.0
+    }
+  },
+  "source_id": "src_e18ecc4fa7c98d59"
+}

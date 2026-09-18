@@ -1,0 +1,52 @@
+schema = "mgpa-published-experiment-v1"
+dataset = "temporal_n170"
+contexts = ["flex_n170"]
+reader_seed = 98
+threads = 2
+random_orientation_seeds = [104729,130363,155921,196613,228017]
+
+[[comparisons]]
+name = "native"
+methods = ["identity","leace","coral_0","coral_1","featmap_0","featmap_1","mgpa_cf","mgpa_iter","mgpa_linear","igbp"]
+fit_seeds = [17,29,43]
+endpoints = ["native"]
+
+[[comparisons]]
+name = "matched_movement"
+methods = ["mgpa_iter","igbp"]
+fit_seeds = [17,29,43]
+endpoints = ["budget_0.1","budget_0.25"]
+
+[model]
+max_stages = 48
+critic_epochs = 12
+max_step = 0.05
+floor = 0.1
+damping = 0.001
+linear_c = 1.0
+hidden_width = 128
+batch_size = 256
+learning_rate = 0.001
+weight_decay = 0.001
+anchor_ridge_alpha = 10.0
+
+[closed_form]
+ridge_alpha = 10.0
+shrinkage = 0.01
+
+[igbp]
+max_stages = 100
+critic_epochs = 50
+learning_rate = 0.0002
+weight_decay = 0.01
+batch_size = 256
+early_accuracy = 1.0
+patience = 10
+min_accuracy_gain = 0.002
+gradient_floor = 1e-12
+transform_batch_size = 512
+budgets = []
+
+[report]
+bootstrap_resamples = 20000
+bootstrap_seed = 1101

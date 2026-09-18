@@ -1,0 +1,6 @@
+# Optional complete raw-input route. Install the package's raw extra first.
+# Download data/checkpoints yourself under their providers' terms.
+[data]
+mode = "raw"
+raw_root = "/path/to/flex-neuroscan/raw"
+# Temporal N170 uses fixed raw time bins: no encoder checkpoint is required.

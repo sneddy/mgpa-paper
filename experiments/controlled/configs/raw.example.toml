@@ -1,0 +1,7 @@
+# Optional complete raw-input route. Install the package's raw extra first.
+# Download data/checkpoints yourself under their providers' terms.
+[data]
+mode = "raw"
+raw_root = "/path/to/wet-dry-ssvep/raw"
+checkpoint = "/path/to/eegpt/model.safetensors"
+device = "cpu"

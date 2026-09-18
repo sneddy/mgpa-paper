@@ -1,0 +1,5 @@
+# Copy to paths.local.toml and provide a portable coordinate bundle.
+[data]
+mode = "prepared"
+source_manifest = "/path/to/recorded_ssvep/manifest.json"
+source_manifest_sha256 = "REPLACE_WITH_SHA256"

@@ -1,0 +1,45 @@
+schema = "mgpa-published-experiment-v1"
+dataset = "controlled"
+contexts = ["ssvep_controlled__rotation1__r02","ssvep_controlled__rotation2__r02","ssvep_controlled__rotation3__r02","ssvep_controlled__rotation4__r02"]
+reader_seed = 98
+threads = 2
+random_orientation_seeds = [104729,130363,155921,196613,228017]
+
+[[comparisons]]
+name = "closed_form"
+methods = ["identity","leace","coral_0","coral_1","featmap_0","featmap_1","mgpa_cf"]
+fit_seeds = [17]
+endpoints = ["native"]
+
+[[comparisons]]
+name = "gate"
+methods = ["identity","measurement","pca","random_0","random_1","random_2","random_3","random_4","ungated"]
+fit_seeds = [17,29,43]
+endpoints = ["budget_0.05"]
+
+[[comparisons]]
+name = "target"
+methods = ["identity","conditional","fit_mean","zero"]
+fit_seeds = [17,29,43]
+endpoints = ["native"]
+
+[model]
+max_stages = 48
+critic_epochs = 12
+max_step = 0.05
+floor = 0.1
+damping = 0.001
+linear_c = 1.0
+hidden_width = 128
+batch_size = 256
+learning_rate = 0.001
+weight_decay = 0.001
+anchor_ridge_alpha = 10.0
+
+[closed_form]
+ridge_alpha = 10.0
+shrinkage = 0.01
+
+[report]
+bootstrap_resamples = 20000
+bootstrap_seed = 1101

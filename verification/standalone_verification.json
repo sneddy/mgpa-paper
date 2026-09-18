@@ -1,0 +1,35 @@
+{
+  "wheel_install": true,
+  "installed_modules_imported": 37,
+  "relocated_path_contains_spaces": true,
+  "model_fitting": false,
+  "reader_fitting": false,
+  "controlled": {
+    "help": true,
+    "plan": true,
+    "published_report": true
+  },
+  "temporal_n170": {
+    "help": true,
+    "plan": true,
+    "published_report": true
+  },
+  "recorded_ssvep": {
+    "help": true,
+    "plan": true,
+    "published_report": true
+  },
+  "task_reuse": {
+    "help": true,
+    "published_report": true,
+    "dev_selection_replay": true
+  },
+  "paper_statistics": "PASS: 374 released files match the manifest.\nPASS: 107 full-precision statistics; maximum error 2.22e-16.",
+  "paper_rebuild": true,
+  "theory_pdf_byte_identical": true,
+  "original_inputs_unchanged": 381,
+  "documented_definitions": 384,
+  "tests_directory_present": false,
+  "status": "PASS",
+  "wheel_sha256": "80525b708dbe3a162a10356c59157b2a88b3ea9fcdcd7c9a64d038414adbaae6"
+}

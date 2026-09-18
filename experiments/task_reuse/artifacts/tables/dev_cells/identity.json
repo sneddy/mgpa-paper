@@ -1,0 +1,58 @@
+{
+  "schema": "mgpa-task-reuse-published-dev-v1",
+  "candidate": {
+    "family": "identity",
+    "id": "identity",
+    "method": "identity",
+    "rank": 1
+  },
+  "source_id": "src_204960f94901312f",
+  "selected": {
+    "aligned_auroc": 0.7601953481230412,
+    "coefficients": {
+      "aggregation": "equal participant mean before minimizing rho",
+      "coefficient_order": [
+        "a",
+        "b",
+        "c"
+      ],
+      "mean": [
+        -0.00382146823063928,
+        0.1919758600534649,
+        0.5720409563002156
+      ],
+      "per_subject": {
+        "flex:1022": [
+          -0.00441794276009444,
+          0.20374988088098359,
+          0.5750850658258065
+        ],
+        "flex:1023": [
+          -0.00322499370118412,
+          0.18020183922594618,
+          0.5689968467746245
+        ]
+      }
+    },
+    "control_independent_change": 0,
+    "endpoint": "strength_0",
+    "guardrail_pass": true,
+    "independent_auroc": 0.5720409563002156,
+    "independent_change": 0,
+    "movement": {
+      "mean": 0,
+      "per_subject": {
+        "flex:1022": 0,
+        "flex:1023": 0
+      }
+    },
+    "objective": "worst_association",
+    "objective_value": 0.3762436280161114,
+    "reversed_auroc": 0.3762436280161114,
+    "worst_association_auroc": 0.3762436280161114,
+    "worst_association_rho": -1
+  },
+  "dev_curve": [
+    {"endpoint":"strength_0","guardrail_pass":true,"independent_change":0,"control_independent_change":0,"movement":{"mean":0,"per_subject":{"flex:1022":0,"flex:1023":0}},"metrics":{"biased":{"association_metrics":{"aligned":{"association":1,"auroc":0.760195348123041,"per_subject":[{"subject":"flex:1022","auroc":0.7744170039466957},{"subject":"flex:1023","auroc":0.7459736922993865}]},"independent":{"association":0,"auroc":0.5720409563002156,"per_subject":[{"subject":"flex:1022","auroc":0.5750850658258065},{"subject":"flex:1023","auroc":0.5689968467746245}]},"reversed":{"association":-1,"auroc":0.37624362801611133,"per_subject":[{"subject":"flex:1022","auroc":0.3669172421847285},{"subject":"flex:1023","auroc":0.3855700138474941}]}}}},"summary":{"aligned_auroc":0.7601953481230412,"coefficients":{"aggregation":"equal participant mean before minimizing rho","coefficient_order":["a","b","c"],"mean":[-0.00382146823063928,0.1919758600534649,0.5720409563002156],"per_subject":{"flex:1022":[-0.00441794276009444,0.20374988088098359,0.5750850658258065],"flex:1023":[-0.00322499370118412,0.18020183922594618,0.5689968467746245]}},"control_independent_change":0,"endpoint":"strength_0","guardrail_pass":true,"independent_auroc":0.5720409563002156,"independent_change":0,"movement":{"mean":0,"per_subject":{"flex:1022":0,"flex:1023":0}},"objective":"worst_association","objective_value":0.3762436280161114,"reversed_auroc":0.3762436280161114,"worst_association_auroc":0.3762436280161114,"worst_association_rho":-1}}
+  ]
+}

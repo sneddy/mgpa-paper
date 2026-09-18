@@ -1,0 +1,17 @@
+# Copy to paths.local.toml and replace each placeholder with your data path/hash.
+# Supply data, not models/readers. Prepared archives are verified and copied into
+# the new run as a portable bundle; no research repository is imported.
+[data]
+mode = "prepared"
+
+[data.manifests]
+ssvep_controlled__rotation1__r02 = "/path/to/rotation1/manifest.json"
+ssvep_controlled__rotation2__r02 = "/path/to/rotation2/manifest.json"
+ssvep_controlled__rotation3__r02 = "/path/to/rotation3/manifest.json"
+ssvep_controlled__rotation4__r02 = "/path/to/rotation4/manifest.json"
+
+[data.manifest_hashes]
+ssvep_controlled__rotation1__r02 = "REPLACE_WITH_SHA256"
+ssvep_controlled__rotation2__r02 = "REPLACE_WITH_SHA256"
+ssvep_controlled__rotation3__r02 = "REPLACE_WITH_SHA256"
+ssvep_controlled__rotation4__r02 = "REPLACE_WITH_SHA256"

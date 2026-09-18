@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "scientific_numeric_or_boolean_values_checked": 200390,
+  "numerical_values_changed": 0,
+  "result_json_files_checked": 297,
+  "files_renamed": 16,
+  "method_ids_normalized": true,
+  "dev_curves_and_selection_evidence_preserved": true,
+  "model_fitting": false,
+  "reader_fitting": false,
+  "scope": "Canonical method IDs and provenance location only; no scientific outputs changed."
+}

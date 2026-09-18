@@ -1,0 +1,278 @@
+{
+  "adapter_or_reader_fitting": false,
+  "contexts": [
+    {
+      "all_arrays_identical": true,
+      "context": "ssvep_controlled__rotation1__r02",
+      "dataset": "controlled",
+      "roles": {
+        "eval": {
+          "arrays": 10,
+          "shape": [
+            2520,
+            2,
+            512
+          ],
+          "task_labels": true
+        },
+        "fit": {
+          "arrays": 8,
+          "shape": [
+            4920,
+            2,
+            512
+          ],
+          "task_labels": false
+        },
+        "head": {
+          "arrays": 10,
+          "shape": [
+            2400,
+            2,
+            512
+          ],
+          "task_labels": true
+        },
+        "val": {
+          "arrays": 8,
+          "shape": [
+            2400,
+            2,
+            512
+          ],
+          "task_labels": false
+        }
+      },
+      "source_id": "src_fd407fd804439a15",
+      "relocated_manifest": "ssvep_controlled__rotation1__r02/manifest.json"
+    },
+    {
+      "all_arrays_identical": true,
+      "context": "ssvep_controlled__rotation2__r02",
+      "dataset": "controlled",
+      "roles": {
+        "eval": {
+          "arrays": 10,
+          "shape": [
+            2400,
+            2,
+            512
+          ],
+          "task_labels": true
+        },
+        "fit": {
+          "arrays": 8,
+          "shape": [
+            5040,
+            2,
+            512
+          ],
+          "task_labels": false
+        },
+        "head": {
+          "arrays": 10,
+          "shape": [
+            2400,
+            2,
+            512
+          ],
+          "task_labels": true
+        },
+        "val": {
+          "arrays": 8,
+          "shape": [
+            2400,
+            2,
+            512
+          ],
+          "task_labels": false
+        }
+      },
+      "source_id": "src_c67c6f89ef60f065",
+      "relocated_manifest": "ssvep_controlled__rotation2__r02/manifest.json"
+    },
+    {
+      "all_arrays_identical": true,
+      "context": "ssvep_controlled__rotation3__r02",
+      "dataset": "controlled",
+      "roles": {
+        "eval": {
+          "arrays": 10,
+          "shape": [
+            2400,
+            2,
+            512
+          ],
+          "task_labels": true
+        },
+        "fit": {
+          "arrays": 8,
+          "shape": [
+            4920,
+            2,
+            512
+          ],
+          "task_labels": false
+        },
+        "head": {
+          "arrays": 10,
+          "shape": [
+            2400,
+            2,
+            512
+          ],
+          "task_labels": true
+        },
+        "val": {
+          "arrays": 8,
+          "shape": [
+            2520,
+            2,
+            512
+          ],
+          "task_labels": false
+        }
+      },
+      "source_id": "src_b481020f3bac5c27",
+      "relocated_manifest": "ssvep_controlled__rotation3__r02/manifest.json"
+    },
+    {
+      "all_arrays_identical": true,
+      "context": "ssvep_controlled__rotation4__r02",
+      "dataset": "controlled",
+      "roles": {
+        "eval": {
+          "arrays": 10,
+          "shape": [
+            2400,
+            2,
+            512
+          ],
+          "task_labels": true
+        },
+        "fit": {
+          "arrays": 8,
+          "shape": [
+            4800,
+            2,
+            512
+          ],
+          "task_labels": false
+        },
+        "head": {
+          "arrays": 10,
+          "shape": [
+            2520,
+            2,
+            512
+          ],
+          "task_labels": true
+        },
+        "val": {
+          "arrays": 8,
+          "shape": [
+            2520,
+            2,
+            512
+          ],
+          "task_labels": false
+        }
+      },
+      "source_id": "src_8be73af9113951a8",
+      "relocated_manifest": "ssvep_controlled__rotation4__r02/manifest.json"
+    },
+    {
+      "all_arrays_identical": true,
+      "context": "flex_n170",
+      "dataset": "temporal_n170",
+      "roles": {
+        "eval": {
+          "arrays": 5,
+          "shape": [
+            1381,
+            2,
+            240
+          ],
+          "task_labels": true
+        },
+        "fit": {
+          "arrays": 4,
+          "shape": [
+            622,
+            2,
+            240
+          ],
+          "task_labels": false
+        },
+        "head": {
+          "arrays": 5,
+          "shape": [
+            716,
+            2,
+            240
+          ],
+          "task_labels": true
+        },
+        "val": {
+          "arrays": 4,
+          "shape": [
+            288,
+            2,
+            240
+          ],
+          "task_labels": false
+        }
+      },
+      "source_id": "src_bd030dc8f16f55a9",
+      "relocated_manifest": "flex_n170/manifest.json"
+    },
+    {
+      "all_arrays_identical": true,
+      "context": "ssvep_recorded_wet_dry__rotation1",
+      "dataset": "recorded_ssvep",
+      "roles": {
+        "eval": {
+          "arrays": 9,
+          "shape": [
+            5040,
+            15,
+            512
+          ],
+          "task_labels": true
+        },
+        "fit": {
+          "arrays": 11,
+          "shape": [
+            9840,
+            15,
+            512
+          ],
+          "task_labels": false
+        },
+        "head": {
+          "arrays": 9,
+          "shape": [
+            4800,
+            15,
+            512
+          ],
+          "task_labels": true
+        },
+        "val": {
+          "arrays": 11,
+          "shape": [
+            4800,
+            15,
+            512
+          ],
+          "task_labels": false
+        }
+      },
+      "source_id": "src_386a0c1ee3b928a6",
+      "relocated_manifest": "ssvep_recorded_wet_dry__rotation1/manifest.json"
+    }
+  ],
+  "raw_encoding_performed": false,
+  "status": "PASS",
+  "scope": "Read-only relocation of all published prepared-input contexts; array values, shapes, dtypes and coordinate states compared. No raw encoding, adapter fitting, or reader fitting."
+}

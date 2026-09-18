@@ -1,0 +1,614 @@
+{
+  "schema": "mgpa-frozen-budget-availability-v1",
+  "scope": "Supporting availability fact from the final manuscript; not an additional reported method comparison.",
+  "requested_val_movement": 0.1,
+  "horizon": 48,
+  "total_random_trajectories": 60,
+  "attained": 43,
+  "unattained": 17,
+  "selection_rule": "First upward VAL crossing; interpolate only the final update. Unattained trajectories are unavailable; no native endpoint is substituted.",
+  "manuscript_source_id": "src_1f49ef9562860bd1",
+  "manuscript_claim": "At the originally primary .10 budget, 17 of 60 random trajectories do not attain it within the horizon.",
+  "cells": [
+    {
+      "context": "ssvep_controlled__rotation1__r02",
+      "fit_seed": 17,
+      "orientation": "random_0",
+      "attained": false,
+      "stages": 48,
+      "fraction": 1,
+      "validation_movement": 0.07700530787137957,
+      "source_id": "src_a6acb1e6b1e32917"
+    },
+    {
+      "context": "ssvep_controlled__rotation1__r02",
+      "fit_seed": 17,
+      "orientation": "random_1",
+      "attained": false,
+      "stages": 48,
+      "fraction": 1,
+      "validation_movement": 0.06504569183211775,
+      "source_id": "src_0022e6e837253a6f"
+    },
+    {
+      "context": "ssvep_controlled__rotation1__r02",
+      "fit_seed": 17,
+      "orientation": "random_2",
+      "attained": false,
+      "stages": 48,
+      "fraction": 1,
+      "validation_movement": 0.07268671594988729,
+      "source_id": "src_8cd6d9039b9c096c"
+    },
+    {
+      "context": "ssvep_controlled__rotation1__r02",
+      "fit_seed": 17,
+      "orientation": "random_3",
+      "attained": true,
+      "stages": 45,
+      "fraction": 0.9937573373317701,
+      "validation_movement": 0.09999999974676092,
+      "source_id": "src_de5b27579c9459a7"
+    },
+    {
+      "context": "ssvep_controlled__rotation1__r02",
+      "fit_seed": 17,
+      "orientation": "random_4",
+      "attained": false,
+      "stages": 48,
+      "fraction": 1,
+      "validation_movement": 0.08443978951427539,
+      "source_id": "src_0a6aba415443ac90"
+    },
+    {
+      "context": "ssvep_controlled__rotation1__r02",
+      "fit_seed": 29,
+      "orientation": "random_0",
+      "attained": false,
+      "stages": 48,
+      "fraction": 1,
+      "validation_movement": 0.08691151722413652,
+      "source_id": "src_35f2605e9317cab5"
+    },
+    {
+      "context": "ssvep_controlled__rotation1__r02",
+      "fit_seed": 29,
+      "orientation": "random_1",
+      "attained": false,
+      "stages": 48,
+      "fraction": 1,
+      "validation_movement": 0.07236277301687007,
+      "source_id": "src_9dbb5cd61bce7ac6"
+    },
+    {
+      "context": "ssvep_controlled__rotation1__r02",
+      "fit_seed": 29,
+      "orientation": "random_2",
+      "attained": false,
+      "stages": 48,
+      "fraction": 1,
+      "validation_movement": 0.07982378659692278,
+      "source_id": "src_64abed28f5ad8854"
+    },
+    {
+      "context": "ssvep_controlled__rotation1__r02",
+      "fit_seed": 29,
+      "orientation": "random_3",
+      "attained": false,
+      "stages": 48,
+      "fraction": 1,
+      "validation_movement": 0.08888691452567293,
+      "source_id": "src_e7356725025c75b0"
+    },
+    {
+      "context": "ssvep_controlled__rotation1__r02",
+      "fit_seed": 29,
+      "orientation": "random_4",
+      "attained": true,
+      "stages": 47,
+      "fraction": 0.9952875077724439,
+      "validation_movement": 0.09999999944998188,
+      "source_id": "src_c034507874e7011d"
+    },
+    {
+      "context": "ssvep_controlled__rotation1__r02",
+      "fit_seed": 43,
+      "orientation": "random_0",
+      "attained": false,
+      "stages": 48,
+      "fraction": 1,
+      "validation_movement": 0.08013093783114815,
+      "source_id": "src_a9958986bdddefea"
+    },
+    {
+      "context": "ssvep_controlled__rotation1__r02",
+      "fit_seed": 43,
+      "orientation": "random_1",
+      "attained": false,
+      "stages": 48,
+      "fraction": 1,
+      "validation_movement": 0.050945017626432595,
+      "source_id": "src_9a3be12af94f4cd0"
+    },
+    {
+      "context": "ssvep_controlled__rotation1__r02",
+      "fit_seed": 43,
+      "orientation": "random_2",
+      "attained": false,
+      "stages": 48,
+      "fraction": 1,
+      "validation_movement": 0.06843097896668585,
+      "source_id": "src_df33bfc291f50624"
+    },
+    {
+      "context": "ssvep_controlled__rotation1__r02",
+      "fit_seed": 43,
+      "orientation": "random_3",
+      "attained": false,
+      "stages": 48,
+      "fraction": 1,
+      "validation_movement": 0.09333831192769404,
+      "source_id": "src_acddcb7cf197bbb7"
+    },
+    {
+      "context": "ssvep_controlled__rotation1__r02",
+      "fit_seed": 43,
+      "orientation": "random_4",
+      "attained": false,
+      "stages": 48,
+      "fraction": 1,
+      "validation_movement": 0.06518531722672706,
+      "source_id": "src_398953aa47990300"
+    },
+    {
+      "context": "ssvep_controlled__rotation2__r02",
+      "fit_seed": 17,
+      "orientation": "random_0",
+      "attained": true,
+      "stages": 38,
+      "fraction": 0.9102596938610059,
+      "validation_movement": 0.09999999965883215,
+      "source_id": "src_d791e90977b8f427"
+    },
+    {
+      "context": "ssvep_controlled__rotation2__r02",
+      "fit_seed": 17,
+      "orientation": "random_1",
+      "attained": true,
+      "stages": 28,
+      "fraction": 0.7302065193653124,
+      "validation_movement": 0.10000000080428766,
+      "source_id": "src_51a8577f07ed7083"
+    },
+    {
+      "context": "ssvep_controlled__rotation2__r02",
+      "fit_seed": 17,
+      "orientation": "random_2",
+      "attained": true,
+      "stages": 34,
+      "fraction": 0.7575422823429125,
+      "validation_movement": 0.10000000023994579,
+      "source_id": "src_080a0f8b12fc0798"
+    },
+    {
+      "context": "ssvep_controlled__rotation2__r02",
+      "fit_seed": 17,
+      "orientation": "random_3",
+      "attained": true,
+      "stages": 36,
+      "fraction": 0.9416098296642286,
+      "validation_movement": 0.09999999925769236,
+      "source_id": "src_b1af7edacc4b377a"
+    },
+    {
+      "context": "ssvep_controlled__rotation2__r02",
+      "fit_seed": 17,
+      "orientation": "random_4",
+      "attained": true,
+      "stages": 25,
+      "fraction": 0.8358239829540235,
+      "validation_movement": 0.09999999967543977,
+      "source_id": "src_0b8693af036c237c"
+    },
+    {
+      "context": "ssvep_controlled__rotation2__r02",
+      "fit_seed": 29,
+      "orientation": "random_0",
+      "attained": true,
+      "stages": 42,
+      "fraction": 0.33065195381641566,
+      "validation_movement": 0.1000000001001831,
+      "source_id": "src_373d5d04966f6305"
+    },
+    {
+      "context": "ssvep_controlled__rotation2__r02",
+      "fit_seed": 29,
+      "orientation": "random_1",
+      "attained": true,
+      "stages": 41,
+      "fraction": 0.7380566895008105,
+      "validation_movement": 0.10000000011600531,
+      "source_id": "src_fabd4005db7b029c"
+    },
+    {
+      "context": "ssvep_controlled__rotation2__r02",
+      "fit_seed": 29,
+      "orientation": "random_2",
+      "attained": true,
+      "stages": 23,
+      "fraction": 0.6182388961315137,
+      "validation_movement": 0.09999999948319752,
+      "source_id": "src_3c1a2401f0791fe8"
+    },
+    {
+      "context": "ssvep_controlled__rotation2__r02",
+      "fit_seed": 29,
+      "orientation": "random_3",
+      "attained": true,
+      "stages": 26,
+      "fraction": 0.8488659560680372,
+      "validation_movement": 0.09999999982001438,
+      "source_id": "src_e6c801e5766080e7"
+    },
+    {
+      "context": "ssvep_controlled__rotation2__r02",
+      "fit_seed": 29,
+      "orientation": "random_4",
+      "attained": true,
+      "stages": 42,
+      "fraction": 0.9427956044673902,
+      "validation_movement": 0.09999999964344883,
+      "source_id": "src_40aad350d42141b5"
+    },
+    {
+      "context": "ssvep_controlled__rotation2__r02",
+      "fit_seed": 43,
+      "orientation": "random_0",
+      "attained": true,
+      "stages": 41,
+      "fraction": 0.6802358925342578,
+      "validation_movement": 0.10000000046416055,
+      "source_id": "src_2dfe602dd7abdb37"
+    },
+    {
+      "context": "ssvep_controlled__rotation2__r02",
+      "fit_seed": 43,
+      "orientation": "random_1",
+      "attained": true,
+      "stages": 38,
+      "fraction": 0.9970459640026075,
+      "validation_movement": 0.09999999907745477,
+      "source_id": "src_1e284ae5dbe1ddf9"
+    },
+    {
+      "context": "ssvep_controlled__rotation2__r02",
+      "fit_seed": 43,
+      "orientation": "random_2",
+      "attained": true,
+      "stages": 40,
+      "fraction": 0.7607997357845289,
+      "validation_movement": 0.09999999946601988,
+      "source_id": "src_45da692428a016a6"
+    },
+    {
+      "context": "ssvep_controlled__rotation2__r02",
+      "fit_seed": 43,
+      "orientation": "random_3",
+      "attained": true,
+      "stages": 19,
+      "fraction": 0.9135988056659716,
+      "validation_movement": 0.10000000043559451,
+      "source_id": "src_c3e87e2cc3841ddc"
+    },
+    {
+      "context": "ssvep_controlled__rotation2__r02",
+      "fit_seed": 43,
+      "orientation": "random_4",
+      "attained": true,
+      "stages": 39,
+      "fraction": 0.9288988411426562,
+      "validation_movement": 0.10000000034928568,
+      "source_id": "src_574b7f9b240881c1"
+    },
+    {
+      "context": "ssvep_controlled__rotation3__r02",
+      "fit_seed": 17,
+      "orientation": "random_0",
+      "attained": true,
+      "stages": 32,
+      "fraction": 0.3590949326753634,
+      "validation_movement": 0.10000000010105031,
+      "source_id": "src_b28f98675ee8d523"
+    },
+    {
+      "context": "ssvep_controlled__rotation3__r02",
+      "fit_seed": 17,
+      "orientation": "random_1",
+      "attained": false,
+      "stages": 48,
+      "fraction": 1,
+      "validation_movement": 0.06600230932076334,
+      "source_id": "src_85d94323f8f14154"
+    },
+    {
+      "context": "ssvep_controlled__rotation3__r02",
+      "fit_seed": 17,
+      "orientation": "random_2",
+      "attained": true,
+      "stages": 30,
+      "fraction": 0.8096065819263476,
+      "validation_movement": 0.10000000048236982,
+      "source_id": "src_298b267a52b879aa"
+    },
+    {
+      "context": "ssvep_controlled__rotation3__r02",
+      "fit_seed": 17,
+      "orientation": "random_3",
+      "attained": true,
+      "stages": 21,
+      "fraction": 0.8038782179355639,
+      "validation_movement": 0.10000000072529137,
+      "source_id": "src_d7b1990ced54dfcb"
+    },
+    {
+      "context": "ssvep_controlled__rotation3__r02",
+      "fit_seed": 17,
+      "orientation": "random_4",
+      "attained": false,
+      "stages": 48,
+      "fraction": 1,
+      "validation_movement": 0.09381957957599449,
+      "source_id": "src_4241663a4b709718"
+    },
+    {
+      "context": "ssvep_controlled__rotation3__r02",
+      "fit_seed": 29,
+      "orientation": "random_0",
+      "attained": true,
+      "stages": 37,
+      "fraction": 0.9021301567554492,
+      "validation_movement": 0.10000000066857691,
+      "source_id": "src_4c2ced2ab199e218"
+    },
+    {
+      "context": "ssvep_controlled__rotation3__r02",
+      "fit_seed": 29,
+      "orientation": "random_1",
+      "attained": false,
+      "stages": 48,
+      "fraction": 1,
+      "validation_movement": 0.06055287420312857,
+      "source_id": "src_535d97243d0f6a86"
+    },
+    {
+      "context": "ssvep_controlled__rotation3__r02",
+      "fit_seed": 29,
+      "orientation": "random_2",
+      "attained": true,
+      "stages": 29,
+      "fraction": 0.9747846424579638,
+      "validation_movement": 0.1000000003185876,
+      "source_id": "src_edf6364fdbaae04b"
+    },
+    {
+      "context": "ssvep_controlled__rotation3__r02",
+      "fit_seed": 29,
+      "orientation": "random_3",
+      "attained": true,
+      "stages": 39,
+      "fraction": 0.8292676508426684,
+      "validation_movement": 0.10000000046444645,
+      "source_id": "src_6f5f84e1d90c1836"
+    },
+    {
+      "context": "ssvep_controlled__rotation3__r02",
+      "fit_seed": 29,
+      "orientation": "random_4",
+      "attained": true,
+      "stages": 36,
+      "fraction": 0.8769544661045092,
+      "validation_movement": 0.10000000081041356,
+      "source_id": "src_a123bcb217a3765d"
+    },
+    {
+      "context": "ssvep_controlled__rotation3__r02",
+      "fit_seed": 43,
+      "orientation": "random_0",
+      "attained": true,
+      "stages": 36,
+      "fraction": 0.5762763321399706,
+      "validation_movement": 0.10000000066039476,
+      "source_id": "src_f40192dcb913c99c"
+    },
+    {
+      "context": "ssvep_controlled__rotation3__r02",
+      "fit_seed": 43,
+      "orientation": "random_1",
+      "attained": false,
+      "stages": 48,
+      "fraction": 1,
+      "validation_movement": 0.08223828998243682,
+      "source_id": "src_66bf65fb874bf9cf"
+    },
+    {
+      "context": "ssvep_controlled__rotation3__r02",
+      "fit_seed": 43,
+      "orientation": "random_2",
+      "attained": true,
+      "stages": 45,
+      "fraction": 0.8787896931171435,
+      "validation_movement": 0.10000000003970852,
+      "source_id": "src_2d1e738dd7342f13"
+    },
+    {
+      "context": "ssvep_controlled__rotation3__r02",
+      "fit_seed": 43,
+      "orientation": "random_3",
+      "attained": true,
+      "stages": 40,
+      "fraction": 0.8478688299655932,
+      "validation_movement": 0.10000000018315107,
+      "source_id": "src_b0165c787ebe8f1d"
+    },
+    {
+      "context": "ssvep_controlled__rotation3__r02",
+      "fit_seed": 43,
+      "orientation": "random_4",
+      "attained": true,
+      "stages": 37,
+      "fraction": 0.8821072280406934,
+      "validation_movement": 0.09999999955005409,
+      "source_id": "src_0ecc6447c1c051dc"
+    },
+    {
+      "context": "ssvep_controlled__rotation4__r02",
+      "fit_seed": 17,
+      "orientation": "random_0",
+      "attained": true,
+      "stages": 31,
+      "fraction": 0.6122023761272413,
+      "validation_movement": 0.0999999995440486,
+      "source_id": "src_df4f126d3c77a2cd"
+    },
+    {
+      "context": "ssvep_controlled__rotation4__r02",
+      "fit_seed": 17,
+      "orientation": "random_1",
+      "attained": true,
+      "stages": 13,
+      "fraction": 0.9090375602245313,
+      "validation_movement": 0.09999999997648537,
+      "source_id": "src_dad03df6a869d4ff"
+    },
+    {
+      "context": "ssvep_controlled__rotation4__r02",
+      "fit_seed": 17,
+      "orientation": "random_2",
+      "attained": true,
+      "stages": 30,
+      "fraction": 0.9308634698390943,
+      "validation_movement": 0.09999999950897555,
+      "source_id": "src_f1f4c19f4e08d57a"
+    },
+    {
+      "context": "ssvep_controlled__rotation4__r02",
+      "fit_seed": 17,
+      "orientation": "random_3",
+      "attained": true,
+      "stages": 21,
+      "fraction": 0.829787462949751,
+      "validation_movement": 0.09999999921267647,
+      "source_id": "src_88da9fe30fcb52aa"
+    },
+    {
+      "context": "ssvep_controlled__rotation4__r02",
+      "fit_seed": 17,
+      "orientation": "random_4",
+      "attained": true,
+      "stages": 27,
+      "fraction": 0.9794959127903002,
+      "validation_movement": 0.10000000043156676,
+      "source_id": "src_2118a3a9367e53ca"
+    },
+    {
+      "context": "ssvep_controlled__rotation4__r02",
+      "fit_seed": 29,
+      "orientation": "random_0",
+      "attained": true,
+      "stages": 14,
+      "fraction": 0.286686375737192,
+      "validation_movement": 0.10000000007925972,
+      "source_id": "src_80c90a46038e8a9c"
+    },
+    {
+      "context": "ssvep_controlled__rotation4__r02",
+      "fit_seed": 29,
+      "orientation": "random_1",
+      "attained": true,
+      "stages": 13,
+      "fraction": 0.804892033338545,
+      "validation_movement": 0.09999999988196803,
+      "source_id": "src_907aa3bbf21b88a2"
+    },
+    {
+      "context": "ssvep_controlled__rotation4__r02",
+      "fit_seed": 29,
+      "orientation": "random_2",
+      "attained": true,
+      "stages": 21,
+      "fraction": 0.9444732964038867,
+      "validation_movement": 0.10000000035800423,
+      "source_id": "src_e043b965d16fc037"
+    },
+    {
+      "context": "ssvep_controlled__rotation4__r02",
+      "fit_seed": 29,
+      "orientation": "random_3",
+      "attained": true,
+      "stages": 33,
+      "fraction": 0.9193838536739332,
+      "validation_movement": 0.09999999973438654,
+      "source_id": "src_f6e47c830a05e8d1"
+    },
+    {
+      "context": "ssvep_controlled__rotation4__r02",
+      "fit_seed": 29,
+      "orientation": "random_4",
+      "attained": true,
+      "stages": 27,
+      "fraction": 0.8994149863719922,
+      "validation_movement": 0.09999999917576163,
+      "source_id": "src_70295c3530d81b05"
+    },
+    {
+      "context": "ssvep_controlled__rotation4__r02",
+      "fit_seed": 43,
+      "orientation": "random_0",
+      "attained": true,
+      "stages": 33,
+      "fraction": 0.777693301439287,
+      "validation_movement": 0.10000000045992159,
+      "source_id": "src_ff63d1ec4b3c7531"
+    },
+    {
+      "context": "ssvep_controlled__rotation4__r02",
+      "fit_seed": 43,
+      "orientation": "random_1",
+      "attained": true,
+      "stages": 13,
+      "fraction": 0.9910592734813672,
+      "validation_movement": 0.0999999995878014,
+      "source_id": "src_ac9a0e733e3ae2d2"
+    },
+    {
+      "context": "ssvep_controlled__rotation4__r02",
+      "fit_seed": 43,
+      "orientation": "random_2",
+      "attained": true,
+      "stages": 37,
+      "fraction": 0.8001724779605883,
+      "validation_movement": 0.10000000013243447,
+      "source_id": "src_c27ec56af84381f7"
+    },
+    {
+      "context": "ssvep_controlled__rotation4__r02",
+      "fit_seed": 43,
+      "orientation": "random_3",
+      "attained": true,
+      "stages": 16,
+      "fraction": 0.9731508791446704,
+      "validation_movement": 0.10000000075504899,
+      "source_id": "src_7162f84f55d10ff8"
+    },
+    {
+      "context": "ssvep_controlled__rotation4__r02",
+      "fit_seed": 43,
+      "orientation": "random_4",
+      "attained": true,
+      "stages": 32,
+      "fraction": 0.9962891638278979,
+      "validation_movement": 0.10000000088136078,
+      "source_id": "src_1fc1225ab17e36e7"
+    }
+  ]
+}
