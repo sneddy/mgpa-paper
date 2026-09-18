@@ -14,6 +14,47 @@ include the manuscript's component controls and Identity, LEACE, CORAL, FEATMAP
 and IGBP comparisons. CORAL and FEATMAP require source identity at application.
 The result identifiers for the two MGPA methods are `mgpa_cf` and `mgpa_iter`.
 
+## Reproduction guide
+
+Choose one of two workflows after [installation](#install):
+
+- **Saved results:** [rebuild and verify the reported statistics](#rebuild-the-reported-results-without-training)
+  from the supplied participant-level cells, without downloading EEG or fitting
+  models. The experimental tables and figures below use these saved results.
+- **Fresh experiments:** obtain the inputs in [DATASETS.md](DATASETS.md), then
+  follow [fresh numerical reproduction](#fresh-numerical-reproduction) and the
+  relevant protocol guide and configuration. This separately prepares data,
+  fits adapters/readers and evaluates new outputs.
+
+Raw recordings, EEGPT weights and fitted adapter/head checkpoints are not shipped.
+[VALIDATION.md](VALIDATION.md) describes the saved-model replay, statistic and
+execution checks; a complete fresh raw-data-to-paper training run has not been
+verified. The protocol guides specify participant roles, preprocessing, endpoint
+selection and uncertainty; configurations fix the published numerical settings.
+
+| Protocol guide | Published configuration |
+|---|---|
+| [Controlled SSVEP](experiments/controlled/README.md) | [paper.toml](experiments/controlled/configs/paper.toml) |
+| [Temporal N170](experiments/temporal_n170/README.md) | [paper.toml](experiments/temporal_n170/configs/paper.toml) |
+| [Recorded SSVEP](experiments/recorded_ssvep/README.md) | [paper.toml](experiments/recorded_ssvep/configs/paper.toml) |
+| [P300-selected task reuse](experiments/task_reuse/README.md) | [paper.json](experiments/task_reuse/configs/paper.json) |
+
+### Paper-to-artifact map
+
+These are the eight external tables and four figures included in the paper.
+Saved participant cells are under each experiment's `artifacts/`; task reuse
+also retains DEV selection evidence. [release_manifest.json](release_manifest.json)
+records their hashes.
+
+| Paper content | Supplied artifacts |
+|---|---|
+| Measurement paths and construction | [Measurement-path illustration](paper_assets/measurement_paths.png); [theory figure](paper_assets/theory_story.pdf) |
+| Controlled Closed-form MGPA | [Closed-form comparison table](paper_assets/controlled_cf_main.tex) |
+| Controlled gate and target | [Gate/target figure](paper_assets/controlled_mechanisms_compact.pdf); [target-control table](paper_assets/controlled_target_controls.tex) |
+| Native N170 and recorded SSVEP | [Native comparison table](paper_assets/real_native_main.tex) |
+| N170 critic and matched-budget controls | [Critic comparison](paper_assets/n170_critic_compact.tex); [IGBP budget comparison](paper_assets/n170_igbp_budget.tex) |
+| P300-selected reuse on N170/MMN | [Worst/control table](paper_assets/reuse_main.tex); [absolute outcomes](paper_assets/reuse_absolute_compact.tex); [paired gains](paper_assets/reuse_paired_ci.tex); [transfer figure](paper_assets/reuse_worst_preview.pdf) |
+
 ## Install
 
 From this directory, using Python 3.11 or 3.12 on macOS or Linux:
