@@ -210,7 +210,7 @@ def preprocess_response(
         raise AssertionError(f"Primary crop must contain 500 samples, got {cropped.shape[-1]}")
     resampled = resample_poly(cropped, target_sfreq, source_sfreq, axis=-1).astype(np.float32)
     if resampled.shape[-1] != 400:
-        raise AssertionError(f"LaBraM input must contain exactly 400 samples, got {resampled.shape[-1]}")
+        raise AssertionError(f"Encoder input must contain exactly 400 samples, got {resampled.shape[-1]}")
     mean = resampled.mean(axis=-1, keepdims=True)
     scale = np.maximum(resampled.std(axis=-1, keepdims=True), eps)
     normalized = (resampled - mean) / scale

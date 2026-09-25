@@ -46,7 +46,7 @@
     "mgpa/data/raw/receipt.py": "ad1d2749d27b4eca9ddfc2de939f323aae94320100b0a8a6532b443290f3d3ac",
     "mgpa/data/raw/runtime.py": "5f90edba7b77139cca8a678a21549a5c55605b138a9661fb06068584bdcc3327",
     "mgpa/data/raw/ssvep_calibration.py": "b3ac70de16911d95c07c88bda9f3153374711c3a0f4bfc72950c8e1bc7f1a2d6",
-    "mgpa/data/raw/ssvep_data.py": "7b5f52a3a59d08cb05148a1716d569dc16318c9db41174d97dbd84d8a02a0e79",
+    "mgpa/data/raw/ssvep_data.py": "63198f1b31037db6c0a3fd375c04db2dddce49f793af627f1c2d4b561b1bd2a7",
     "mgpa/data/raw/ssvep_encoder.py": "eb2af70268877c89fcaab09c455e2c094bc5745a29a4b26a11d2a792f1c37c95",
     "mgpa/data/raw/ssvep_references.py": "732f025ef27caf1af03bad1ff11bda109e7d79888c387def202fc18c0fb2324a",
     "mgpa/data/raw/ssvep_transport.py": "26044bee760d664c5999228d044b460142f23e6d9d1b986b14894720f9203eb3",
