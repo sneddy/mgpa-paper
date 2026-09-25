@@ -1,6 +1,6 @@
 """Raw EEG to frozen features, with explicit inputs and a portable receipt.
 
-This optional stage is intentionally independent of repair-model fitting. Raw
+This optional stage is intentionally independent of correction-model fitting. Raw
 data/checkpoints are not downloaded implicitly. Existing output attempts are
 never overwritten; completed acquisitions are verified and reusable.
 """

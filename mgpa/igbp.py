@@ -321,7 +321,7 @@ class IGBP(PortableEstimator):
     Default native output applies 100 projections. Each width→width→2 ReLU
     source classifier trains for at most 50 epochs, AdamW lr=.0002, with
     source-validation accuracy patience 10 and minimum improvement .002.
-    These defaults are the single IGBP configuration reported in merged_v5.
+    These defaults are the single IGBP configuration reported in the paper.
     No measurement gate, source identity, or downstream labels enter replay.
 
     ``settings`` accepts the named fields in DEFAULTS. Movement budgets affect

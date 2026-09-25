@@ -38,11 +38,11 @@
     "mgpa/data/features.py": "faf2a56c9e9ee7529861310edda47a00d7084fe781fc98b34b42518fd3d0cb67",
     "mgpa/data/geometry.py": "db3d5f1e4390a2e8ceb0d03d055765a903796bb35a21501268496b18442518ff",
     "mgpa/data/interfaces.py": "7118e0245b4f825424448ab7d278c8e4a3b13f8cf93762782fb3a547a781b0ae",
-    "mgpa/data/prepared.py": "d5c92cbae6703d5e473be8e8ec9555d7e63a79772d615e651fbfbce72adbd59b",
+    "mgpa/data/prepared.py": "b9426902d0ea4e083e155fd405a3c3d7fe4f69a614dd40231c5fe69862b502d1",
     "mgpa/data/raw/__init__.py": "01cf6bc34c325dec637b0bf10d3e9bcf5aa775aa249aff65ada67e5dca38976e",
     "mgpa/data/raw/flex_gap.py": "332ab3a84d468ad448cbd7aba5253d871686316926339ddf97848b88f0c90a07",
     "mgpa/data/raw/flex_ingest.py": "784e5328613dacaf7a64ea63661ac7495f51ce5644a111ed4554245c815eeff3",
-    "mgpa/data/raw/pipeline.py": "2386e18e691c2b6d860760b324a333ea52deed70f2a85de2c4af79827bd0ece6",
+    "mgpa/data/raw/pipeline.py": "1582cde55e59271e45bc8d1a2a6ef0e36a9824ca01ef492dcf30b1b1d27f01f8",
     "mgpa/data/raw/receipt.py": "ad1d2749d27b4eca9ddfc2de939f323aae94320100b0a8a6532b443290f3d3ac",
     "mgpa/data/raw/runtime.py": "5f90edba7b77139cca8a678a21549a5c55605b138a9661fb06068584bdcc3327",
     "mgpa/data/raw/ssvep_calibration.py": "b3ac70de16911d95c07c88bda9f3153374711c3a0f4bfc72950c8e1bc7f1a2d6",
@@ -53,7 +53,7 @@
     "mgpa/data/reuse.py": "efeca3df4743eee85281a58d202202afddcd9de8d3823490064761d7c0fe84d0",
     "mgpa/data/reuse_encoder.py": "077eb0289973ccbce73a01ad239b1f8a73adc9f13845a444eb444b315bc8bbb8",
     "mgpa/data/runner.py": "fb44a1ad5e14a0cdec9ba11d38febb389c01fb1d5ca814b7e776c168061a9297",
-    "mgpa/igbp.py": "94a941cad849bbaea651efaeaed3dc8b69a7a7ef9dbdc66e48ab983f8cd7afe4",
+    "mgpa/igbp.py": "2ca4383c86038245df2cdc3b991e6b4641fc60ec8269d6c4c6a614e6f2d3854e",
     "mgpa/iterative.py": "45828ad8cf9f1a65daa38606dae44ac824c7ed7b268d79ed3298a9ccee11c5ed",
     "mgpa/reporting.py": "2c7d5903ec7ed0b56875631aa3ce75b42c37311bfa6aa07b4134e7fa70c97446",
     "mgpa/serialization.py": "0a7caac4a9a691659f381a050d6fdbec415da994ce91d6a3e23634aa7b0203b7",
@@ -65,7 +65,6 @@
     "paper_assets/render_theory.py": "ed87322f1adbdf94ddf19e021b5c964507be4bb9fd6027080618951c47386e7d",
     "paper_assets/verify.py": "f65e5c52f31414ed88e4bbe79f6b1e448bbe6c11ad4aca71e15cc4067f25ef9e"
   },
-  "manuscript": "merged_v5",
   "methods": [
     "ClosedFormMGPA",
     "IterativeMGPA"
@@ -369,7 +368,8 @@
     "paper_assets/controlled_cf_main.tex": "53fd72ba9570a7ebf6573d3f80fa46857427fa13e32ac335327291248897b24e",
     "paper_assets/controlled_mechanisms_compact.pdf": "ca7eeb15657c016769f97910f24e76fe9635908d95fcf4f6b64d84ffc872451f",
     "paper_assets/controlled_target_controls.tex": "6b2d0ced5d94c7fe393cb28f3188bdcc4aba1878e7f829c3729ef3f071973344",
-    "paper_assets/measurement_paths.png": "24a515db0da35d9cd4f4127e1534a48ccf601dc601350415c3be9eb12c525e92",
+    "paper_assets/measurement_paths_v2.png": "b06e807658d43ca1c2b9756eb2049193e69ec94c380ef4a8796a4f535e8b887a",
+    "paper_assets/mgpa_figure.png": "d1556f52ad159bff203ad693dc43c803c8779b898d784a99b0c5d315de387213",
     "paper_assets/n170_critic_compact.tex": "3ae9c0f413f6448b88fba2d628f7d0cf3946b2a9cab74894ecfae9a109faed38",
     "paper_assets/n170_igbp_budget.tex": "df678d062f602009bd3ec28408c1a1493e82f4b17b234711f6da3c1f8c242133",
     "paper_assets/published_values.json": "6e393807e6069364b991bccd02d370a03bf1104c18f4695ae92b86c6cd2a9733",
@@ -379,7 +379,6 @@
     "paper_assets/reuse_paired_ci.tex": "5e0ca5bd99c96b91988a5ba9114cc50808212742cbaf136e4943ea9e3c47684e",
     "paper_assets/reuse_worst_preview.pdf": "1693913a517626e411d3ddeb41015e62586bde467f5988dc64d69c30ce0109f3",
     "paper_assets/theory_clouds.json": "9f615ab9f1dce757f10e940f27f9ceedcae7b6ef00c0f16d3fe88baa2a1650f3",
-    "paper_assets/theory_story.pdf": "e4a372915b598111791f72c1bcc721baabc213d5e0af4c987488b3e954befc80",
     "verification/data_preparation_verification.json": "25b120813755be3305e35c4260f4d9b579f362d6665f7051b9b3c0828d39b796",
     "verification/result_integrity.json": "3df9977a991e249174c54a828447ded45f46a0afba5b6e165b1f5913dc5c5654"
   },
@@ -396,9 +395,13 @@
       "sha256": "6b2d0ced5d94c7fe393cb28f3188bdcc4aba1878e7f829c3729ef3f071973344",
       "source_id": "src_5bb0f184de8022f8"
     },
-    "measurement_paths.png": {
-      "sha256": "24a515db0da35d9cd4f4127e1534a48ccf601dc601350415c3be9eb12c525e92",
-      "source_id": "src_af557ad57fd046ab"
+    "measurement_paths_v2.png": {
+      "sha256": "b06e807658d43ca1c2b9756eb2049193e69ec94c380ef4a8796a4f535e8b887a",
+      "source_id": null
+    },
+    "mgpa_figure.png": {
+      "sha256": "d1556f52ad159bff203ad693dc43c803c8779b898d784a99b0c5d315de387213",
+      "source_id": null
     },
     "n170_critic_compact.tex": {
       "sha256": "3ae9c0f413f6448b88fba2d628f7d0cf3946b2a9cab74894ecfae9a109faed38",
@@ -427,10 +430,6 @@
     "reuse_worst_preview.pdf": {
       "sha256": "1693913a517626e411d3ddeb41015e62586bde467f5988dc64d69c30ce0109f3",
       "source_id": "src_0dc99380fbf4985e"
-    },
-    "theory_story.pdf": {
-      "sha256": "e4a372915b598111791f72c1bcc721baabc213d5e0af4c987488b3e954befc80",
-      "source_id": "src_6956d0cdb7b15adc"
     }
   },
   "paper_map": {
@@ -447,8 +446,11 @@
       "controlled",
       "target"
     ],
-    "measurement_paths.png": [
+    "measurement_paths_v2.png": [
       "motivation"
+    ],
+    "mgpa_figure.png": [
+      "theory"
     ],
     "n170_critic_compact.tex": [
       "temporal_n170",
@@ -474,9 +476,6 @@
     ],
     "reuse_worst_preview.pdf": [
       "task_reuse"
-    ],
-    "theory_story.pdf": [
-      "theory"
     ]
   },
   "protocols": {
@@ -571,7 +570,7 @@
     }
   },
   "provenance": {
-    "description": "Exact source paths and hashes are archival identifiers, not runtime dependencies.",
+    "description": "Source records are content hashes of the archived results each released file was derived from; they are identifiers, not runtime dependencies.",
     "identifier_mapping": {
       "halfstep_selected": "mgpa_iter",
       "igbp_strong": "igbp",
@@ -636,1527 +635,1146 @@
     },
     "sources": {
       "src_0022e6e837253a6f": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s17__random_1__budget_0.1.json",
         "sha256": "920a35286e805783276d7af7121d1a29079802a016d3b5a75c9e1f261c278a2c"
       },
       "src_02abec355b3b63f8": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s29__random_4__budget_0.05.json",
         "sha256": "487315636049446f0abb497393d05a0bfe916e88110ec55e5951c888cb65cdca"
       },
       "src_03a53cf4d8457543": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/n170/cells/flex_n170__s17__measurement__budget_0.25.json",
         "sha256": "81d15fe0ae3f46287dc89369b81ad147987e32d946eef40c6682bd855b539a8c"
       },
       "src_04c063097bdb3402": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/eval_cells/mmn__coral.json",
         "sha256": "1a2f2796ae8f7fb0f417c0a17f6c4949e9e6828be22952e3611792c3f1bfc43f"
       },
       "src_0719edc01946e0e3": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/dev_cells/coral_ref1_ridge0.01.json",
         "sha256": "3effe53c17750104c2c388b7e8076c6280a9c0b470c4de47420e04fd1a988a4f"
       },
       "src_080a0f8b12fc0798": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s17__random_2__budget_0.1.json",
         "sha256": "cf865fa0ba6f22a896f68c7f845a05becc6d5ac21ff9e28da1b1f246e7552107"
       },
       "src_08c50386d4cd65b4": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/dev_cells/coral_ref0_ridge1.json",
         "sha256": "857c7e584f9ea817729297250ad00862b08aa53807d5e4ae3e6e91c20ef0701c"
       },
       "src_0a6aba415443ac90": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s17__random_4__budget_0.1.json",
         "sha256": "857c29c7a36e5fcdefd53a7d45fb934fd86fa5b87302014ddd4a8d10384182a3"
       },
       "src_0b8693af036c237c": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s17__random_4__budget_0.1.json",
         "sha256": "c6a104251fc1c407b8be4e6c5c2fb7aeb39ada118388b2f4b3461c2fde02eeff"
       },
       "src_0ca667b8bca867eb": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s29__random_4__budget_0.05.json",
         "sha256": "4e38751a601d59a69285670506c9e64d7b2bb9276091c89035a6cbfb86516e6d"
       },
       "src_0dc99380fbf4985e": {
-        "path": "workshop/projects/mgpa-merged-v5/assets/reuse_worst_preview.pdf",
         "sha256": "1693913a517626e411d3ddeb41015e62586bde467f5988dc64d69c30ce0109f3"
       },
       "src_0ecc6447c1c051dc": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s43__random_4__budget_0.1.json",
         "sha256": "9bd544557add13f4d6a3426a969b70be187fdec11ef7444a791d2a357fca1f77"
       },
       "src_0fca4c4b9d2b7114": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/igbp/cells/flex_n170__s43__igbp_strong__native.json",
         "sha256": "b35cef8b8ff8cbc75aaa35f13cf8672ff5115df0a32090ed495f00fcb41fd0b3"
       },
       "src_1067d15420c2b646": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_diagnostics/artifacts/discovery_v1/tables/eval_cells/n170__halfstep_selected_seed29.json",
         "sha256": "d0c45c3609a27f72e2bf68caefdab9fa0e2e1cc27e9578053b654cd8f614f4a3"
       },
       "src_10eba22fb73c094d": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/target/tables/cells/ssvep_controlled__rotation1__r02__s17__mgpa_fit_mean__native.json",
         "sha256": "db991e8df42a7b353efacc304865048c9e2b81277e0cb67e004aa2f8305c9994"
       },
       "src_12079709a2d19f3b": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation4__r02__s17__mgpa_marginal__native.json",
         "sha256": "f5b33c6204e40f71711cc9d623c3ed2d23f703f2f62edda3cb4e25acc1667b51"
       },
       "src_1250d6b0c11c6189": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_diagnostics/artifacts/discovery_v1/tables/eval_cells/n170__halfstep_selected_seed43.json",
         "sha256": "fa589ebbdaab5c91d6a63049b4ebf0e1b328cba367d6034112f647c968ba4e27"
       },
       "src_1366e596a31b1716": {
-        "path": "workshop/projects/mgpa-merged-v5/assets/n170_critic_compact.tex",
         "sha256": "3ae9c0f413f6448b88fba2d628f7d0cf3946b2a9cab74894ecfae9a109faed38"
       },
       "src_1369f71e4dc3cd2a": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s29__measurement__budget_0.05.json",
         "sha256": "b1faee8df66b0daebbb2c17622d745329dcad1fd58f3f057569d9c4e41911fbb"
       },
       "src_14cbff419cb00bf8": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s29__random_0__budget_0.05.json",
         "sha256": "57c7042ecf62017fa38055ff78697382e3054040dbc990abca44031bb9cc4f40"
       },
       "src_160af5e0e8fa7022": {
-        "path": "workshop/latest_experiment/experiments/recorded_token_readers/artifacts/main_v1/tables/cells/leace__s43.json",
         "sha256": "1a038a8c6bbe86c677c1611285d083f6de7764ab9be6421775febf2538e79bbf"
       },
       "src_174b2fa5a2f8e8c1": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_diagnostics/artifacts/discovery_v1/tables/eval_cells/mmn__halfstep_selected_seed43.json",
         "sha256": "0c2d2ee432d47056b1a4474879970f3ef9459caeec22853743f35345f00b30ad"
       },
       "src_18e7cd69645e12a2": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/dev_cells/coral_ref1_ridge10.json",
         "sha256": "2658f6c4f1ada0da2d7e4214116f801e897b9de46a59830bd50747223a71c09d"
       },
       "src_19067ec5c6a711a6": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation1__r02__s17__coral_0__native.json",
         "sha256": "cd40f8ce99fa5209a830ba60fb810c38ba2437eef1c9679177ac5e73ebb17e2b"
       },
       "src_191a44454083f038": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s17__random_1__budget_0.05.json",
         "sha256": "09dfe27b0ea1715df298284959d3ef33570d1cc4bc1ad0154df7283ab498f2b3"
       },
       "src_1937b436807f3ac3": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s43__ungated__budget_0.05.json",
         "sha256": "7019a3efddc5464ae940ab96c76c0f6a14a0ee63ad0d3d917b2286a83ae461d9"
       },
       "src_196e7d65c6078fdc": {
-        "path": "workshop/projects/mgpa-merged-v5/sections/reproducibility.tex",
         "sha256": "4caf444cb7e6f466dc04b189e04ab0023e5498991567b7243ae5c4ef41875211"
       },
       "src_19e730d7bc95a3d6": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s29__random_4__budget_0.05.json",
         "sha256": "50ae84e9f9d1f6e76467b4704481e054fd78bd93ec5ca7a73b0180bde2585a1e"
       },
       "src_1ae0bbf97c1f5d37": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/dev_cells/featmap_ref1_ridge1000.json",
         "sha256": "af6b3c1d2c4da9607028068bcb73f070a273111807958e6a97544c97471fb9b6"
       },
       "src_1aec422e2d3e9b6e": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/ssvep_igbp_v1/tables/cells/ssvep_recorded_wet_dry__rotation1__s17__igbp_strong__native.json",
         "sha256": "2321c3d9e30de48f7255a1410a81ef0374042eee97bc9ab73df91297dfb13964"
       },
       "src_1d8510dc6d9d0619": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/eval_cells/p300__identity.json",
         "sha256": "ad36c4b81c4ddf14192da9975f176f9f0ca4ea268dc78f57de81b94c449190a3"
       },
       "src_1e284ae5dbe1ddf9": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s43__random_1__budget_0.1.json",
         "sha256": "822f766a223dc564d7bdd4565ee9ddf722b90516c75445544ff643f672fe3b27"
       },
       "src_1e5f680552b47d80": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s43__random_0__budget_0.05.json",
         "sha256": "f6425ce7d075d6aff71a82896ebeda6e4f6e56169b48f296c6054689aa694bc0"
       },
       "src_1e87cb24e3a97633": {
-        "path": "workshop/latest_experiment/experiments/n170/artifacts/paper_v2/tables/cells/flex_n170__s17__mgpa__native.json",
         "sha256": "b34509fb8f1b0af419eb7bd65c699bd34d3af990a3fac60ab46a822b837ed706"
       },
       "src_1ec7b29ce245ad29": {
-        "path": "workshop/latest_experiment/experiments/recorded_token_readers/artifacts/main_v1/tables/cells/mgpa__s43.json",
         "sha256": "d33434db3a7a1b3f6478189912b28bd721fe3018fb425274f229a75193f2f4f2"
       },
       "src_1ed22bf0201cda2b": {
-        "path": "workshop/latest_experiment/experiments/recorded_token_readers/artifacts/main_v1/tables/cells/coral_1__s43.json",
         "sha256": "5d51eab79f65fa5f26a979a10ebc5e15467d0466f8341e3c3a126738040e9c6f"
       },
       "src_1f49ef9562860bd1": {
-        "path": "workshop/projects/mgpa-merged-v5/sections/appendix_protocol_compact.tex",
         "sha256": "825dd867bc0b4291bab173b6f83b8a0db1fb3678a0ae54b699ff81a73a0b9cb0"
       },
       "src_1fc1225ab17e36e7": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s43__random_4__budget_0.1.json",
         "sha256": "5c48c7690a45e2ea0f5f04f33f6efd1d9aa53fc92453b86a6afb7a836b6a9052"
       },
       "src_204960f94901312f": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_discovery/artifacts/discovery_v4/tables/dev_cells/identity.json",
         "sha256": "7a2bd6a5a82f2260a519fd2d62a2095157c871959660950c1e949458d6f789bd"
       },
       "src_20d502022343691c": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_discovery/artifacts/discovery_v4/tables/dev_cells/leace_ridge1.json",
         "sha256": "5da9ca30db7d6f76f34feb3c2f1ba053b943cbf142f324aa1f741b2a899473dd"
       },
       "src_2118a3a9367e53ca": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s17__random_4__budget_0.1.json",
         "sha256": "424340c8c785fadea368a22d4fd6cf89dd3f15f155d048897714f8ff88e735b6"
       },
       "src_21a617fe9621883e": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/dev_cells/coral_ref1_ridge0.1.json",
         "sha256": "300067ffbe4acf647dfef4390042f1690b259f8b14d7e6d5b631647fbbe41781"
       },
       "src_21ee9bf0f9e0b793": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s29__random_3__budget_0.05.json",
         "sha256": "cac9304be5ac7d9fe13125be5dbbfc9e26be933bf099bb02501d23ec6ced3f2b"
       },
       "src_233c37e70d319cdf": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s29__random_1__budget_0.05.json",
         "sha256": "b61dd137d23836fbff1276abda5a88ec466ec3aa888c6b6ecbc97b8748ded02c"
       },
       "src_235c336d508c1609": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s43__measurement__budget_0.05.json",
         "sha256": "d26271410a963ff2b3f59fde67f2c10d75a5651b951dc271210de3c6a8090b68"
       },
       "src_244a2367744fa0a6": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation2__r02__s29__mgpa__native.json",
         "sha256": "09378b7148f72a65cd06780eb8bae1ecffbc9761dc61588032b254fba0b592dd"
       },
       "src_24fca0a57b752fda": {
-        "path": "workshop/latest_experiment/experiments/recorded_token_readers/artifacts/main_v1/tables/cells/coral_0__s17.json",
         "sha256": "cd0aaea96da5264349ab74bf412011ed7efe1244e3a37ff240ee022bfe4cdcf3"
       },
       "src_24ffc014d7e470f0": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s43__identity__native.json",
         "sha256": "ffca840320f14fd1ca95f3a153d2a992c16066f2db4adcc86a149b0f73c7cce6"
       },
       "src_254f766cdd3c253b": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s43__random_4__budget_0.05.json",
         "sha256": "e7b1b3be7e5586cc148d0033468e1de31c34cae5ebe41dafd6ca24ace4f89182"
       },
       "src_25d9c548f1763ba5": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s29__ungated__budget_0.05.json",
         "sha256": "26b709ca0999cb8e356f17dbbaf3de3cb1990439b2825ae33097e7d7968beb65"
       },
       "src_262689320cb1cf09": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s43__random_2__budget_0.05.json",
         "sha256": "dd9c623786c8d1ee2edd3b66f6f242f6eb6ee8232f2470abf0ec54e6a754e250"
       },
       "src_277780b575ede235": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s29__random_2__budget_0.05.json",
         "sha256": "4150772d09d8bd55b189c26bd9220434ce86ff9c502102819a09fcc4eeef435a"
       },
       "src_28d74de04c8d663b": {
-        "path": "workshop/latest_experiment/experiments/n170/artifacts/paper_v2/tables/cells/flex_n170__s43__leace__native.json",
         "sha256": "81991de63b11c7ae27d179449ce4a4dc15d33a1f5724c69a118fdca1f59154fb"
       },
       "src_290326653ae2508a": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/eval_cells/p300__featmap.json",
         "sha256": "6ac882c334e1db46a3a4fade65562a328bc3a816f114896319581106ecddc341"
       },
       "src_2988f78eb451e538": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s29__random_2__budget_0.05.json",
         "sha256": "7d504e5ff9f8c9f592cac0b232d0789e001385d514d141e1c01d369c7d33dc45"
       },
       "src_298b267a52b879aa": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s17__random_2__budget_0.1.json",
         "sha256": "f9558129edd395a867271c412190c75756b31e80097a3ae798521f983b0863ec"
       },
       "src_2a4d095cb526022e": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s29__measurement__budget_0.05.json",
         "sha256": "c6fc969bdad20579b4a7f79d283fb2a8b36f40c857cc7de47c5cd57b39ae29e2"
       },
       "src_2a747ffedc69785d": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s43__random_1__budget_0.05.json",
         "sha256": "59f42f6bc4ca87f21d562de461b2fba5c5786de864afc642145653766e0f131e"
       },
       "src_2bb0135066a6ee25": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation1__r02__s29__mgpa_marginal__native.json",
         "sha256": "24705ebeab0625c9cbd15cdc6bd9e5aa7b5a438a1317e1866e341b1e86b4b2e0"
       },
       "src_2c0bb947a0fbb782": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation3__r02__s17__coral_0__native.json",
         "sha256": "101cfcc511b9d8cfe084ed57c6bb56c39d5c1d9ba5aede196f424c57b1a389bc"
       },
       "src_2c4a0aebbe15ae34": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s43__identity__native.json",
         "sha256": "e21a3273583b2420c2791e632e2beb2ba82dc63793f7eff8e70b21a12021bff5"
       },
       "src_2c90d835a0a5f3cb": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s17__random_1__budget_0.05.json",
         "sha256": "9e4cfbdd78d644449a488eff9cffd871ac3ebda53b3f40d4255ab7434f9418c1"
       },
       "src_2cd58267e7fb488a": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_discovery/artifacts/discovery_v4/tables/dev_cells/leace_ridge0.1.json",
         "sha256": "47e5dd35564327db18757d333cdb3530ebf05a51c3a9ec3d30aedf0e83fc0c96"
       },
       "src_2cda900a3d040f8b": {
-        "path": "workshop/latest_experiment/experiments/recorded_token_readers/artifacts/main_v1/tables/cells/coral_1__s17.json",
         "sha256": "78289ce8726aa3aa151adb9f40b2268ea3e7076621b054bc99956ebf25c5f371"
       },
       "src_2cf105a2c1fd3627": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s43__random_3__budget_0.05.json",
         "sha256": "0e2a98d7d265a447de40b4cb2aa11f458645ca04c704877b36cc1bd6ad35f9b9"
       },
       "src_2cf429fd1473756e": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation1__r02__s29__mgpa__native.json",
         "sha256": "ec1fb7f0e4678e9cb35d75da08ae02b8883a86ca1fe99fb0ca7d8c3a1693e8b6"
       },
       "src_2d1e738dd7342f13": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s43__random_2__budget_0.1.json",
         "sha256": "2ffdf976422be021404b6f37e7eab63925276f5073ed8962498e6612f32fc157"
       },
       "src_2d327bd4723bfd14": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_diagnostics/artifacts/discovery_v1/tables/eval_cells/n170__halfstep_selected_seed17.json",
         "sha256": "5c964058d4c3f3a610a286dd497c6e212a18e85362a292b503e0b1678a1e5dfb"
       },
       "src_2dfe602dd7abdb37": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s43__random_0__budget_0.1.json",
         "sha256": "0bad9248320fffa52bf7854421e8108be1111b3f5d9c17d9183a44ff174feeb3"
       },
       "src_2e8a35a35bedf756": {
-        "path": "workshop/latest_experiment/experiments/recorded_token_readers/artifacts/main_v1/tables/cells/coral_0__s29.json",
         "sha256": "5c00e1ae2e8ded817094deb4ba2f06acf935d815dfe0bbb1b249c1d0f4ced2ec"
       },
       "src_2ef0fa6e65b6ee2c": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s29__random_1__budget_0.05.json",
         "sha256": "9f87fe68844fbfe2f2a647c62652bd94c067e8b375c6cb160185e5c91176ff15"
       },
       "src_2f4342345ba9bef3": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/dev_cells/featmap_ref1_ridge0.json",
         "sha256": "4bb91b9dd79bbc46b3f4571f506d3dffa9b61e8fc1411b0c27df9695082e7a6e"
       },
       "src_307919b3448822a8": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation3__r02__s17__featmap_0__native.json",
         "sha256": "e18ef0101c66b8076e02bb44ecec3a0fbc4f4f68aa9e6160dbe1136005e2e32f"
       },
       "src_30f6350fac53ed4f": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s17__random_4__budget_0.05.json",
         "sha256": "02c72a025a107721776766530b5a50f8ce357a5073e96cd516980ce6c2d8f82c"
       },
       "src_30fe0d008d192ead": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/igbp/cells/flex_n170__s43__igbp_strong__budget_0.1.json",
         "sha256": "464a0caf7d8beccfb45a6dccaa3c0ff3d61b59b0d2f686b8af83d0495289036a"
       },
       "src_32ae91dd01abf6ae": {
-        "path": "workshop/latest_experiment/experiments/recorded_paired_oneshot/artifacts/discovery_v1/full_source_evaluation.json",
         "sha256": "b28e7980359de9f60ae140b71b75d08bf7488322ae2af16233b839651f49222c"
       },
       "src_336f331597f3f494": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s29__random_0__budget_0.05.json",
         "sha256": "7a63a541242508856d4615512393bb30fa7572b070997fa0d53a9f00171b8b9b"
       },
       "src_35551abbd8aaf7a6": {
-        "path": "workshop/latest_experiment/experiments/recorded_token_readers/artifacts/main_v1/tables/cells/mgpa__s29.json",
         "sha256": "e3638283609c3548c2eb662617788eac024e5d7fa164ae7561e88b467b9a9e28"
       },
       "src_35f2605e9317cab5": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s29__random_0__budget_0.1.json",
         "sha256": "baf8d68d395ea6577d90dbe1af7ad3923786f8c06d20f2834f8b310f8d6d9600"
       },
       "src_36d011e07f8111d9": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/eval_cells/n170__leace.json",
         "sha256": "fb69893e50d8ebe99a5b7b10f9db0e5e1865a75d84dbbbfb97add3d74b26321e"
       },
       "src_370c5f3a79be9bed": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s43__ungated__budget_0.05.json",
         "sha256": "021de11e4060e3c2090e2b92bb0a9447c05e06cde07914425cfa7e3eeea6121e"
       },
       "src_373d5d04966f6305": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s29__random_0__budget_0.1.json",
         "sha256": "9c0b8a9d22e3c95def8cbac62be3aa10921ae4394c30bcdc88fe36076c951cd3"
       },
       "src_37a67966280149e5": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s17__random_0__budget_0.05.json",
         "sha256": "7efdc5f97476d61b3a702edec71567256cc7ced53f649516ef951903d3f20782"
       },
       "src_380a77cb04ce6d0a": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s29__ungated__budget_0.05.json",
         "sha256": "7d7fc598abda75713fe0ad786ef91001c7b32964a32622cb010e22c3218373c0"
       },
       "src_386a0c1ee3b928a6": {
-        "path": "workshop/latest_experiment/.cache/prepared/62f5949a5017dc0311ea/manifest.json",
         "sha256": "a57d2007da8fd1a67079246c74d41d9ce7582d3e4a5534a35551372c8f34a073"
       },
       "src_3957058fc7c6b25e": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation1__r02__s17__featmap_1__native.json",
         "sha256": "8737fddd025141c48c70f9d627ad2b2419e42a9057d68fd6efdeca9b750cab0d"
       },
       "src_398310e22f78ab4c": {
-        "path": "workshop/latest_experiment/experiments/recorded_token_readers/artifacts/linear_only_v1/tables/cells/mgpa_linear_tr__s29.json",
         "sha256": "bf01329061cd07141ee1f897ba1fa833cc7410cf6d02fe9d7160ff3e12589871"
       },
       "src_398953aa47990300": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s43__random_4__budget_0.1.json",
         "sha256": "b0eeefe6f28944959fbed7afc23be7e74c335c0dec6c60ee81c5f3048b4819e3"
       },
       "src_3a8badf7fd15aa30": {
-        "path": "workshop/latest_experiment/experiments/recorded_token_readers/artifacts/main_v1/tables/cells/coral_1__s29.json",
         "sha256": "abaef3c044911ff8cab8e6ce85fcf72f22ca62a23c19510f0ca07882dfb6663a"
       },
       "src_3a9b41434edc76d4": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s43__random_1__budget_0.05.json",
         "sha256": "9b2f296a7a4eada4e0074ffc2852e6cb36e835562b298c3b4ea006ba0946b0e9"
       },
       "src_3aed884d069180c7": {
-        "path": "workshop/latest_experiment/experiments/n170/artifacts/paper_v2/tables/cells/flex_n170__s29__mgpa__native.json",
         "sha256": "6a67a60010fdee14cb7ffac4cb77344c97006bf24c2b56a4c89a289660dc9753"
       },
       "src_3b0df27aafa6e04b": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/igbp/cells/flex_n170__s17__igbp_strong__budget_0.25.json",
         "sha256": "31232801ac4fc444c394745c7f4ed4ca338f6a0d195b4ba94996c4a32871fc15"
       },
       "src_3b5eba03b246f1af": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_diagnostics/artifacts/discovery_v1/tables/eval_cells/p300__halfstep_selected_seed43.json",
         "sha256": "a874dc6f5eb63d846fe8574b7bb4bf793f6bd89bddc93dc78437cb7bf12c96a7"
       },
       "src_3b85dc95904efde3": {
-        "path": "workshop/projects/mgpa-merged-v5/sections/appendix_results_compact.tex",
         "sha256": "5ace77d20d6c5dd6c82bd41f2c848dc2c859013b0bf3ac4a799d38023e156e58"
       },
       "src_3be010b3c58d85bb": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation4__r02__s29__mgpa_marginal__native.json",
         "sha256": "83957bad3a28695e72ff91a755a572641ea219cdb19294ff3939f97a402db018"
       },
       "src_3be225a592623a4c": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation3__r02__s17__mgpa__native.json",
         "sha256": "4772433211cd028a77026857d8fa92cafe9a4f7bf8505bba879b81205dbe2277"
       },
       "src_3c1a2401f0791fe8": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s29__random_2__budget_0.1.json",
         "sha256": "a452f3909bf27a6f332a123a15d725a89a499e90b10c344d455c19b4a02b7359"
       },
       "src_3d4094321c661d91": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/target/tables/cells/ssvep_controlled__rotation2__r02__s43__mgpa_fit_mean__native.json",
         "sha256": "e489d417e82441eced7e57a30d3814cfb6003047d86ede8fed7bb47b637f7199"
       },
       "src_3e63a126b7cd359d": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation2__r02__s29__mgpa_marginal__native.json",
         "sha256": "9251d486b383b66fa116c1902fb7a335ffb0b3cb3a91b3c86086d6f4e3a46196"
       },
       "src_3f9058573ca51a46": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s43__random_3__budget_0.05.json",
         "sha256": "1b2ae870692e9efb9f7e971e142494c30290caeec8b821b2f40661d4302ae1d2"
       },
       "src_40aad350d42141b5": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s29__random_4__budget_0.1.json",
         "sha256": "58a8393d378dd856becbe07849609ac055bec8ff0114493aa45fc56700e430a4"
       },
       "src_40c0119b1a34f507": {
-        "path": "workshop/latest_experiment/experiments/n170/artifacts/paper_v2/tables/cells/flex_n170__s43__featmap_0__native.json",
         "sha256": "0dd8861e7a89bdd23991aec8bc0b8ba40807947641705560b04dbfaf481a1f5d"
       },
       "src_417ea02796f4c370": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s17__random_2__budget_0.05.json",
         "sha256": "e8f9863ab5aae0d1995220c4e030d3c9fb2d63ff7f3155f38ea4ba7b780b8219"
       },
       "src_4241663a4b709718": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s17__random_4__budget_0.1.json",
         "sha256": "f4ac0e12986c12b65274643009c579385da872b4b82ff97e0c28a0fb853c9320"
       },
       "src_427d33dd32297a3d": {
-        "path": "workshop/latest_experiment/experiments/n170/artifacts/paper_v2/tables/cells/flex_n170__s17__featmap_1__native.json",
         "sha256": "36caae94033405b543ac08395f89e0a835e08ea50b562c37fc74e8b3107d7365"
       },
       "src_439efc1d4e1c1669": {
-        "path": "workshop/projects/mgpa-merged-v5/assets/n170_igbp_budget.tex",
         "sha256": "df678d062f602009bd3ec28408c1a1493e82f4b17b234711f6da3c1f8c242133"
       },
       "src_44a0311a5cbf6a7d": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s17__random_3__budget_0.05.json",
         "sha256": "fbee5f19a0d9f9611b4f65fb426a74a3c2078de2f9883b9dbb5df3d2e4993f74"
       },
       "src_45421dd1d51ff224": {
-        "path": "workshop/latest_experiment/.cache/runs/gate_attribution/gate_v1/models/controlled__ssvep_controlled__rotation1__r02__s17__pca/model.json",
         "sha256": "46be14464c6adaf8de76e2e0ca2f85335df3f19a9d0d986918406b9c8ba67b13"
       },
       "src_45da692428a016a6": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s43__random_2__budget_0.1.json",
         "sha256": "443f30d53f6f2cfe9fb7995d3bf91ea4ea66e1d6ceab5bc2e3fa55816b669d96"
       },
       "src_4788434f06e110c4": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s29__random_3__budget_0.05.json",
         "sha256": "e19e92a2961bc7265580ea16797f9c8b60061743b6ab40db79084a38f7295148"
       },
       "src_47dc75283edcc992": {
-        "path": "workshop/projects/mgpa-merged-v5/assets/real_native_main.tex",
         "sha256": "467e8fbf417f813b35c727ea570049e4f4b181a22bb55d7bc47d5a856a9ea851"
       },
       "src_49420bce144b5a3e": {
-        "path": "workshop/latest_experiment/experiments/controlled_contextual_direction/artifacts/discovery_v1/cells/ssvep_controlled__rotation3__r02__paired_constant_pooled__native.json",
         "sha256": "03c1a155aff7b2467ef1c94703e37d73429d34a2c8ebfb0fde76ea6769afaa6c"
       },
       "src_4995a11f5668a6c3": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s17__random_2__budget_0.05.json",
         "sha256": "393252c1daea2bff83730a707c09476929aa693658633e4666dc4e783a70369f"
       },
       "src_49fca7efae8d3639": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation2__r02__s17__mgpa__native.json",
         "sha256": "23d8d41a324d28a6730dd51c214cb35242c2ce63d94f10f6db028d9b19856d64"
       },
       "src_4c2ced2ab199e218": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s29__random_0__budget_0.1.json",
         "sha256": "9a9736ce5c15db507c39823bbc02d729ec33f5feb80585e1380f526bfc8d9a84"
       },
       "src_4c485182adcb8f27": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/ssvep_igbp_v1/tables/cells/ssvep_recorded_wet_dry__rotation1__s29__igbp_strong__native.json",
         "sha256": "20a7124d0be45ac368bb8d27609f5cc8d2f3f0b69faeee848a8b8607d2b906c5"
       },
       "src_4c523d687b06c66d": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation2__r02__s43__mgpa_marginal__native.json",
         "sha256": "417f09ed84748709ab196e73b734bbedfe07eb3d9eb512c3d277c22dcb4aa585"
       },
       "src_4c57e1a85a7c4274": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_diagnostics/artifacts/discovery_v1/tables/dev_cells/seed17.json",
         "sha256": "04bcfe7086e14e0e8440101c9b2d4867164f60638a30f0703ae31c12b3428e01"
       },
       "src_4c8fbdc08b06778a": {
-        "path": "workshop/latest_experiment/experiments/n170/artifacts/paper_v2/tables/cells/flex_n170__s43__mgpa__native.json",
         "sha256": "a55047650e106ec838c916fa2fef5e68a284389fccace322131d18b5d34cd350"
       },
       "src_4d02666f3d022be2": {
-        "path": "workshop/latest_experiment/experiments/n170/artifacts/paper_v2/tables/cells/flex_n170__s17__identity__native.json",
         "sha256": "5e1fc96a1cea4b1cb77c42ed7413bd9105a353bc53bb2d01a1db37b62f1cc5a8"
       },
       "src_4d713b98bb756706": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_discovery/artifacts/discovery_v4/tables/dev_cells/leace_ridge0.01.json",
         "sha256": "cff7f600f08aa3b0a9a6fd9b7a911a26cd07a619c73b8533ff47868728398d4f"
       },
       "src_4ecd1f5c915d18d8": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/dev_cells/coral_ref0_ridge10.json",
         "sha256": "f41f6976d92f019774b2ad79112d63fe5ba98949c5014249aaac859016aecfca"
       },
       "src_4eef9d31a60924dc": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s29__random_2__budget_0.05.json",
         "sha256": "125e240277182fb0c3f9329f8a27a58d4c87bc7d15a53da3bd6a0152440940e9"
       },
       "src_4fba57e038a1dd8d": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s17__ungated__budget_0.05.json",
         "sha256": "b237b2fb834b6bf8f6ea7b4cc4b28d04e729ff137a0510de126a4325ffd45d54"
       },
       "src_50449c15e2f8a437": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s43__pca__budget_0.05.json",
         "sha256": "f42d71bebafe956f03e708f3f086ed0fe9ed30da9919a180d93f404bbd2ae974"
       },
       "src_5057a663ce673183": {
-        "path": "workshop/latest_experiment/experiments/recorded_token_readers/artifacts/main_v1/tables/cells/identity__s17.json",
         "sha256": "6878ac488a43f3255885bed4c341fb601f266405ed458cf4fff66c8d5496c061"
       },
       "src_50840b14d3fa5788": {
-        "path": "workshop/latest_experiment/experiments/n170/artifacts/paper_v2/tables/cells/flex_n170__s29__coral_1__native.json",
         "sha256": "d558558208684b35c0a62947cb1641e6b0b53d1fbb6dcd5b53b02de245041b8c"
       },
       "src_51089de2bee25472": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation3__r02__s17__identity__native.json",
         "sha256": "5f43aa9b2e57d16561ba40f2b7f7e7b2f59e3fa84a9c3bc6b3abd085acbbb3de"
       },
       "src_51a8577f07ed7083": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s17__random_1__budget_0.1.json",
         "sha256": "2a9ceb747d5d20b5b9214fa337464c190f1ca1ddbffdd707459e202d8d8aa871"
       },
       "src_51d15ad0eea946e0": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/eval_cells/n170__simple_pair.json",
         "sha256": "49a667d3d7a584be2991a01f12ba22185f251f0abbe83eff719a0f33715e9606"
       },
       "src_535d97243d0f6a86": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s29__random_1__budget_0.1.json",
         "sha256": "b209a07e4ef6dcc146eb35c0cf7842035273f109bb8ff52d6b243642f3105ea1"
       },
       "src_53ace59dcd1cc1a8": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s17__identity__native.json",
         "sha256": "a014736c7a48fbf56f6800e2109135eb56d0c74633368aa804854809f6959c1d"
       },
       "src_54217945ab212001": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s43__random_1__budget_0.05.json",
         "sha256": "f10413c402d55deaaad8b97f482889eba882608103e71ca0d007a702b4eaf2f3"
       },
       "src_55edb3c2ba2f0e0c": {
-        "path": "workshop/latest_experiment/experiments/controlled_contextual_direction/artifacts/discovery_v1/cells/ssvep_controlled__rotation1__r02__paired_constant_pooled__native.json",
         "sha256": "7fc5d17e8a9ce4b0f53cf0f0b30ffca712e6d6e9e5b63e5d661f2ba97af4e79c"
       },
       "src_568e974617b7264e": {
-        "path": "workshop/latest_experiment/experiments/n170/artifacts/paper_v2/tables/cells/flex_n170__s29__featmap_0__native.json",
         "sha256": "230cb355e0ba4e46882437e9346130be0dd55876c6273fdb471b90c38684e6c5"
       },
       "src_56dcbd38fa4cabe5": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s29__random_3__budget_0.05.json",
         "sha256": "783174cf2a467470bd3ffbabc9110c1b1e973e9bd0d7eb55a19a9ff6945f246d"
       },
       "src_574b7f9b240881c1": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s43__random_4__budget_0.1.json",
         "sha256": "f94037badf57e920832c659c3c7d576c554b9be7fa244948acac6649dfefb545"
       },
       "src_577e2038ba4849f1": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation2__r02__s43__mgpa__native.json",
         "sha256": "36febab399e982892f8b59289ad50a1537183a1b42f78b201b47be619742f0b3"
       },
       "src_582171df4b7aaa68": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation4__r02__s43__mgpa__native.json",
         "sha256": "1d741eb072be94535b9a3ea724862598eed3bdff0fb1399f788d49c8600144d6"
       },
       "src_58ad70c90cfb274e": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s29__random_0__budget_0.05.json",
         "sha256": "738e5ed91ea2e8efe60fdfdef9c871e685b660de4615cd47c31ae8264605c2e2"
       },
       "src_591fa69d3a250f1d": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/dev_cells/featmap_ref0_ridge1.json",
         "sha256": "cd547c8d0a30ba6bddbdbe2fb623e3c55e8dfdf94b0453885c6a8ceb8cf94923"
       },
       "src_5920044a84177a68": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s29__pca__budget_0.05.json",
         "sha256": "26f3bf64a7edcee3f0b59653d75766ebe0dde001dc3f442886e9d1afdd478bf7"
       },
       "src_593aaa8d95d4d9af": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation4__r02__s17__coral_0__native.json",
         "sha256": "411deea500f63d4525683dc34998ce7571de5aa84bfdf801d796c7bba93743f0"
       },
       "src_5a9667c512fe7c93": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/n170/cells/flex_n170__s43__measurement__budget_0.1.json",
         "sha256": "08b2883c09e985b7b64d1ea3069c5cbbcc1c47cd67d33724e1bdaba8035ecaca"
       },
       "src_5bb0f184de8022f8": {
-        "path": "workshop/projects/mgpa-merged-v5/assets/controlled_target_controls.tex",
         "sha256": "6b2d0ced5d94c7fe393cb28f3188bdcc4aba1878e7f829c3729ef3f071973344"
       },
       "src_5bfb1082aa285b43": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s17__ungated__budget_0.05.json",
         "sha256": "280aab2852a20d48a1da6611a6387e53d72fea4a17a912bcfeab419f32dd1ee2"
       },
       "src_5c2a17a0edd4d60c": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation4__r02__s17__coral_1__native.json",
         "sha256": "9e7ec8269df368c4bd274fd98c962e00b81995de0370dea33cdb013ab7242b9f"
       },
       "src_5cc32941a8f55932": {
-        "path": "workshop/latest_experiment/experiments/n170/artifacts/paper_v2/tables/cells/flex_n170__s43__coral_1__native.json",
         "sha256": "db58c947e3d863c932e80fa090cf6a89b0b0a6fcb6bc249957bf6875ed299f4c"
       },
       "src_5cd83bc04a48af18": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s29__identity__native.json",
         "sha256": "1a6ca455c26cf2aa3e50f7c26285acfc6b5c51d73e846c8c31fa95abd80900ea"
       },
       "src_5e3d93d3910b3461": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s17__ungated__budget_0.05.json",
         "sha256": "3c4861ed4c6d42e39edc38430b254270087bd44f48f8e1fb056e81d20c9f27c4"
       },
       "src_5ec9c950857d4c18": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s29__random_1__budget_0.05.json",
         "sha256": "c24edc1cf6f973588f9a38ae1ec6411104933974e871e94f5de08d1e6da66a08"
       },
       "src_606d67f41f3251f1": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s43__random_4__budget_0.05.json",
         "sha256": "5dee5589c2060208eabf31060700508637be8d49ff733ac8287708d01d284eb2"
       },
       "src_6221d35594b826c2": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/dev_cells/featmap_ref0_ridge10.json",
         "sha256": "a52c9d0b1d69ae7b10251f89d9886c9a4d23fa932fbfea0c5e1e3ce225b76558"
       },
       "src_6245fc63739796ac": {
-        "path": "workshop/latest_experiment/experiments/n170/artifacts/paper_v2/tables/cells/flex_n170__s29__featmap_1__native.json",
         "sha256": "319f067a889351882d8f9a11c65cb6c3e43a429a377f87eeb04b48f11230ffe7"
       },
       "src_628e9d528ca59d96": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s29__measurement__budget_0.05.json",
         "sha256": "4ff955cd8013436d806c003844c6ac5afa62f192ad7f270e2414b7fead2f6caf"
       },
       "src_63ccbf176a01c3b1": {
-        "path": "workshop/projects/mgpa-merged-v5/assets/controlled_cf_main.tex",
         "sha256": "53fd72ba9570a7ebf6573d3f80fa46857427fa13e32ac335327291248897b24e"
       },
       "src_63eeac47316b499a": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s17__random_0__budget_0.05.json",
         "sha256": "50b2de60cd2341ede99086b6ec2e9672a679384de4c7af13e2d874da17aeece8"
       },
       "src_641d6bb337853357": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s43__pca__budget_0.05.json",
         "sha256": "6a648fdac871847d61911728399825b0964ead405064ea15f3412d5810f69c14"
       },
       "src_644b63980b5004e5": {
-        "path": "workshop/latest_experiment/experiments/n170/artifacts/paper_v2/tables/cells/flex_n170__s43__featmap_1__native.json",
         "sha256": "9f81399dee0975cf529762d41a73e06dac6742e4cf920cf72de7cafbc7895a7e"
       },
       "src_6463e398e6538d78": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_discovery/artifacts/discovery_v4/tables/dev_cells/leace_ridge0.json",
         "sha256": "6fafe9c6a1231aa243cf3f32cd17897ee2d06d08f582c8a5908c861e32890dcf"
       },
       "src_64abed28f5ad8854": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s29__random_2__budget_0.1.json",
         "sha256": "2eb5b1a98b1657a04882d59436104664eeba738b2640eea1ffe7657fd16d6523"
       },
       "src_6693954a26ff1b2d": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/eval_cells/mmn__simple_pair.json",
         "sha256": "5820b3c506ad4a49472970c5a40cba12def933d265095c4ba28d7bc8146d80d9"
       },
       "src_66bf65fb874bf9cf": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s43__random_1__budget_0.1.json",
         "sha256": "f02a36b5f7824625aa6c12a27711cd242554b8572f62657f7401a0f1eb54e825"
       },
       "src_673a832b7a4f8b41": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/ssvep_igbp_v1/tables/cells/ssvep_recorded_wet_dry__rotation1__s43__igbp_strong__native.json",
         "sha256": "acdff8dc95c2d2aedc852073984e53983edc3afe5440cbd35ede7f9e6c871cb0"
       },
       "src_685a3760f64dfb45": {
-        "path": "workshop/latest_experiment/experiments/recorded_token_readers/artifacts/main_v1/tables/cells/leace__s29.json",
         "sha256": "a85c37e18dba880ad551787bdad933e386528810a973da46e77a1dcfffbd2b10"
       },
       "src_6880d7074c0704d0": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/eval_cells/p300__leace.json",
         "sha256": "c8906de20d4c86e79cda4c0cb739c7f5e1892a5dd2d81a513e136951d5cc6d91"
       },
       "src_692fb1511b84cf67": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/target/tables/cells/ssvep_controlled__rotation2__r02__s17__mgpa_fit_mean__native.json",
         "sha256": "c45f827fa798208f82ba0b5b1feff865b165c62cb644020196b56bd82b473c99"
       },
       "src_6944b0921edc609e": {
-        "path": "workshop/latest_experiment/experiments/n170/artifacts/paper_v2/tables/cells/flex_n170__s17__leace__native.json",
         "sha256": "4e8f1ff86fb8ad0708ee95f5b7a727a930f79d61485f1421a098b5c8fcc6213f"
       },
       "src_6956d0cdb7b15adc": {
-        "path": "workshop/projects/mgpa-merged-v5/assets/theory_story.pdf",
         "sha256": "e4a372915b598111791f72c1bcc721baabc213d5e0af4c987488b3e954befc80"
       },
       "src_69a1b58acf9d79de": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation2__r02__s17__coral_1__native.json",
         "sha256": "6306ac24d7fb0edf438153844bff8643827c6fa24c0d30a65c1c91b134848a4b"
       },
       "src_6a13b501c3e046d0": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/dev_cells/featmap_ref1_ridge100.json",
         "sha256": "2fd4fc668d3c8312a3a4cfecfcf5b2d78209cd7e518724a5f0631981a2963d6f"
       },
       "src_6c49be891ac6f023": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s17__random_3__budget_0.05.json",
         "sha256": "e6d72628a128031f5da6fef7fba6cbafa547de47cbbed1f4a909412c33146e44"
       },
       "src_6d6b3c4a21a47700": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_diagnostics/artifacts/discovery_v1/tables/eval_cells/mmn__halfstep_selected_seed17.json",
         "sha256": "4449c17ae0717df2ad425754b4b3e17f7b1e64037b0dc4065edd8ab643fadff8"
       },
       "src_6ed5c163b6701617": {
-        "path": "workshop/projects/mgpa-merged-v5/assets/controlled_mechanisms_compact.pdf",
         "sha256": "ca7eeb15657c016769f97910f24e76fe9635908d95fcf4f6b64d84ffc872451f"
       },
       "src_6f5f84e1d90c1836": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s29__random_3__budget_0.1.json",
         "sha256": "e2a0b5acfe7440592fd0882485b6ad950e17474622225ea359ec7b573caab000"
       },
       "src_70295c3530d81b05": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s29__random_4__budget_0.1.json",
         "sha256": "66a881d32e7aac48e8a6c08b4ecb00ed15bc603f3c2e03b57afa646142c8caae"
       },
       "src_7094e5895bb7e29b": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_diagnostics/artifacts/discovery_v1/tables/dev_cells/seed29.json",
         "sha256": "b2562f0f9774267047b1536d7e5234aa4cc6ddeaa900aeb9b252e71ed3497451"
       },
       "src_70e24b0c59ef5f44": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/eval_cells/n170__identity.json",
         "sha256": "3532901ea2e59e2eb8dc1a66f2e370443827289f20ebeb66bb6214601a7aad0e"
       },
       "src_7162f84f55d10ff8": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s43__random_3__budget_0.1.json",
         "sha256": "efa27193bf4957de5344cce49f70c7f99202f356f313a0fcdff2bb80b38b6d16"
       },
       "src_71adf13e7ce6cdf0": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/igbp/cells/flex_n170__s29__igbp_strong__budget_0.25.json",
         "sha256": "d2e75fbba5227560978537f741c8ab55dbd0a6de34b98c4d4f1aae3974507cec"
       },
       "src_72d66baf1f123581": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s43__measurement__budget_0.05.json",
         "sha256": "8a57eed14d4edff3bb054b37ff9437868737b08aa2866fa6dcdb12c93ffeabb9"
       },
       "src_72dfbad095372cbb": {
-        "path": "workshop/latest_experiment/experiments/critic_complexity/artifacts/main_v1/tables/cells/n170__s17__mgpa_linear_tr__native.json",
         "sha256": "ed33e2efe3007ccc8f617fe23ab013b06724befcc5fae14021cd4de729d5199c"
       },
       "src_733ac9daf6351a7e": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_discovery/artifacts/discovery_v4/tables/dev_cells/leace_ridge0.001.json",
         "sha256": "89fff97d3e4adacdef039b9d53aa2cf41a19d3bf09a8c8bc86c25904919ce4c0"
       },
       "src_7419b70cba732928": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/eval_cells/n170__coral.json",
         "sha256": "8c3de6b284a39e860cacdc2a13d94cbafdc2ce8ca235b33ece9c1153236208d5"
       },
       "src_7567bfe477e1b747": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/dev_cells/coral_ref0_ridge0.1.json",
         "sha256": "c2ac32ea92be49fc672828042a26ccf2e77eb62bbc8cdc2de2ea5f91c4dae51f"
       },
       "src_776d704a57c348e2": {
-        "path": "workshop/latest_experiment/experiments/controlled_contextual_direction/artifacts/discovery_v1/cells/ssvep_controlled__rotation2__r02__paired_constant_pooled__native.json",
         "sha256": "626334835bb66b1b13ee19d8de71dbc0d19f9b33ef0c86c9209451f8e9b82985"
       },
       "src_788695b764d36fc4": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_discovery/artifacts/discovery_v4/tables/dev_cells/simple_pair_rank8.json",
         "sha256": "1f50b2d3eeef448b698087eb1d337362ced665e52352516f07877c089a2d7862"
       },
       "src_791a9d2d0abe56bb": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation1__r02__s17__mgpa__native.json",
         "sha256": "fde6f1be28a160f3e8da3b9e3f8468580ee46c6681be74ed5f0e4e6c0daf1ab4"
       },
       "src_7beacbad244d0f37": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/dev_cells/featmap_ref0_ridge0.json",
         "sha256": "fd69719cbebc2c69cf52e37585ef90f19426f3a31d537b8cbb708b839d84a9df"
       },
       "src_7e4f796b0d2cf710": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/dev_cells/featmap_ref0_ridge1000.json",
         "sha256": "cb4639789372c8a337050029c22736cd09f52581344baf9e543552253592b109"
       },
       "src_7e81878eaf960234": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s43__random_2__budget_0.05.json",
         "sha256": "572e56705e231930cb018a4e46919db2e28b4193b2878686a069006f31c95443"
       },
       "src_7ec943fad82d28c7": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s29__pca__budget_0.05.json",
         "sha256": "78c3bf888c492fab4e1a33d4bee257fa54637a4932fa3e914733c5e1d9e204dc"
       },
       "src_7f4e81ba2d4f4628": {
-        "path": "workshop/latest_experiment/experiments/n170/artifacts/paper_v2/tables/cells/flex_n170__s17__coral_0__native.json",
         "sha256": "b32d84e4a178b24dd39e2c24de8f95dee109eb7be064b67b6a1a860026b169f0"
       },
       "src_802f3bfd6e3b6a49": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/eval_cells/mmn__identity.json",
         "sha256": "cc22baa0da21ccef3ffff789f30f8ddb2a9ce986f8dc6ee248bf118514c4fe21"
       },
       "src_80c90a46038e8a9c": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s29__random_0__budget_0.1.json",
         "sha256": "9b986c5b2d31e948c549210d52935ec5d4fa4bfea449b01b53595c938d0eefd6"
       },
       "src_82cb72f263acd852": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s17__random_2__budget_0.05.json",
         "sha256": "37f8c2808fdfdd59695e91097f56de9073be7e1c0d9383c52012c045cebba6be"
       },
       "src_8399aa91360c757a": {
-        "path": "workshop/projects/mgpa-merged-v5/assets/reuse_absolute_compact.tex",
         "sha256": "7da0fe24f03bbfc4dfaf27ac80f31076c9262230da629fd27e8899d37bb3e3f4"
       },
       "src_83dd2012d6157328": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation4__r02__s17__identity__native.json",
         "sha256": "65c7f5bcb0e69f5128333d7625c8f54a96def0dc8dcebc6ecea20b8ba2dc0039"
       },
       "src_85d94323f8f14154": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s17__random_1__budget_0.1.json",
         "sha256": "66dcd4701b4908ca3ee0967b5b29971b6b6526c85039eaf426b9ca7cf1f28605"
       },
       "src_88a283670cb4e2ce": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation4__r02__s43__mgpa_marginal__native.json",
         "sha256": "a1a5e3754e3e59ff4fa1e75885633d7fe1f7a526173886753280f59b5b8ef6d0"
       },
       "src_88da9fe30fcb52aa": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s17__random_3__budget_0.1.json",
         "sha256": "d9e4434886bcd60fc041cc87173bf1c3c3852b4a9b8a2412f482766c08b3130a"
       },
       "src_8a2990af2c6d8887": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s17__ungated__budget_0.05.json",
         "sha256": "1d3805e2e1990f3d003a2483b60cc52c377fd78384d21cf1df8348cae1fefd9f"
       },
       "src_8af7c854852d367d": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/dev_cells/featmap_ref1_ridge10.json",
         "sha256": "49b29b7afd437ceb3d7f906f1966bf5a1cfe742a62c8198337e4238a3e29a471"
       },
       "src_8be73af9113951a8": {
-        "path": "workshop/latest_experiment/.cache/prepared/ececd2488b51332c81ce/manifest.json",
         "sha256": "d1de3b1b23b7f52d1e52f6a24f5282f777dafc891f2a6b08040f1a3959f05019"
       },
       "src_8cd6d9039b9c096c": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s17__random_2__budget_0.1.json",
         "sha256": "56cd4bfc288448bf44fef81500a3a58503c66d689fc11e8b7430e44af350e0ec"
       },
       "src_8f2bee9efe1652ec": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s43__random_3__budget_0.05.json",
         "sha256": "59ce2cd3757a48003cabe3d16f8afe47f26a71fb91943fce71b8195edf6a7ca1"
       },
       "src_8f2cef183791a61e": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s43__pca__budget_0.05.json",
         "sha256": "cf88ad12fb549b60c166c2612c94dc1fc1596705336b47855bfd53f0dbad9567"
       },
       "src_8fcf2507d1a35836": {
-        "path": "workshop/latest_experiment/experiments/recorded_token_readers/artifacts/main_v1/tables/cells/identity__s43.json",
         "sha256": "5386e436b9b314cbd6435a0c48b682e19b953a94f5aeea578fb3a7ea20db18c4"
       },
       "src_90102c53c70d9977": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation4__r02__s17__leace__native.json",
         "sha256": "5348988f2c978e3c00dd8565b3aa10b0063bbce0c4970a917b062df6628df2a3"
       },
       "src_904da03632783b98": {
-        "path": "workshop/latest_experiment/experiments/critic_complexity/artifacts/main_v1/tables/cells/n170__s43__mgpa_linear_tr__native.json",
         "sha256": "96ae36b9de7f7c3763392aec71dc245f3dab408568751a7301b0d08db5f801b9"
       },
       "src_907aa3bbf21b88a2": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s29__random_1__budget_0.1.json",
         "sha256": "82a7b1dac09508ad72e476d965d20ab3fa7a0061b9a8d586bd544006bf3d1f84"
       },
       "src_9157ab542de4051b": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation1__r02__s17__featmap_0__native.json",
         "sha256": "06398755c66c90135aecc28fca04be4bded839a4454bec243756ce2d821b37f5"
       },
       "src_917e324f12639b4c": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation3__r02__s29__mgpa_marginal__native.json",
         "sha256": "c4f7ecabe3da033d11a1ce775cc0918d43b67cb6642c1cf42cccc513a62ae3f4"
       },
       "src_918f08ac982fa006": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s43__random_1__budget_0.05.json",
         "sha256": "3a86bf83f34255cf86abf3436d0db3f609b83a67fec9f08e99115cd1b58832cd"
       },
       "src_91b05f62ee6e9f38": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/igbp/cells/flex_n170__s29__igbp_strong__budget_0.1.json",
         "sha256": "8563e474156bda8cb4d5c86f3583b29471bea6445448e8c607146ceca7146192"
       },
       "src_91c544a50f31eacb": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_diagnostics/artifacts/discovery_v1/tables/dev_cells/seed43.json",
         "sha256": "3818f497f4ee2a64470fc253ecbe08530efe790d6faa6305cc761bdf34945c7d"
       },
       "src_91f322d1f65cda34": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s17__random_0__budget_0.05.json",
         "sha256": "e5ed1f0b689b7c7d881343780604e84fa01c82ed1f3ca779b1740607491ea059"
       },
       "src_92266b1a21906d8d": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/eval_cells/mmn__leace.json",
         "sha256": "db63a13092924f0a5bddf1e56ee51d8aea58b5fef4a4a33895287726c4ae1f92"
       },
       "src_92c0b93c936f6859": {
-        "path": "workshop/latest_experiment/experiments/n170_paired_oneshot/artifacts/discovery_v1/cells/flex_n170__s29__paired_constant_pooled__native.json",
         "sha256": "aca64e497d34434bd484107dc19a2201fa033ec8c0da07e835b5e3454a16b882"
       },
       "src_938da4a782dc05d8": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s17__measurement__budget_0.05.json",
         "sha256": "83f2212035da0e8bd8caade81f0c5cf05582f6a5741777a6b77d0d080524b71b"
       },
       "src_9515b1517844956f": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_diagnostics/artifacts/discovery_v1/tables/eval_cells/mmn__halfstep_selected_seed29.json",
         "sha256": "90b72d9129a70dfb7c4af92be423c0fd8439860526ac230868dbc13aff4554f2"
       },
       "src_958e192ad8283576": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation3__r02__s43__mgpa_marginal__native.json",
         "sha256": "a3d6343352fca8f080cab5a4cf656aba06fcb75aaf8c3ff8cc80b577c69efcff"
       },
       "src_97e510b53b5e670d": {
-        "path": "workshop/projects/mgpa-merged-v5/assets/reuse_main.tex",
         "sha256": "930959a1a553a3928446976a0c3dd0f8bfd1eb27b6b2e2d5ccd785d0c17dcfc6"
       },
       "src_985152a40aa23df6": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation3__r02__s29__mgpa__native.json",
         "sha256": "b46dc8c45cacc192197b0887bd17250597f09e3f907993ebcc63f4144706a5ab"
       },
       "src_987e24cb65947541": {
-        "path": "workshop/writing/merged_v5.tex",
         "sha256": "2a4c39a8ee94eea9444f577557ffede5e71c3a6c4009b53e46b461dc2d932b32"
       },
       "src_98e9c6a90dd0185d": {
-        "path": "workshop/latest_experiment/experiments/recorded_token_readers/artifacts/main_v1/tables/cells/mgpa__s17.json",
         "sha256": "016c78ab0f9e9fffad6c8d64faefc409b93baa347fab54c9dac6ada611b61238"
       },
       "src_99d998265f49edb8": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/target/tables/cells/ssvep_controlled__rotation3__r02__s43__mgpa_fit_mean__native.json",
         "sha256": "7ca0e9abd5e2acd6a1f192435a72edec1f4a03f78de91a360cb5c7f8829b3a59"
       },
       "src_9a1c8ba35ee444f1": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation4__r02__s17__featmap_1__native.json",
         "sha256": "37dfed834892940116dfc1e650aba5b806a5d2cbe8e1dc2831da8706f3394fcf"
       },
       "src_9a308c9090de4aff": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s43__measurement__budget_0.05.json",
         "sha256": "a0090285ceb7bf60b5c5cf901eb28b3dba4cae558f0be05c6643b6f56f5e3130"
       },
       "src_9a3be12af94f4cd0": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s43__random_1__budget_0.1.json",
         "sha256": "6a75fd0c06c107f584222a3ef6464c5042d8d11ba0fe6a62c8c540be8be811fe"
       },
       "src_9b13ad86511f9621": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s17__pca__budget_0.05.json",
         "sha256": "70525427079ba8d2c852f82687353f726aae5739a5102bbaee2b277c79cc30cf"
       },
       "src_9dbb5cd61bce7ac6": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s29__random_1__budget_0.1.json",
         "sha256": "19614c6648a751165befbae34096ec5c5b9408d3207230e98d0f7387fd5bb93a"
       },
       "src_9e93aff0b7f56b32": {
-        "path": "workshop/latest_experiment/experiments/n170/artifacts/paper_v2/tables/cells/flex_n170__s43__identity__native.json",
         "sha256": "3242284e4f571fb0ab9e21a25a9b3e2ef3a2a8fa335ea972797993c4cf22b71b"
       },
       "src_9f596269d44a30fb": {
-        "path": "workshop/latest_experiment/experiments/n170_paired_oneshot/artifacts/discovery_v1/cells/flex_n170__s17__paired_constant_pooled__native.json",
         "sha256": "221c46a52d7407bada28d11af74abf8add6a261a6b4d55665953a9435be5473e"
       },
       "src_a1127cf077af0db8": {
-        "path": "workshop/projects/mgpa-merged-v5/assets/reuse_paired_ci.tex",
         "sha256": "5e0ca5bd99c96b91988a5ba9114cc50808212742cbaf136e4943ea9e3c47684e"
       },
       "src_a123bcb217a3765d": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s29__random_4__budget_0.1.json",
         "sha256": "dcf81652ac05e5e4fa429fc71ebbce3cc1f095ea20af15322366738721bc92c7"
       },
       "src_a191cd4f57bb6240": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/n170/cells/flex_n170__s43__measurement__budget_0.25.json",
         "sha256": "051b98a429c87af0f30fc5b3b75a6a0acb96d741ed51add6bf8539beb9df0102"
       },
       "src_a24d424cc1967db7": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/target/tables/cells/ssvep_controlled__rotation2__r02__s29__mgpa_fit_mean__native.json",
         "sha256": "2472ce55b0206bbf96af603ed5c0cc57908998eccf7d29bfb3b5da2198cba686"
       },
       "src_a34cdb0386e9eeb8": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation1__r02__s43__mgpa__native.json",
         "sha256": "783f43f691af03ddc61b16d893448a5f6a31dbaccb697e38f911e81e644fe954"
       },
       "src_a47358d590a570f6": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s29__identity__native.json",
         "sha256": "48007f8e5cdefd836eb59139b9c2fe5c70731e054192c12a6ff7f97b14b41d46"
       },
       "src_a4eb4354b763914f": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/igbp/cells/flex_n170__s17__igbp_strong__native.json",
         "sha256": "64dde6af374a45e6d58d2fa9e65b67acdea786ac5a1b06eda28b32e32967afd5"
       },
       "src_a5fd0f7dbdbe40e1": {
-        "path": "workshop/latest_experiment/experiments/n170/artifacts/paper_v2/tables/cells/flex_n170__s29__identity__native.json",
         "sha256": "c4f4ea80e7b070561e92dcd21964a9dc9d597c4acf089348d8426cbc40e5306b"
       },
       "src_a64355dbdb334aef": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_diagnostics/artifacts/discovery_v1/models/halfstep_seed17/native/model.npz",
         "sha256": "3ae7cac6551d14bee2adae33ced77a6f7e025cb2c19c07a7b6fd10bfb8c74969"
       },
       "src_a6acb1e6b1e32917": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s17__random_0__budget_0.1.json",
         "sha256": "98cb22157838c3de05dc24eaa4ebc0f4e16e25febcd6f61ecb97e347d6f5cb13"
       },
       "src_a6ebf06da5f6e0c7": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/eval_cells/mmn__featmap.json",
         "sha256": "c1398509aa8039af647c3cc027865512fd762d2d922883b7a00e36cd726e7235"
       },
       "src_a854e6b294d99ecb": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/dev_cells/coral_ref1_ridge1.json",
         "sha256": "c6ef08d21e02eb368f737bef721319be8a3c59070f46cea35378ab3283ef928a"
       },
       "src_a8f5114df62b09fc": {
-        "path": "workshop/latest_experiment/experiments/n170/artifacts/paper_v2/tables/cells/flex_n170__s17__featmap_0__native.json",
         "sha256": "79415e5443e51eb77ca41b3110ccbb5ca8f4b305020125e880ae4339aabac964"
       },
       "src_a91dbefb4f134040": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s29__identity__native.json",
         "sha256": "f4e23847118d328e550f132583ab5e6152faf280c3103f97d2ecd73d270b1473"
       },
       "src_a994b630ed0ac722": {
-        "path": "workshop/latest_experiment/experiments/controlled_contextual_direction/artifacts/discovery_v1/cells/ssvep_controlled__rotation4__r02__paired_constant_pooled__native.json",
         "sha256": "5e206a132948bca2dc5d5dec0a0133cea643d41f97886800c153f418379627f5"
       },
       "src_a9958986bdddefea": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s43__random_0__budget_0.1.json",
         "sha256": "7fbbd46bd47a189ea474043bd051316a4a95608361df1d531fc896840b877857"
       },
       "src_aa03c388331a7f55": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s43__random_0__budget_0.05.json",
         "sha256": "bae8b51aa14c2254196781e7fe8f0e96a0e3f889e1440a2284477ba04210c0a6"
       },
       "src_aa299342146c4bc7": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/dev_cells/featmap_ref0_ridge100.json",
         "sha256": "b90d39054ab3491e5bcb4c4dc2f852f1f4c5f4b3aec1c82f9ec81361ab27cf87"
       },
       "src_ac04af0d1433c792": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_diagnostics/artifacts/discovery_v1/models/halfstep_seed17/native/model.json",
         "sha256": "981a226d922607ef89854145c353530555a0be7596ff51e20db60228966f82ec"
       },
       "src_ac0f684decc6b540": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s17__random_1__budget_0.05.json",
         "sha256": "af14228d09cfff52343924b26080b685608923902eef2748a82b295e7a4f2db4"
       },
       "src_ac3b26de7e27bf10": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation4__r02__s17__mgpa__native.json",
         "sha256": "1d25b84501c84d7dbbd3141878cee6213f45d1ad83bc08e196b6c78adc3fd99f"
       },
       "src_ac9a0e733e3ae2d2": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s43__random_1__budget_0.1.json",
         "sha256": "ecd379fa26bdc9f282a0e85a472dc30cdeb2f3c98cad47001c06135df516abe7"
       },
       "src_acddcb7cf197bbb7": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s43__random_3__budget_0.1.json",
         "sha256": "0f63aa92b61451f33eae816bfce85c5520e5d4caa51835b0e2a4124a1f630b76"
       },
       "src_acf3a54bab193fb9": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s17__identity__native.json",
         "sha256": "d00f4ed59ec9fc8ee112014b2e0022b1947c17157deba335e8499d7f5eece327"
       },
       "src_ad4212d9a1e2cbcd": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s43__measurement__budget_0.05.json",
         "sha256": "a8da2b199899dfad17a38ef5e0188200ad6b81e463a28b14a857df1e6b85ab69"
       },
       "src_ad8fa8824eaf711f": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s17__random_4__budget_0.05.json",
         "sha256": "68ea3b33fbee1eacb37eaf91cbcd05109f8702396a3a09a36276ef8028f6a163"
       },
       "src_adc8c07179800d18": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s29__ungated__budget_0.05.json",
         "sha256": "6a27b310a42f3d1e751b09624bb36b67bb7f573c6b6aa4d280de122f17d9ba3c"
       },
       "src_add151729118f38f": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s29__ungated__budget_0.05.json",
         "sha256": "38b460e6b6262b10cc24de2296262152330875c10e54a43b8cedab968eeb7320"
       },
       "src_ae75ca7a171fb9b0": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/n170/cells/flex_n170__s29__measurement__budget_0.25.json",
         "sha256": "7f67d6d69c9b49130d2591a6fcd4dc3d7c71cc07a24a0a7505b563b911eac711"
       },
       "src_af0ce79603a90e53": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s43__random_2__budget_0.05.json",
         "sha256": "ff8521602f46f9e6fb335059e8be24ed7498b5930b218d3b63aec77ae0309a91"
       },
       "src_af557ad57fd046ab": {
-        "path": "workshop/projects/mgpa-merged-v3/assets/measurement_paths.png",
         "sha256": "24a515db0da35d9cd4f4127e1534a48ccf601dc601350415c3be9eb12c525e92"
       },
       "src_b0165c787ebe8f1d": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s43__random_3__budget_0.1.json",
         "sha256": "85e646dcc9839abc8f265ba37aaf9899c521445964ba8fc5aba6432c0265127c"
       },
       "src_b03da052bf31e4e0": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_diagnostics/artifacts/discovery_v1/tables/eval_cells/p300__halfstep_selected_seed29.json",
         "sha256": "624f3cb17d595efbff814dce5813e17c5f5b773071442b0554100b0341e9fe33"
       },
       "src_b097e05e1c2c3033": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s29__random_3__budget_0.05.json",
         "sha256": "d4b386963ecc68547d48c12f0f58725b08f8d155df31502d5dcd1e0d76ae70b1"
       },
       "src_b0bfdc60709c7806": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s43__random_2__budget_0.05.json",
         "sha256": "bd0d60578d17739a0951d5735894df535c2753df3497598734b9ab5b7489f3c9"
       },
       "src_b14c2d0ac650516d": {
-        "path": "workshop/latest_experiment/.cache/runs/gate_attribution/gate_v1/models/controlled__ssvep_controlled__rotation1__r02__s17__pca/model.npz",
         "sha256": "26e9cc18a38abe8f14a9a1ab659a4505368ecc8af4fa452d19599beb94bbf3b7"
       },
       "src_b17a39ba3e5986e0": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s43__ungated__budget_0.05.json",
         "sha256": "93a7071806ca7b944f9234667ff4e051c1ba1bc74c4e9de6da060005b424e040"
       },
       "src_b1af7edacc4b377a": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s17__random_3__budget_0.1.json",
         "sha256": "704247caee964eed25119f9aad55c1ce1cc1f7f9d08db0050c5ca2e43a0a8080"
       },
       "src_b1fc864fc837aab8": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation2__r02__s17__identity__native.json",
         "sha256": "6e183aed500e86e2714d3acde22db768d1835b2070ec35ba47175d0ba59f9a36"
       },
       "src_b28f98675ee8d523": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s17__random_0__budget_0.1.json",
         "sha256": "6ee4c40243d4952303b32c6e5f3c1b83293574f9e29d7ce30d2c10390bb3867e"
       },
       "src_b4193cd396d51a69": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/igbp/models/flex_n170__s17__igbp_strong/model.json",
         "sha256": "3ebea3c3d564090bb515c9d0f325e0df2dd67a58228f9078c733cd57066d2ff9"
       },
       "src_b448c55c6308bdfd": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation1__r02__s17__leace__native.json",
         "sha256": "a9da377d0b71fca9af062ba37c3e72b3db7a590b65649fc8f1ee9af90a89db26"
       },
       "src_b481020f3bac5c27": {
-        "path": "workshop/latest_experiment/.cache/prepared/9accdce708032a8cd830/manifest.json",
         "sha256": "74d215900282fdd1706c719cf6fd2ffb9651b226bf26ba35d3cc0754a571279e"
       },
       "src_b51530166a482cf0": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/igbp/cells/flex_n170__s43__igbp_strong__budget_0.25.json",
         "sha256": "7dbb90f0691848273206411740328de06d5e3f47e6b3330dda7e2ec4108dcf5b"
       },
       "src_b5498e9038b6fc7e": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s17__random_0__budget_0.05.json",
         "sha256": "c99576a5c6aed389290a289dad8be058e7ff43b19339b7f97ad4cb358d7d177b"
       },
       "src_b6285f86d9b8aa67": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation3__r02__s17__mgpa_marginal__native.json",
         "sha256": "2b8b006cc2193bf359a27f9f485543ca8633d4f5c1dc04d481414a33d489c0f3"
       },
       "src_b641a544d119d88a": {
-        "path": "workshop/latest_experiment/experiments/recorded_token_readers/artifacts/main_v1/tables/cells/coral_0__s43.json",
         "sha256": "9d76ec9690e9fe786aaa4b0e76ee9bb37078000f0a91e3fd102299fc787fcb8b"
       },
       "src_b675566c26cdd248": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/eval_cells/p300__simple_pair.json",
         "sha256": "baa3a9f62191afb1973dfac0b0d8dfefbae085887128b189937137897ec18353"
       },
       "src_b7113ebab6f14762": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/n170/cells/flex_n170__s17__measurement__budget_0.1.json",
         "sha256": "f643dc31c7038fc561063944a48dac619c7e050c3909c730c2869722975159d0"
       },
       "src_b822bf744b2cdee1": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s17__random_4__budget_0.05.json",
         "sha256": "d0a1cc64996873e5020d7019d2f5d67e6dff153642a0b5d15852ac3cd18aebfa"
       },
       "src_ba44824fb11bea4f": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation2__r02__s17__leace__native.json",
         "sha256": "3139e4acb2fecd2e0cdc7b44a709b9b4f38666b374ae7e22a921b8367725c6d6"
       },
       "src_bb368a7f38ca455f": {
-        "path": "workshop/latest_experiment/experiments/recorded_token_readers/artifacts/linear_only_v1/tables/cells/mgpa_linear_tr__s43.json",
         "sha256": "742f262ce9cbc9d92906824252bc04c15204d41838f2ecb2be4718647d34da6c"
       },
       "src_bb4e0c9dbfdd4a22": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation3__r02__s17__featmap_1__native.json",
         "sha256": "6dd14615bbe9c81b6f3ab44616c13ebb55696e534136685730fb2a7b43ac5758"
       },
       "src_bbbdc2172865d173": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s29__random_4__budget_0.05.json",
         "sha256": "b7f9e44944617cf5542f029f8e1af0d153d21b24b709e05f2664d7e26a87f153"
       },
       "src_bc22a84eacd3e90f": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_diagnostics/artifacts/discovery_v1/tables/eval_cells/p300__halfstep_selected_seed17.json",
         "sha256": "3484da53397dde7b11f9a74e718aefeedfda1ea897714f4c2c2d5a9cbdaa305a"
       },
       "src_bd030dc8f16f55a9": {
-        "path": "workshop/latest_experiment/.cache/prepared/8a123f9f80f460b28ba2/manifest.json",
         "sha256": "0092f26acfc03a8f8d7a68870fdd4ce048421552650d8fc057deaae3656ceb23"
       },
       "src_bdb76c2908c28f00": {
-        "path": "workshop/latest_experiment/experiments/controlled_contextual_direction/artifacts/discovery_v1/models/ssvep_controlled__rotation1__r02/paired_constant_pooled/model.json",
         "sha256": "ecdd749313c924f0f3b9913e4194150e6fca011570319e8822c132f5fdea5580"
       },
       "src_bdde448574884579": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/dev_cells/featmap_ref1_ridge1.json",
         "sha256": "926042bae3d0d9f9d0f3c3d9696594babcb850b52f6b145dac22789c0914f250"
       },
       "src_bdf366f46aed0e3e": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation1__r02__s17__coral_1__native.json",
         "sha256": "96d7dd944775a0ef062e2a8f86241efb90e5bb31c772226a0eb568c34e3173c3"
       },
       "src_be021e84548decf5": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/igbp/cells/flex_n170__s17__igbp_strong__budget_0.1.json",
         "sha256": "f90ce06f86c7c19c916b79378a87e86d56d07dbbb9fc42983510f51f29e51b94"
       },
       "src_bed476f51b5b0d54": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s17__measurement__budget_0.05.json",
         "sha256": "029e9acaff27d1bee9ccecc8f1218bab1ef4ffe10fa67766aa421f085ab506c6"
       },
       "src_bf4aa10366c29781": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s29__measurement__budget_0.05.json",
         "sha256": "4a1b4ed2b6b24bfbf9ebf86f35d0b91c8619ec182ae2ff26fbc45d0e9111282c"
       },
       "src_c034507874e7011d": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s29__random_4__budget_0.1.json",
         "sha256": "51079add78e3362693462f833a73496e78745fb2bd420141cc96b5810f3e625f"
       },
       "src_c23d3d837125203d": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation2__r02__s17__mgpa_marginal__native.json",
         "sha256": "fc2485cca128ea464aa56d7409407e9d92b7be39e5dd6caca4c2a58d4a75c556"
       },
       "src_c24637d3359a31df": {
-        "path": "workshop/latest_experiment/experiments/n170/artifacts/paper_v2/tables/cells/flex_n170__s29__coral_0__native.json",
         "sha256": "1509a039d684b09c730ac598f3a477f76a9ab24db61a1e3f8c80cef3bbdd4429"
       },
       "src_c27ec56af84381f7": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s43__random_2__budget_0.1.json",
         "sha256": "be10c18f20556c63e6f847031ba372a1ecc7bd9ff2dabac788d11bacd2448b0c"
       },
       "src_c3e87e2cc3841ddc": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s43__random_3__budget_0.1.json",
         "sha256": "f11a49ed296987ffa93032c23f0dc6b274cab92fba401230447c7420a1c1b902"
       },
       "src_c65e143959a5be8c": {
-        "path": "workshop/latest_experiment/experiments/n170/artifacts/paper_v2/tables/cells/flex_n170__s43__coral_0__native.json",
         "sha256": "73176c81883473d5a2679dcf75b7def9e9669650df77f98144c3c6c0ee1e7c4f"
       },
       "src_c67c6f89ef60f065": {
-        "path": "workshop/latest_experiment/.cache/prepared/d8914b73422ce3f9073c/manifest.json",
         "sha256": "de0b853d19b7e1a7c3a93a94251830fa890b40efe027eae90d28a54cf1fc7c82"
       },
       "src_c9a14ca14d963548": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s29__pca__budget_0.05.json",
         "sha256": "8d93fb43e7675851b91c0c3ab09aea9f460ec5c930e5f61df4f62c36ee67a658"
       },
       "src_ca3d5fadd3a43552": {
-        "path": "workshop/latest_experiment/experiments/n170/artifacts/paper_v2/tables/cells/flex_n170__s17__coral_1__native.json",
         "sha256": "12887f7ceee10766ccc0fdfe8f340002a511db5909ef765da0df200b10725fd9"
       },
       "src_cd2762b21a171fb7": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s43__identity__native.json",
         "sha256": "fda6d9056aa3b4be40469d70a14e9275f194ee6ab22959a11c49512d0b58a4f6"
       },
       "src_cd66084eb7259431": {
-        "path": "workshop/latest_experiment/experiments/n170_paired_oneshot/artifacts/discovery_v1/cells/flex_n170__s43__paired_constant_pooled__native.json",
         "sha256": "5fe02e5d93d4d8018ae7fa53cc9ac0ddc37baedaa2fde5d13d4f87ca7ba76517"
       },
       "src_cf415b8382dddb0e": {
-        "path": "workshop/latest_experiment/experiments/critic_complexity/artifacts/main_v1/tables/cells/n170__s29__mgpa_linear_tr__native.json",
         "sha256": "ecf98fe0c481114c38f837bf125616a93d476e5ed4743577b37bcdd5b0848ca9"
       },
       "src_cf752344b860e3e6": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation2__r02__s17__featmap_1__native.json",
         "sha256": "b734a0082a6450dac7c1e2822a6916193a773037542163c44573c4e6fb5f2aa3"
       },
       "src_d071c6a8d2317d16": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/target/tables/cells/ssvep_controlled__rotation1__r02__s43__mgpa_fit_mean__native.json",
         "sha256": "1ad207c3e4ee4547318390b4cba7e803ecb0999526caa69bd676e94496ae5d1a"
       },
       "src_d0cc9038ef7314cb": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation1__r02__s43__mgpa_marginal__native.json",
         "sha256": "170e0b5e3f81790e044aad90276fb39d5e07dcbdcc833afba5be0c8cbab4f9bc"
       },
       "src_d2c852cc07656f2e": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s29__random_0__budget_0.05.json",
         "sha256": "738ff48d8a04e25d91e8c035c6eaf93293632bff70ca2ddebc615fb12c56f4bc"
       },
       "src_d32810c35352893b": {
-        "path": "workshop/latest_experiment/experiments/recorded_token_readers/artifacts/main_v1/tables/cells/leace__s17.json",
         "sha256": "91e51a2972a4c90e6f3e938e9185d0d7c60780f505273f51a0dae1102728c3b7"
       },
       "src_d42ccc4e0e3ce562": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation3__r02__s17__leace__native.json",
         "sha256": "cb19d4ebeaff5661053d3837aad94a3d641dbc5292893d9192ee822922bad72c"
       },
       "src_d437cace21937b82": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s43__random_0__budget_0.05.json",
         "sha256": "1f134f7839db42760b63b8d510d928494aea9ceb23dbb9f7dca9438b3a049017"
       },
       "src_d6b3ffb0a6e69470": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/igbp/models/flex_n170__s17__igbp_strong/model.npz",
         "sha256": "d1db191ec5a950d77edc1bcd60a1d71f82d65cdcf5edaeb98803d5b4915edec2"
       },
       "src_d791e90977b8f427": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s17__random_0__budget_0.1.json",
         "sha256": "c05b8f3cded685c3a45c2c4293ae44c2f38d0f185901b508a6092b38e1d543d1"
       },
       "src_d7b1990ced54dfcb": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s17__random_3__budget_0.1.json",
         "sha256": "0b80cb592e249bb4aa7b8dd9e718019a782fb7da45d94cb6491c3e1e8aff2caa"
       },
       "src_d9e1bf6ef56d9ca7": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s43__random_4__budget_0.05.json",
         "sha256": "797adcb92eb27af857d4b4cebd14d5a22b26fcb9b41dd7a42e9832862197c2a6"
       },
       "src_dad03df6a869d4ff": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s17__random_1__budget_0.1.json",
         "sha256": "b2222ca46ec289903b0bb4d14fd805b7e3599ead6d88a6b50dccfba8875f661f"
       },
       "src_db406cf149922186": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s43__random_4__budget_0.05.json",
         "sha256": "f95de4c532357032bdbb44cb46cf4bef4a139ec554236b32bca31c0ae0efe350"
       },
       "src_dbc570bb4fc9f848": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/igbp/cells/flex_n170__s29__igbp_strong__native.json",
         "sha256": "5d3c7d9e37c747745edf6e0e1a86e00a63e75a15f969948c7951ae85fc339f49"
       },
       "src_dd00deadb437666b": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/target/tables/cells/ssvep_controlled__rotation4__r02__s29__mgpa_fit_mean__native.json",
         "sha256": "7ad201df1e94c1182b04f16db8beb0c134ab3056aab5e4fc1e5317bb4cb20591"
       },
       "src_de5b27579c9459a7": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s17__random_3__budget_0.1.json",
         "sha256": "914d474ce4bb471064f2be5231eb7b7ebb1fa593295fc47232343dee4d0a515e"
       },
       "src_df2343283d2b78a8": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s43__random_0__budget_0.05.json",
         "sha256": "53c77ba28bb18e97d8469b30c74703d0dc9980fbaeebd8dad08d6955a204c18c"
       },
       "src_df33bfc291f50624": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s43__random_2__budget_0.1.json",
         "sha256": "6969b679bb05588188db8723af98513b23471ecbb589fcfda2bb7a93bd31a71a"
       },
       "src_df4f126d3c77a2cd": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s17__random_0__budget_0.1.json",
         "sha256": "6cce551519214080d5a05da60774654c221683e927fd8b96b7f914d06438b204"
       },
       "src_df5fa221d9a8d72c": {
-        "path": "workshop/latest_experiment/experiments/n170/artifacts/paper_v2/tables/cells/flex_n170__s29__leace__native.json",
         "sha256": "ff1091a24dc74a52a6dd3717162793e5007e41ccf2647575dfc757f6c217305a"
       },
       "src_df7bf6b399d01309": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation1__r02__s17__identity__native.json",
         "sha256": "6a627be9597020e3d3513a893189a72d0a931b27c7d06c219a9e01b3871c0628"
       },
       "src_e01b385b09c2ec1e": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/n170/cells/flex_n170__s29__measurement__budget_0.1.json",
         "sha256": "7893419102d16ae034aedb713dcccfd536f83c012632e2264488d07e052bd749"
       },
       "src_e043b965d16fc037": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s29__random_2__budget_0.1.json",
         "sha256": "4e181d44c19ec9eff8940670499f95ff5df42967e974717e156568c441e5c7e8"
       },
       "src_e18ecc4fa7c98d59": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/eval_cells/p300__coral.json",
         "sha256": "3aa3496ab73b51f22f7576b3fa3eeb6a729a6ddc6fb8320153d33b308e37ad43"
       },
       "src_e1dee42d88aa8697": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s29__random_1__budget_0.05.json",
         "sha256": "24c05f051915cd1ff2477c22b6f723f48e477b36252337ace850686e7b848269"
       },
       "src_e353702a8925dca5": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation4__r02__s17__featmap_0__native.json",
         "sha256": "46fa8f26bb7bb40983dc3e788b2fa46c629632a4e67ae662c0bc69dd69d5d906"
       },
       "src_e3f562942fffa269": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s17__measurement__budget_0.05.json",
         "sha256": "32624e5fa2c618d47b0f7f96ad82ef56b4f19b3f460c393350689e1c19b4a7ae"
       },
       "src_e4c42d72041f1254": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s17__random_1__budget_0.05.json",
         "sha256": "db332558cf04e3a5e9ddf1106cf854a82963fa776393238f55060c393dc26bff"
       },
       "src_e62b2904bf92cac5": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s17__pca__budget_0.05.json",
         "sha256": "4a202f50d8a807022f8300a65d40b39f544ec3a3cb313a216e31a4c67af73ab5"
       },
       "src_e62f852d6a21898d": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation2__r02__s17__coral_0__native.json",
         "sha256": "0ac941e52a7214c21d69af8f4a0ecffd38051d9ae410903faf0324fb4b5a6cbe"
       },
       "src_e69aca39d78dfc88": {
-        "path": "workshop/latest_experiment/experiments/controlled_contextual_direction/artifacts/discovery_v1/models/ssvep_controlled__rotation1__r02/paired_constant_pooled/model.npz",
         "sha256": "69da2251845a47074d6624297beec89c5e65edf6e4b5878851609b00b3b2e62f"
       },
       "src_e6c801e5766080e7": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s29__random_3__budget_0.1.json",
         "sha256": "eee5fd93c81dd3ad6333c01a31a5887a531e98a8b7d78596f90df5212b852547"
       },
       "src_e71bcfd14a03528d": {
-        "path": "workshop/projects/mgpa-merged-v5/sections/experiments.tex",
         "sha256": "790aa840ba085935255ddced9c23ef6509d16655e9e5d207f65872615fce94af"
       },
       "src_e7356725025c75b0": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s29__random_3__budget_0.1.json",
         "sha256": "cb9839449a668bf96ce39078ef6dccd1fa280db86aab9bbf5469b7c09e214a8c"
       },
       "src_e9eb4506881d3716": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s17__pca__budget_0.05.json",
         "sha256": "c0874a1059df14ac2ff64f0208080cad0bcddaef7533b7ae1a46c742af43f958"
       },
       "src_eab54b102f51604d": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s17__pca__budget_0.05.json",
         "sha256": "cd94ce087160d02464bef38cda5900312f338693cd9a12180b00895eccf98752"
       },
       "src_eb6a7ee0999d2ac7": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s29__pca__budget_0.05.json",
         "sha256": "bac8f0ff15e7761cd747066effce3f2e15135af298ca8cf391605abe8c5e5ba9"
       },
       "src_eba030c7d84950a0": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/target/tables/cells/ssvep_controlled__rotation1__r02__s29__mgpa_fit_mean__native.json",
         "sha256": "10799d917cb9aacc3e637fdeabc1a2e907d9659bb0cff9b781cd1e958b98887c"
       },
       "src_ebb9fbefe26917f2": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s17__measurement__budget_0.05.json",
         "sha256": "8ba20cfa97bd5e0b15ceecc35923b6588c07d8cc5bf59fd99820cb0bbb40e31f"
       },
       "src_ec5dd14d4d873e07": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s29__random_2__budget_0.05.json",
         "sha256": "bbdac2ddb079e102875e7f7290d75db36b411273654c39a7e6ccd0da96433b37"
       },
       "src_ecef921e5dbf726a": {
-        "path": "workshop/latest_experiment/.cache/runs/controlled/paper_v2/models/ssvep_controlled__rotation1__r02__s17__mgpa/model.json",
         "sha256": "a439a5cb3633093c3ea33b339367e2c7803b6697bd1d64d91d5fcb2a53590f88"
       },
       "src_ed7281acdeaa4a81": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/target/tables/cells/ssvep_controlled__rotation3__r02__s17__mgpa_fit_mean__native.json",
         "sha256": "0e94764f38524be5fa0408f8cfc324bfa8ccbf924fbe6b0034c0aba5247c142d"
       },
       "src_ed91ba28b24fc7af": {
-        "path": "workshop/latest_experiment/experiments/recorded_token_readers/artifacts/linear_only_v1/tables/cells/mgpa_linear_tr__s17.json",
         "sha256": "871f513d52c3ead777e9a17b956f11e24396175a106cbb11802362715816911d"
       },
       "src_edf6364fdbaae04b": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s29__random_2__budget_0.1.json",
         "sha256": "60b881fb8b85e8277c861e4b729a06ecd9cf6f26b0e424a1aab05f432a348975"
       },
       "src_ee50da3d7de88fdb": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s43__identity__native.json",
         "sha256": "fd738a3944456ba0a59b6f1181a9f998133fbda5bc689b3de7bf45a04e2f31bd"
       },
       "src_eef24065c6ea4e12": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation3__r02__s43__mgpa__native.json",
         "sha256": "badb5077c55d82ee00e27e092cdfbebebb6d5bb3db340ac396b4349a167548cf"
       },
       "src_ef0ecf5d05e3d2d7": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s43__random_3__budget_0.05.json",
         "sha256": "d1e790e7fd6e4f5eb01600bf1a6c0ba009558fc62143c040d0b3a6d652e654f6"
       },
       "src_ef558103f6aee171": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/dev_cells/coral_ref0_ridge0.01.json",
         "sha256": "5b44ddada319c741f93e4e924a2874eb1ae796ffb9555cdc035a6450cf1f854b"
       },
       "src_efca395b5971831d": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s29__identity__native.json",
         "sha256": "160eb16893e82345391a151da716da5dcf8625c2e8d4fb9de45dffac28ea3203"
       },
       "src_f04828004386dcad": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s17__identity__native.json",
         "sha256": "ba44d41a502e2ea3a6ac2876d444ba24a80d5175eb8945cd8a1485500e568070"
       },
       "src_f067322df6a70d52": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s17__identity__native.json",
         "sha256": "2f613b25b04e60784ba8c08d7f1d0aaff550374de254854d1ae72deac6ce1f10"
       },
       "src_f106d43df4c9c899": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/target/tables/cells/ssvep_controlled__rotation3__r02__s29__mgpa_fit_mean__native.json",
         "sha256": "d60f3ecd645d242c8751cdf04bb57213a9717739156ec526105d4f93046516ef"
       },
       "src_f1b68318eb928044": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation1__r02__s17__mgpa_marginal__native.json",
         "sha256": "7964a3ae4b6549be82b8668f59d7757dafb61473bd07f6cb33bcdd42b706941e"
       },
       "src_f1f4c19f4e08d57a": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s17__random_2__budget_0.1.json",
         "sha256": "fdafadc05b18b0294773edec55b4e2358f5048cff219722d77c4a57609120616"
       },
       "src_f204604bdca1a145": {
-        "path": "workshop/latest_experiment/.cache/runs/controlled/paper_v2/models/ssvep_controlled__rotation1__r02__s17__mgpa/model.npz",
         "sha256": "aed584973f1b2bc2570b5a46053f85f8ffc3249de2d7248636bda7c1e3e5b9ab"
       },
       "src_f365baf72b0ddbea": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s43__ungated__budget_0.05.json",
         "sha256": "9600e66dbe67637e10dcdf68bf4210bcc6ad94bd5518505798a6387136d5d064"
       },
       "src_f37b200e4d5274ff": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/target/tables/cells/ssvep_controlled__rotation4__r02__s17__mgpa_fit_mean__native.json",
         "sha256": "8501ecf00d872aec8431546300692c63f7825cfc5ea42c8147b76cb11162a32e"
       },
       "src_f38e6d5157b810c3": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s17__random_4__budget_0.05.json",
         "sha256": "9b05c6a3eb942c5269f4e279f5e365a3928d13dfead9b9fb4fb5d70404a845b6"
       },
       "src_f3e6f3f1f70db36e": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation4__r02__s29__mgpa__native.json",
         "sha256": "e351d8e0704031402c0b3b9b31ecf7a707cc75f3779bebb1c406b4fd66fc7243"
       },
       "src_f40192dcb913c99c": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s43__random_0__budget_0.1.json",
         "sha256": "3e563a910d8e1d0f5e19f5fb883594e4423d97a01cb2e4e1c0ca58372eb8cc3c"
       },
       "src_f507817c9fe2899c": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s17__random_3__budget_0.05.json",
         "sha256": "0c214ad6c75b31c9cbb9b5885f6ccfc7acccf0c858bac404c981bbcb8f1ba7dc"
       },
       "src_f51913ed222ea99d": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation1__r02__s43__pca__budget_0.05.json",
         "sha256": "f88882d33d24b6dbf8c86bb3aefe12d9351ad28ad789115958de60487d3e1efd"
       },
       "src_f59b7f0ccab3beaa": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation3__r02__s17__coral_1__native.json",
         "sha256": "a25d17ecb90fc0e6b8c5305f54e3da8ac90f4dd4e29178c81b3777e2cd50efef"
       },
       "src_f6e47c830a05e8d1": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s29__random_3__budget_0.1.json",
         "sha256": "651fbdc599aa5d6eb0b050e9372760b29aefa8d5d88a58a2bcd83ceffaf1f920"
       },
       "src_f7a164994977fad0": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s17__random_3__budget_0.05.json",
         "sha256": "63e740c54bc657de0738b06338d0297dfa5ac43bcded7865757c7c4f094264ce"
       },
       "src_f7b194cc8e9a9dc8": {
-        "path": "workshop/latest_experiment/experiments/recorded_token_readers/artifacts/main_v1/tables/cells/identity__s29.json",
         "sha256": "4aab5eb0b4106f28badae3197d88d76c0eecd0866ac9d9b6a55f3494b7b51f98"
       },
       "src_fabd4005db7b029c": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation2__r02__s29__random_1__budget_0.1.json",
         "sha256": "233add41e187bbb27509b43d8a0148bc62766729681d16526c5020a66329f3bd"
       },
       "src_fc1d201eb2e9debf": {
-        "path": "workshop/latest_experiment/experiments/review_response/artifacts/review_v2/target/tables/cells/ssvep_controlled__rotation4__r02__s43__mgpa_fit_mean__native.json",
         "sha256": "68c90d8d5d3724ceb710cc6ff542f3afd186e8ac96eec6575d2e808d297ab8dd"
       },
       "src_fd407fd804439a15": {
-        "path": "workshop/latest_experiment/.cache/prepared/40f33ed041539c1a6198/manifest.json",
         "sha256": "cd8ac2de142d75e6facbb9abf1920a3aeb020f1ff38e548b6341ece169d06df6"
       },
       "src_fe0e22fe8eb82bfd": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation3__r02__s17__random_2__budget_0.05.json",
         "sha256": "9013d485f0279ed471d4b9eae32b964a1501f834f680c76bd59edbebd74e1847"
       },
       "src_fe677e486df48204": {
-        "path": "workshop/latest_experiment/experiments/flex_task_reuse_final/artifacts/final_v1/tables/eval_cells/n170__featmap.json",
         "sha256": "c001ae05ea6484d47235368a65977ad3e581f1b18a66ead1d62d1a73da468f45"
       },
       "src_ff63d1ec4b3c7531": {
-        "path": "workshop/latest_experiment/experiments/gate_attribution/artifacts/gate_v1/tables/cells/controlled__ssvep_controlled__rotation4__r02__s43__random_0__budget_0.1.json",
         "sha256": "b6393d97fd2bd7ac2aca386809c1b559d417b9d09732e70596393e059a7f992a"
       },
       "src_ffbb5ba9cdae3e84": {
-        "path": "workshop/latest_experiment/experiments/controlled/artifacts/paper_v2/tables/cells/ssvep_controlled__rotation2__r02__s17__featmap_0__native.json",
         "sha256": "4d7846fd69765aa17a5af8990f84e5e71cf977dcbb98cb5dbf92262eba3965ec"
       }
     }

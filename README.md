@@ -14,13 +14,6 @@ include the manuscript's component controls and Identity, LEACE, CORAL, FEATMAP
 and IGBP comparisons. CORAL and FEATMAP require source identity at application.
 The result identifiers for the two MGPA methods are `mgpa_cf` and `mgpa_iter`.
 
-## Manuscript
-
-The self-contained manuscript project is in [writing/](writing/README.md):
-[LaTeX source](writing/merged_v5.tex) · [PDF](writing/merged_v5.pdf).
-It includes all figures, table sources, bibliography, and local ICLR styles.
-Compilation instructions are in [writing/README.md](writing/README.md).
-
 ## Reproduction guide
 
 Choose one of two workflows after [installation](#install):
@@ -55,7 +48,7 @@ records their hashes.
 
 | Paper content | Supplied artifacts |
 |---|---|
-| Measurement paths and construction | [Measurement-path illustration](paper_assets/measurement_paths.png); [theory figure](paper_assets/theory_story.pdf) |
+| Measurement paths and construction | [Measurement-path illustration](paper_assets/measurement_paths_v2.png); [theory figure](paper_assets/mgpa_figure.png) |
 | Controlled Closed-form MGPA | [Closed-form comparison table](paper_assets/controlled_cf_main.tex) |
 | Controlled gate and target | [Gate/target figure](paper_assets/controlled_mechanisms_compact.pdf); [target-control table](paper_assets/controlled_target_controls.tex) |
 | Native N170 and recorded SSVEP | [Native comparison table](paper_assets/real_native_main.tex) |
@@ -140,8 +133,8 @@ python experiments/recorded_ssvep/run.py report --published
 python experiments/task_reuse/run.py report --published
 ```
 
-`build.py` writes tables, CSVs, experimental figures and the theory illustration
-to `paper_assets/generated/`; it does not overwrite the supplied manuscript assets.
+`build.py` writes tables, CSVs, experimental figures and an analytic preview of the
+theory illustration to `paper_assets/generated/`; it does not overwrite the supplied manuscript assets.
 Generated reports are local outputs and are not needed to run the package.
 `verify.py` authenticates the released code, configurations and saved numerical
 cells, then checks participant-derived means and intervals against the manuscript.

@@ -48,9 +48,9 @@ the selected summaries exactly: Closed-form strength 1.1, Iterative stages
 records this check. It validates the selection calculation, not independence
 of the cohorts used during protocol development.
 
-Table and figure builders read saved numerical results only. The theory
-illustration has a local renderer; the measurement-path illustration is supplied
-as a static asset. File hashes and source-record provenance are recorded in
+Table and figure builders read saved numerical results only. The measurement-path
+and theory illustrations in the paper are schematic figures supplied as static
+assets. File hashes are recorded in
 [release_manifest.json](release_manifest.json).
 
 ## Standalone execution

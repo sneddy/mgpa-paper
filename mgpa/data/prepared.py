@@ -1,4 +1,4 @@
-"""Preparation boundary: data arrays only, never fitted repair maps/readers.
+"""Preparation boundary: data arrays only, never fitted correction maps/readers.
 
 Two explicit modes are supported. ``prepared`` verifies and relocates existing
 coordinate archives byte-for-byte. ``frozen_features`` re-estimates coordinates
